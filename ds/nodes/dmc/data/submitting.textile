@@ -10,9 +10,7 @@ h3. Before data is sent:
 
 * "Get an FDSN network code":http://www.fdsn.org/networks/request/ (This is administrated by the FDSN)
 * Submit test volume(s) (Typically, a network submits miniSEED data, and if this is the case, we will need a dataless SEED volume (metadata) and miniSEED data volume(s). This will allow the DMC to run the data through an extensive sanity-checking process and eliminating problems before they get into the permanent holdings.)
-* Get a tape label (template form) from "Gale Cox":mailto:gale@iris.washington.edu and correctly indicate number of volumes/tapes
-OR
-contact "Rick Benson":mailto:rick@iris.washington.edu to set up an FTP directory
+* Contact "data-submission@iris.edu":mailto:data-submission@iris.edu to set up an FTP directory
 * Make clear any special considerations
 
 h3. Accepted Data Formats
@@ -28,14 +26,9 @@ h3. Accepted Data Formats
 
 fn1. The initial dataless SEED volume should be all-inclusive for the network data that is being submitted. Once the data begins routinely flowing, dataless volumes can be submitted for either stations that have changed their operating parameters, or can continue to be all-inclusive. Dataless volumes can reflect the changed metadata only.
 
-h3. Media formats 
-
-Data can be submitted on DLT, 4mm, 8mm, DVD, USB, etc.
-The data should be written to media using either dd or tar.
-
 h3. On-line transfers
 
-* Before shipping data, contact "Rick Benson":mailto:rick@iris.washington.edu so that we can create the appropriate directories, on the appropriate machine, and permit ftp utilization between data centers.
+* Before shipping data, contact "data-submission@iris.edu":mailto:data-submission@iris.edu so that we can create the appropriate directories, on the appropriate machine, and permit ftp utilization between data centers.
 * Send dataless SEED. Once received, we can enable automated archiving.
 
 The data should preferably include:
@@ -58,7 +51,7 @@ For non-realtime data the DMC is providing a "miniseed2dmc client":https://githu
 
 On the DMC side we run a ringserver process to catch the streaming data sent by miniseed2dmc and write it out into file denominations of our choosing. In practice the DMC will run one ringserver process for each supplier. Each ringserver process will "listen" for connections on a network (TCP) port, so each supplier should be assigned a port number.
 
-The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "Rick Benson":mailto:rick@iris.washington.edu at the IRIS DMC to initiate submission.
+The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "data-submission@iris.edu":mailto:data-submission@iris.edu at the IRIS DMC to initiate submission.
 
 Server name: @ringsub.iris.washington.edu@
  
