@@ -1,0 +1,49 @@
+h1. Restricted Data Access
+
+Since 2002, the IRIS DMC has been committed to managing data by accepting it as close to real-time as possible. The DMC realizes that efficiencies are realized on many levels, from eliminating tape transfers, capitalizing on low-latency delivery protocols, to noticing problems with data, so that they can be corrected while the data collection is still active and relevant information is fresh. If refined metadata is created while data collection is underway, there are fewer problems with the final product, in the end.
+
+But in addition to this, an important function of the DMC is to collect data, sort it, and make it readily available to a wider research community, especially with short-term temporary experiments (such as from PASSCAL, SEIS-UK, OBSIP, SISMOB-FR, and others) that have multiple partners conducting research with new data, and don't want to be burdened with distributing data while the research is underway. For this reason, there are data at the DMC that appear to be available in the holdings, but are restricted.
+
+There are four generalized policies for what data are restricted:
+
+# *IRIS/PASSCAL:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
+# *OBSIP:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
+# *SEIS-UK:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open
+# *SISMOB-FR:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open.
+
+h2. How can you determine if data are restricted?
+
+The "Metadata Aggregator":/mda has this information posted. Mouse over the key in the upper right hand corner and see the key expand to look like this:
+
+<notextile>
+  <figure>
+    <img src="/media/_s/img/dms/nodes/dmc/data/types/restricted/mda-legend.png" />
+    <figcaption class="text-center"><strong>Figure 1:</strong> The Meta Data Aggregator legend</figcaption>
+  </figure>
+</notextile>
+
+h2. How can I determine who ran the experiment (Principal Investigator's or PI's) to know whether I can ask for access?
+
+There is a list of experiments for the IRIS/PASSCAL deployments with this information located at:
+
+"http://ds.iris.edu/data/passcal/latest.pdf":/data/passcal/latest.pdf
+
+This is updated monthly. At this time, there is no spreadsheet with this information for other non-IRIS groups.
+
+h2. How can I register to access data should I have been given the password for any given network of restricted data?
+
+"Register here &raquo;":/ds/nodes/dmc/forms/restricted-data-registration/
+
+h2. What happens with restricted data that are requested to be shipped using ftp?
+
+IRIS places data on an anonymous ftp disk located at *ftp.iris.washington.edu:/pub/userdata* that is segregated by the @.NAME@ field entry that was used when making requests. So that the data cannot be downloaded and used by non-participating researchers, you must be able to decrypt the data using openssl, and the instructions for this, with examples, is located at:
+
+"http://ds.iris.edu/ds/nodes/dmc/data/types/restricted/encrypted/":/ds/nodes/dmc/data/types/restricted/encrypted/
+
+h2. If a Network is listed as being "partially open", meaning just select stations are without restriction to use, how do I know which they are?
+
+You can look up the stations that are *open* "here":http://ds.iris.edu/vnets?vnet=_PAS-OPEN .
+
+h2. More information
+
+If you have any trouble, please email IRIS staff using: "engine_room@iris.washington.edu":mailto:engine_room@iris.washington.edu

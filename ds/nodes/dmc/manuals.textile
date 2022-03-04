@@ -1,0 +1,89 @@
+h1. Manuals
+
+The IRIS DMC provides manuals for all software, tools and services we provide.
+
+h2. Categories
+
+<notextile>
+  <div class="row-fluid">
+    <div class="span6">
+      </notextile>
+* "APIs and Toolkits":#api
+* "Data Center Utilities":#data-center-utilities
+* "Instrumentation Manuals":/hq/instrumentation
+* "Plotting and Display Programs":#plotting-and-display
+* "Processing Programs":#processing
+      <notextile>
+    </div>
+    <div class="span6">
+      </notextile>
+* "Request tools":#request-tools
+* "SAC":#sac
+* "SEED Tools":#seed
+* "SEED Manual [v. 2.4]":http://www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf
+* "Software Tutorials":/tutorials - _Videos_
+      <notextile>
+    </div>
+  </div>
+</notextile>
+ 
+h2(#api). Application Programming Interfaces and Toolkits
+
+table(table table-bordered table-striped).
+|_. Name|_. Summary|
+|"DHI2mseed":http://www.isti2.com/DHI2mseed/DHI2mseed.html |Command line tool for accessing miniSEED waveforms via DHI.|
+|"FissuresImpl":http://www.seis.sc.edu/software/fissuresImpl/ |FissuresImpl provides java classes directly needed to support clients and servers using the Fissures/DHI system.|
+|"FissuresUtil":http://www.seis.sc.edu/software/fissuresUtil/ |FissuresUtil provides java classes that are built on the Fissures/DHI system and provide utility funtionality that is used across many clients and servers created at USC|
+|"Java Web Service Library (IRIS-WS)":/dms/nodes/dmc/software/downloads/iris-ws/ |The IRIS-WS Library is a Java API that allows direct access to data and information at the DMC from within your programs.|
+|"Simple":http://www.seis.sc.edu/software/simple/ |Simple is a collection of very simple DHI clients that illustrate how to make calls on DHI servers.|
+
+h2(#request-tools). Request Tools
+
+table(table table-bordered table-striped).
+|_. Name|_. Summary|
+|"AutoDRM":/manuals/autoDRM.htm |*ENDING January 1, 2018* - AutoDRM is an automatic data request management system used for obtaining data through a system of formatted email messages.|
+|"BREQ_FAST":/manuals/breq_fast.htm |Email request format based on station/channel/time parameters|
+|"JWEED":/dms/nodes/dmc/software/archive/jweed/ |Java update of WEED that allows users to access event and station data through an interactive map.|
+|"MATLAB Data Access":/dms/nodes/dmc/software/downloads/iris-ws/ |Waveform data, event metadata, and station metadata from the IRIS-DMC can now be accessed within MATLAB using the IRIS-WS Java library. No knowledge of Java is required.|
+|"MetaData Aggregator":/mda/help |The MetaData Aggregator (MDA) prints metadata summaries from the IRIS DMC database including data availability and links to further services.|
+|"NetDC":/manuals/netdc/ |Email request format based on inventory, response data, and station/channel/time parameters. "Participating Networks":/manuals/netdc/intro.htm |
+|"SeismiQuery":/SeismiQuery/help.html |SeismiQuery is a set of pre-formatted database queries that allow users to access data and information stored in the DMC Oracle database.|
+|"SOD":http://www.seis.sc.edu/sod/documentation/index.html |SOD is software application that automates data selection, downloading, and routine processing tasks. Now includes utilities for calling DHI services via the command line.|
+|"SOSA":/dhi/sosa/docs/ |SOSA is a Java client for retrieving, analyzing, and comparing observed and synthetic seismograms.|
+|"VASE":/manuals/vase/ |VASE is a Java-based client application designed for viewing and extracting seismic waveforms from the DHI waveform repository via BUD.|
+|"WILBER":/wilber3/ |Browse large earthquakes, view waveforms, and request waveform data.|
+
+h2(#seed). SEED Manual.
+
+* "SEED Manual v2.4 [PDF]":http://www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf (Revised 2010)
+* "SEED Manual Appendix A":/manuals/SEED_appA.htm (Revised 2010)
+* SEED Readers
+** "Jrdseed":/dms/nodes/dmc/software/downloads/jrdseed/0-10-1/manual : A Java port of our classic rdseed application developed by ISTI.
+** "rdseed":/dms/nodes/dmc/software/downloads/rdseed/5-3-1/manual : For reading FDSN SEED formatted volumes, enabling conversion of SEED to SAC (binary or ascii), AH, SEGY, CSS, miniSEED or fullSEED.
+** "verseed":http://seiscode.iris.washington.edu/projects/verseed : For verification of SEED volumes
+** "POD":/manuals/pod.htm : Produce a SEED volume from a set of waveform files, their associated station/channel descriptions and response information
+* SEED Response Evaluation Tools
+** "evalresp":/manuals/evalresp.htm : Evaluate response information and output to ASCII files using rdseed produced RESP files
+** "FetchResp":/manuals/fetchresp.htm : Java client which will download response information from IRIS DMC and construct RESP files on the user's computer.
+** "JEvalResp":/manuals/Java version of evalresp
+** JPlotResp": Graphically-oriented Java program for processing and plotting the response information
+
+h2(#data-center-utilities). Data Center Utilities
+
+table(table table-bordered table-striped).
+|_. Name|_. Summary|
+|Portable Data Collection Center (PDCC) "v3.0":/dms/nodes/dmc/software/downloads/pdcc/3-0/manual/ , "v3.8":/dms/nodes/dmc/software/downloads/pdcc/3-8/manual/ |A toolkit allowing seismic network operators to store and manage seismic instrument metadata and waveform data in SEED format.|
+|"verseed":https://seiscode.iris.washington.edu/projects/verseed |For verification of SEED volumes|
+
+h2(#plotting-and-display). Plotting and Display Programs
+
+table(table table-bordered table-striped).
+|_. Name|_. Summary|
+|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the IRIS DMC|
+
+h2(#processing). Processing Programs
+
+table(table table-bordered table-striped).
+|_. Name|_. Summary|
+|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the IRIS DMC|
+|"TauP":http://www.seis.sc.edu/downloads/TauP/taup.pdf |Application for computing travel times|

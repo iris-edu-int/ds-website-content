@@ -1,0 +1,63 @@
+h1. Encrypted Data
+
+IRIS routinely distributes restricted data sets to authorized users in encrypted format to ensure the data remains in a private access domain for the time period of the access restriction. Authorized users are required to use the same password they were given when registering to access these data and was assigned by the PI of the project.
+
+We used to use the @crypt@ utility on Sun OS machines for this task, but have discovered that crypt implementations do not work reliably in cross-platform situations. Therefore, we looked to some other alternatives for securing delivered data sets and settled on an open-source solution: OpenSSL.
+
+OpenSSL is a community developed toolkit implementing the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols and offers a strong cryptography library. It can be compiled on many platforms and most major platforms can download and make use of a pre-built binary. Some platforms even have OpenSSL installed.
+
+The main website for OpenSSL can be found here: "http://www.openssl.org/":http://www.openssl.org/
+
+ 
+h2. Finding or Installing
+
+Below are a list of platforms and instructions on how to install and access OpenSSL for use in decrypting IRIS restricted data:
+
+h3. Sun OS Solaris SPARC and Intel:
+
+Check first to see whether you have OpenSSL available on your machine. It will probably be located in @/usr/local/ssl/bin@. If it is not there, check for @/opt/csw/ssl@. Otherwise, you'll want to install a binary package for openssl. A site that appears to be user-friendly is "Blastwave":http://www.blastwave.org/packages.php/openssl_utils.
+
+Read the HOWTO "Use Blastwave":http://www.blastwave.org/howto.html to learn how to use their package utility @pkg-get@. Once that is installed, you can install @openssl_utils@ to get the *openssl* binary. The install point for this will be @/opt/csw/ssl@.
+
+h3. Mac OS X
+
+Mac OS X comes with *openssl* pre-installed as @/usr/bin/openssl@.
+
+h3. Windows
+
+A self-installing download for Windows is available here: "http://www.slproweb.com/products/Win32OpenSSL.html":http://www.slproweb.com/products/Win32OpenSSL.html
+
+h3. Linux
+
+Many versions of Linux will come with *openssl* pre-installed as @/usr/bin/openssl@. Use your Linux system's package updater to verify that you are running the latest version. You can also try entering
+
+<pre>rpm -q openssl</pre>
+
+to see if the package is installed and what version it is. If you do not have it, you can install the rpm for openssl by visiting "http://www.rpmfind.com/":http://www.rpmfind.com/, or make use of tools such as @yum@ or @apt@ for updating and managing your installs.
+
+ 
+h2. To Use
+
+OpenSSL has a lot of command options, and a wide array of cryptographic tools available. The IRIS DMC is currently making use of the _DES CBC_ encryption algorithm (Data Encryption Standard - Cypher Block Chaining) due to its symmetric encrypt/decrypt capacity for ease of use by our data recipients. This basically means that we can use the same password to encrypt the data as the user uses to decrypt the data. Simpler bookkeeping for both sides.
+
+As an authorized recipient of restricted data from IRIS, you will be provided with a password specifically tied to the restricted network identifier. All you need to do is supply the password, labeled below as @{passwd key}@ in order to decrypt the data. Here is the usage pattern:
+
+<pre>openssl enc -d -des-cbc -salt -in {seed.openssl} -out {seed} -pass pass:{passwd key}</pre>
+
+where:
+
+<pre>{seed.openssl} = the encrypted SEED product you received from us
+{seed} = the decrypted SEED filename that will be written by running the command
+{passwd key} = the password key you were supplied to decrypt the file</pre>
+
+Replace the above entries with your own, and type the rest of the arguments exactly as shown.
+
+h3. Example
+
+<pre>/usr/bin/openssl enc -d -des-cbc -salt -in seed.openssl -out seed -pass pass:seism</pre>
+
+where:
+
+<pre>'seed.openssl' is the encrypted input file name
+'seed' is the output seed file name
+'seism' is the password for decrypting the data</pre>

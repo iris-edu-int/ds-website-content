@@ -1,0 +1,16 @@
+h1. Regional Exchange of Earthquake Data (REED)
+
+The Regional Exchange of Earthquake Data (REED) project works with networks to support telemetry components, allowing data sharing in real time. REED also supports the transfer of data from field stations to network centers for hazard monitoring.
+
+* Focus on solving data communication issues
+** Station to data center
+*** Cellular modems
+*** Radio modems
+** Data center to Internet
+*** Fiber installation
+*** Data tariffs
+* Past efforts
+** Central Asia
+** SW Pacific Tsunami Task Group
+
+Please see the "DMS Newsletter article for more information":/ds/newsletter/vol15/no2/the-regional-exchange-of-earthquake-data-reed-project/.

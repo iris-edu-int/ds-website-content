@@ -1,0 +1,17 @@
+h1. Acceptable Use Policy
+
+h2. Scope
+
+This policy applies to everyone who uses Data Services information technology resources and to all uses of those resources, whether physically located at Data Services Seattle-based office or remotely. Although local information technology services at Data Services may have supplemental policies regarding acceptable use and user privacy expectations, those policies cannot diminish Data Services responsibilities or user privacy expectations as set forth below.
+
+
+h2. Acceptable Use
+
+IRIS Data Services provides information technology to its users to advance its research and scientific mission. Authorized users may also use IRIS Data Services information technology for appropriate incidental use so long as those activities are legal and do not violate:
+
+* IRIS-wide policies, which are subject to change from time to time
+* contractual obligations
+* the safety, security, privacy, reputational, and intellectual property rights of others
+* restrictions on political or commercial activities that are applicable to not for profit organizations like IRIS.
+
+Every user bears the responsibility for knowing and complying with applicable laws, policies, and rules; for appropriately securing their computers and other electronic devices from misuse or theft by others; and for avoiding any use that interferes with others' legitimate access to and use of IRIS Data Services information technology.

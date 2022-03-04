@@ -1,0 +1,9 @@
+h1. DMC vnets Retirement
+
+The DMC's vnets service has been retired.  But not to worry, virtual networks are alive and well.
+
+To browse virtual networks the DMC's Metadata Aggregator (MDA) is the best choice:
+"http://ds.iris.edu/mda/#vnetlist":http://ds.iris.edu/mda/#vnetlist
+
+For programmatic access to virtual networks, both virtual network definitions and resolved listings are available from the DMC's virtual network web service:
+"http://service.iris.edu/irisws/virtualnetwork/1/":http://service.iris.edu/irisws/virtualnetwork/1/

@@ -1,0 +1,15 @@
+h1. Usage guidelines for IRIS DMC services
+
+h2. Guidelines for using web services
+
+"Web services":http://service.iris.edu hosted at the IRIS DMC ("http://service.iris.edu":http://service.iris.edu) should be used with following limitations:
+* Users should limit usage to no more than *5 concurrent connections* to any combination of web services.
+* Users should limit their clients to no more than *10 connections per second* regardless of the return capability of the service interfaces.
+
+The DMC's network equipment will deny connections (via a TCP RESET) when the limits have been exceeded.
+
+NOTE: In particular, polling for real-time continuous time series data is not allowed. For continuous, near real-time data please use our "streaming service":/ds/nodes/dmc/services/seedlink/.
+
+h2. Guidelines for using the real time "SeedLink streaming service":/ds/nodes/dmc/services/seedlink/
+
+Users of the DMC's "SeedLink streaming service":/ds/nodes/dmc/services/seedlink/ *should not sustain more than 5 concurrent connections*.

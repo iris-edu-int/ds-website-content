@@ -1,0 +1,26 @@
+h1. QA Related Web Services, Products, and Software
+
+
+h4. Web Services and Client Tools
+
+"MUSTANG":http://services.iris.edu/mustang/, Modular Utility for Statistical Knowledge Gathering: seismic data quality metrics and Probability Density Functions (PDFs).
+* "Introduction to MUSTANG":/ds/nodes/dmc/quality-assurance/mustang
+* "MUSTANG Databrowser":/mustang/databrowser/ , a web based MUSTANG metrics plotting tool
+* "LASSO":http://lasso.iris.edu , a web based station performance tool utilizing MUSTANG metrics (works best in Google Chrome or Firefox browsers)
+* "MUSTANGular":http://ds.iris.edu/mustang/mustangular , an interactive map viewer of station metrics
+
+h4. Products
+
+Synthetic Seismograms
+"Global ShakeMovie synthetics at the DMC":http://www.iris.edu/ds/products/shakemoviesynthetics/
+"Global ShakeMovie synthetics at the DMC event listing":http://www.iris.edu/spud/synthetic
+
+"Envelope Functions":/ds/products/envelopefunctions/
+
+"Calibration Products":/ds/products/calibration/
+
+h4. Software
+
+"R Package on CRAN":https://cran.r-project.org/web/packages/IRISMustangMetrics, IRISMustangMetrics is the official public release of R code used by MUSTANG to calculate metrics.
+"ISPAQ":https://github.com/iris-edu/ispaq (IRIS System for Portable Assessment of Quality), software for calculating MUSTANG-style seismic data quality metrics on a local machine.
+"QuARG":https://github.com/iris-edu/quarg (Quality Assurance Report Generator), software for network operators to find station problems using MUSTANG metrics and user-specified threshold values, examine the generated problem list using links to QA tools, document the issues in a ticketing system, and create a formatted HTML report from the tickets.

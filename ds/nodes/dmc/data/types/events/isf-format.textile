@@ -1,0 +1,129 @@
+h1. ISF Format
+
+h2. ISF format with DMC extensions
+
+_Defined 2007-03-14_
+
+The accepted format for associated hypocenter and phase information submitted to the IRIS DMC is the IASPEI Seismic Format (ISF) BULLETIN message type, specifically IMS1.0:SHORT format with an ISF Phase Information Sub-block. In addition to this specification, specially constructed IMS1.0 comments recognized and parsed by the DMC should be included to indicate SEED location ID's, unambiguous FDSN/SEED network codes and submitting agencies.
+
+The IRIS-recognized comments take the form of IMS 1.0 unformatted comments and should not interfere with parsers built for IMS1.0 or ISF. Their specific construction is detailed below.
+
+Blocks specifically supported are, in message order:
+
+* Bulletin Title Block
+* Agency Comment (IRIS/FDSN specific)
+* Event Title Block
+* Origin Block
+* Origin Sub-block
+* Magnitude Sub-block
+* Comment Sub-block
+* Phase Block
+* Phase Information Sub-block
+* Phase Information Sub-block Comments (IRIS/FDSN specific) 
+
+Each of these Block formats are defined in the ISF/IMS1.0 document pages 163-170 (link to document below) with the exception of these sections:
+
+# The IRIS/FDSN specific *"Agency Comment"* is defined as an IRIS Comment ("see below":#comments) with the following key/value pair: @AGENCY="xx"@ describing the agency submitting the Bulletin. For example:
+
+@(IRIS AGENCY="University of Washington")@
+
+# The *"Phase Information Sub-block"* is defined in the ISF extensions document starting on page 16 (link to document below).
+
+# The IRIS/FDSN specific *"Phase Information Sub-block Comments"* are defined as IRIS Comments (see below) with the following key/value pairs:
+
+pre. FDSNNETWORKCODE="xx" :: FDSN Network code associated with the picked waveform.
+FDSNLOCATIONID="xx" :: FDSN Location ID associated with the picked waveform.
+FDSNQUALITYCODE="x" :: FDSN data quality code (D, R, Q, etc.)
+
+The FDSN network code is required, the location id and quality code are assumed to be unknown if not present. For example:
+
+@(IRIS FDSNNETWORKCODE="II" FDSNLOCATIONID=" ")@
+
+or
+
+@(IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="00" FDSNQUALITYCODE="R")@
+
+h2(#comments). IRIS Comments
+
+IRIS specific comments using the IMS1.0 "unformatted comment" syntax are formatted beginning with an open, round bracket "(" at position 2 in the record/line, followed by "IRIS", followed by key and (quoted) value pairs and ending with a closed, round bracked ")". A comment line should not be longer than 120 characters. 
+
+For data submitted to the DMC the station code (Phase Block), channel code (Phase Information Sub-block), and IRIS Comment keys: FDSNNETWORKCODE, FDSNLOCATIONID and FDSNQUALITYCODE should all follow the SEED/FDSN naming nomenclature and uniquely identify the waveform associated with the phase arrival.
+
+h2. Origin author codes
+
+The "Author" field of origin lines should be set to one of the following agencies if they match the description:
+
+* *ISC:* International Seismic Centre
+* *PDE:* NEIC monthly PDE listing
+* *PDE-W:* NEIC weekly PDE listing
+* *PDE-Q:* NEIC (QED) daily listing
+* *SCEDC:* Southern California Earthquake Data Center
+* *NCEDC:* Northern California Earthquake Data Center
+* *ANFR:* USArray Array Network Facility, additional review
+* *ANF:* USArray Array Network Facility, analyst reviewed
+
+Any other author codes will be accepted but not used for determining the primary origin for a given event.
+
+h2. External ISF Documentation
+
+The ISF format is an extension of the IMS1.0 format, specifications for each can be found at the links below.
+
+* "ISF/IMS1.0 documentation":http://isc-mirror.iris.washington.edu/standards/isf/
+* "IASPEI standards and formats":http://isc-mirror.iris.washington.edu/standards/
+
+h2. Examples
+
+Simple example message (this is not a real event):
+
+pre. DATA_TYPE BULLETIN IMS1.0:short
+ (IRIS AGENCY="University of Washington")
+EVENT 01060441 Off west coast of Washington
+   Date       Time        Err   RMS Latitude Longitude  Smaj  Smin  Az Depth   Err Ndef Nsta Gap  mdist  Mdist Qual   Author      OrigID
+1978/01/06 04:41:22.20               18.7900  121.9000                  33.0                                                    01060441
+Sta     Dist  EvAz Phase        Time      TRes  Azim AzRes   Slow   SRes Def   SNR       Amp   Per Qual Magnitude    ArrID
+CHTO   21.70 273.7 P        04:46:12.740   2.4                           ___  43.8     261.1  1.30 m_i            08921001
+MAJO   22.77  35.7 P        04:46:22.825   1.1                           ___  23.1     428.2  2.25 m_q            08921002
+CTAO   45.42 147.0 P        04:49:38.968   1.3                           ___  20.4     108.9  1.50 m_q            08921003
+KAAO   49.24 299.7 P        04:50:09.284   2.0                           ___  61.3     277.1  1.35 m_e            08921004
+MAIO   57.10 301.5 P        04:51:07.757   2.6                           ___  23.9      51.5  0.60 m_q            08921005
+Net      Chan F Low_F HighF AuthPhas    Date     eTime wTime eAzim wAzim  eSlow wSlow      eAmp  ePer eMag Author     ArrID
+IU        SHZ c   0.7   3.0 P        1978/01/06  0.200                                                    SEA_KenC 08921001
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  ")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA_KenC 08921002
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  ")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA      08921003
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="R")
+IU        SHZ c   0.7   3.0 P        1978/01/06  0.400                                                    SEA      08921004
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  ")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA      08921005
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="R")
+
+Another example message with multiple origins and magnitudes (this is not a real event either):
+
+pre. DATA_TYPE BULLETIN IMS1.0:short
+ (IRIS AGENCY="University of Washington")
+EVENT 01060441
+   Date       Time        Err   RMS Latitude Longitude  Smaj  Smin  Az Depth   Err Ndef Nsta Gap  mdist  Mdist Qual   Author      OrigID
+1978/01/06 04:41:22.20               18.7900  121.9000                  33.0                                          PDE       01060441
+1978/01/06 04:41:23.30               18.7923  121.8900                  10.0                                          PDE-W        14406
+1978/01/06 04:41:30.49  13.11  0.26  18.8010  121.6772 316.8 298.0  72  25.0f        12    4 353  67.80  77.94 a i uk ANF          16244
+Magnitude  Err Nsta Author      OrigID
+mb     4.7        7 NEIC         14406
+mb     4.6        7 ANF          16244
+Sta     Dist  EvAz Phase        Time      TRes  Azim AzRes   Slow   SRes Def   SNR       Amp   Per Qual Magnitude    ArrID
+CHTO   21.70 273.7 P        04:46:12.740   2.4                           ___  43.8     261.1  1.30 m_i            08921001
+MAJO   22.77  35.7 P        04:46:22.825   1.1                           ___  23.1     428.2  2.25 m_q            08921002
+CTAO   45.42 147.0 P        04:49:38.968   1.3                           ___  20.4     108.9  1.50 m_q            08921003
+KAAO   49.24 299.7 P        04:50:09.284   2.0                           ___  61.3     277.1  1.35 m_e            08921004
+MAIO   57.10 301.5 P        04:51:07.757   2.6                           ___  23.9      51.5  0.60 m_q            08921005
+Net      Chan F Low_F HighF AuthPhas    Date     eTime wTime eAzim wAzim  eSlow wSlow      eAmp  ePer eMag Author     ArrID
+IU        SHZ c   0.7   3.0 P        1978/01/06  0.200                                                    SEA      08921001
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="Q")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA      08921002
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="Q")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA      08921003
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="Q")
+IU        SHZ c   0.7   3.0 P        1978/01/06  0.400                                                    SEA      08921004
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="Q")
+IU        SHZ c   0.7   3.0 P        1978/01/06  1.000                                                    SEA      08921005
+ (IRIS FDSNNETWORKCODE="IU" FDSNLOCATIONID="  " FDSNQUALITYCODE="Q")

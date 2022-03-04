@@ -1,0 +1,53 @@
+h1. Virtual Networks at the DMC
+
+h2. Overview
+
+A virtual network is a group of stations representing an affiliation that goes beyond the traditional bounds of networks to represent an umbrella organization or initiative. A virtual network definition allows the arbitrary grouping of stations each with independent time ranges. Virtual networks are identified by a virtual network code. To differentiate virtual network codes from traditional FDSN/SEED network codes virtual network codes are prefixed with an underscore @_@ character. Most of the IRIS DMC's public access tools allow users to query for and access data based on virtual network codes.
+
+A good example of virtual network utility is the "Global Seismographic Network":http://www.iris.edu/hq/programs/gsn (GSN) which is a collection of more than 220 stations from over 10 different networks. Data and information about these stations as a group is accessible using the "_GSN":/mda/_GSN virtual network code.
+
+For further discussion of virtual networks at the IRIS DMC refer to the following DMS Electronic Newsletter articles:
+
+* "Virtual Networks - Volume 6, Number 2 (June 2004)":/ds/newsletter/vol6/no2/virtual-networks-defined/
+* "Virtual Networks becoming a reality at the DMC - Volume 6, Number 3 (December 2004)":/ds/newsletter/vol6/no3/virtual-networks-becoming-a-reality-at-the-dmc/
+* "Virtual Networks at the IRIS DMC - Volume 8 Number 4 (December 2006)":/ds/newsletter/vol8/no4/virtual-networks-at-the-iris-dmc/
+
+h2. Virtual Network Discovery and Browsing
+
+* "MetaData Aggregator (MDA)":/mda Includes a list of public virtual networks (below the traditional networks) in expanded form and combined with station metadata.
+* "Programmatic Access":http://service.iris.edu/irisws/virtualnetwork/1/ Both virtual network definitions and resolved listings are available from the DMC's virtual network web service.
+* "SeismiQuery Virtual Network Query Form":/SeismiQuery/virtual_net.htm Allows for flexible searching of virtual networks when needed.
+
+h2. Virtual Network Description (VND)
+
+A virtual network is defined using a Virtual Network Description (VND) which contains a list of network-station pairs each with independent start and end times.
+
+table(table table-bordered table-striped).
+|=. Description of fields|
+|Virtual network|Virtual network code|
+|Network|FDSN/SEED network code|
+|Station|FDSN/SEED station code, may be @*@ for entire network|
+|Install date|Station installation date, optional|
+|Certification date|Station certification date, optional|
+|Start date & time|Start of station in this VND, two fields for date and time|
+|End date & time|End of station in this VND, two fields for date and time|
+|Primary DC|Primary data center affiliation code|
+|Secondary DC|Secondary data center affiliation code|
+
+Each unique primary and secondary data center affiliation code must be included in a VND and indicate a URL to the given data center. As an example the VND for the GSN is easy obtained in comma-separated value (.csv) format using the virtual network web service: "_GSN VND in comma-separated value format":http://service.iris.edu/irisws/virtualnetwork/1/query?code=_GSN&definition=true&format=CSV
+
+
+h2(#maintenance). Virtual Network Description Maintenance
+
+The recommended way to update (or create) a VND is to download a current VND from the virtual network service, edit as needed and return, usually by email, to the DMC. _Note: the DMC will only load pre-approved VNDs._
+
+h3. Important points regarding maintenance
+
+* A VND completely defines a virtual network, there are no partial updates.
+* The required fields are: virtual network, network, station, start date, start time, end date and end time, all other fields are optional.
+* The station field may be @*@ to indicate all stations from the network.
+* The date fields are in @YYYY/MM/DD@ format and the time fields are in @hh:mm:ss@ format.
+* Any primary or secondary codes must be accompanied by matching @DCC:@ lines indicating a URL for the data center.
+* Only lines starting with a virtual network code or @DCC:@ are parsed from the VND, all other lines are ignored. The "virtual network service":http://service.iris.edu/irisws/virtualnetwork/1/ output includes more lines for informational purposes only.
+
+VNDs can be submitted to the DMC in either MS-Excel (@.xls@) format or comma-separated value (@.csv@) format. XML-based MS-Excel formats, i.e. with a @.xlsx@ extension, are not supported. 

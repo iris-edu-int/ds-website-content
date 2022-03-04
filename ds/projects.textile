@@ -1,0 +1,13 @@
+h1. Projects
+
+Over the next decade, IRIS programs will continue to evolve in support of increasingly larger-scale international research projects. The IRIS mission of facilitating seismological research will require addressing the two emerging science- limiting factors: increasing the number of competent seismologists worldwide - particularly in developing countries - and securing resources to support operational facilities on a global scale. IRIS will undertake a pan-IRIS approach to both challenges through implementation of capacity-building activities covering all aspects of seismological practice, and through the development of concerted strategies to secure funding to leverage NSF investment in seismological facilities. These programs and activities will be integral to relevant IRIS programs and are detailed in the corresponding program sections. In addition, IRIS will pursue partnerships with other US and international organizations and agencies to provide IRIS members with the opportunity to become involved in activities of broad societal impact in developing countries.
+
+The following projects are accessible online. Many of these projects require authentication.
+
+h2. Regional Exchange of Earthquake Data (REED)
+
+"More information &raquo;":/ds/projects/regional-exchange-earthquake-data/
+
+h2. Project Initiation Forms
+
+Project planning forms. "More information &raquo;":/ds/projects/pif

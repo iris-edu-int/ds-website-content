@@ -1,0 +1,96 @@
+h1. Sync File Format
+
+h2. About Synchronization Files
+
+Synchronization files are ASCII descriptions of network/station/location/channel data holdings. The Synchronization file format was created to facilitate the verification and comparison of data holdings at DCC's and the DMC. For more information or if you have questions or comments about sync files "e-mail us":mailto:webmaster@iris.washington.edu.
+
+h2. General Guidelines
+
+*    Fields are separated by a pipe (@|@) symbol
+*    The field separator should appear between fields only, i.e., @a|b|c@, not @|a|b|c|@.
+*    Fields may be left empty, no spaces allowed; some fields are required in the time span lines, see below
+*    There should be one header line at the beginning of a synchronization file, followed by any number of time span lines
+*    Time span lines in the synchronization file should be sorted with an alphanumeric sort, the most common default for the Unix sort utility
+
+h2. The Header Line
+
+The two fields in the header line are ordered and defined as follows:
+
+# DCC Name
+# Date Modified
+
+Where:
+
+table(table table-bordered).
+|_. DCC Name | E.g. DMC, ASL, IDA, or PIC (Passcal Instrument Center) |
+|_. Date Modified | The latest date time span lines were modified, in SEED time format to the nearest day (YYYY,JJJ) with no spaces and zero padded to the left. This date should correspond to the latest date in the Date Line Modified Fields in the time span lines. |
+
+h3. Example Header Line:
+
+pre. ASL|1998,274
+
+h2. The Time Span Lines
+
+The sixteen fields in a time span line are ordered and defined as follows:
+
+# Network*
+# Station*
+# Location*
+# Channel*
+# Start Time*
+# End Time*
+# Max Clock Drift
+# Sample Rate
+# Number of Samples
+# Channel Flag
+# Station Volume
+# DCC Tape Number
+# DMC Volume Number
+# Comment
+# Date Line Mod DMC
+# Date Line Mod DCC
+
+*Required Field (note that few fields are required)
+
+Where:
+
+table(table table-bordered).
+|_. Network | The approved SEED network code assigned by the DMC |
+|_. Station | The approved Station Code, wildcards NOT permitted |
+|_. Location | The location ID. If not there, leave blank |
+|_. Channel | The SEED channel name, wildcards NOT permitted |
+|_. Start Time | The start date of data represented in this line, in SEED date format to the nearest second (YYYY,JJJ,HH:MM:SS), with no spaces and zero padded to the left. |
+|_. End Time | The end date represented in this line in SEED date format to the nearest second (YYYY,JJJ,HH:MM:SS), with no spaces and zero padded to the left. |
+|_. Max Clock Drift  | Max clock drift in seconds per sample. |
+|_. Sample Rate | Number of samples per second. |
+|_. Number of Samples  | Total number of samples in this time series. (Not stored at the DMC) |
+|_. Channel Flag | Continuous (@C@) or triggered (@T@) |
+|_. Station Volume | Any Station Volume Identifier |
+|_. DCC Tape Number | The DCC assigned tape number |
+|_. DMC Volume Number | The DMC assigned tape number |
+|_. Comment | One of the following comments:
+DD - Data delayed (expected ship date)
+DW - Data withheld (reason)
+SD - Station down
+TP - Tape problem (lost, blank)
+OT - Other (specify)
+NC - No comment |
+|_. Date Line Modifed by DMC | The date that the line was modified by the DMC in SEED date format to the nearest day (YYYY,JJJ), with no spaces and zero padded to the left. |
+|_. Date Line Modifed by DCC | The date that the line was modified by the DCC in SEED date format to the nearest day (YYYY,JJJ), with no spaces and zero padded to the left. |
+
+h3. Examples of Time Span Lines:
+
+pre. IU|ANMO|01|BHE|1994,258,00:00:00|1994,265,00:00:00|.0005|20||CG|||||1998,275||
+IU|ANMO|01|BHE|1994,265,00:00:00|1994,275,00:00:00|.0005|20||CG|||||1998,275||
+
+h2. Representing Continuous Time Spans
+
+Preferably, continuous data for a given network/station/location/channel is written in one time span line. Continuous data -may- be represented in the synchronization file by a sequence of time span lines. The continuous data time span lines must be written such that a previous time span's end time and the next time span's start time:
+
+# Are equal (preferred)
+# Differ by less than some constant amount
+# Differ by less than 1/2*sample rate (Sample Rate field must be filled)
+
+This ambiguous definition of what may constitute continuous data in a synchronization file is a result of trying to make the synchronization file format flexible and easy to write. Definitions of what consitute continuous data in a synchronization file which allow for the minimum number of fields being written to a synchronization file and which seem most likely to allow for a straight dump of start and end time values in a DCC's database are provided. Currently, the Max Clock Drift field is not being used as part of a continuous data definition. Though well suited for that, using it would require that the number of samples also be written to a synchronization file and few writers of synchronization files fill in that field.
+
+Tools developed to operate on synchronization files should support the above definitions of continuous data as options.

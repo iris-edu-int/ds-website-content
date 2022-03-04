@@ -1,0 +1,48 @@
+h1. History
+
+The table below shows in reverse chronological order (most recent first) some milestones in the history of the Data Management Center. More details can be found in our "newsletter":http://www.iris.edu/dms/newsletter/ .
+
+table(table table-bordered table-striped).
+|_. Year|_. Event|_. Group|
+|2014|IRIS Data Management System officially renamed Data Services|-|
+|2014|New "Event page web application released":/ds/nodes/dmc/tools/event/ to bridge between IRIS HQ "RETM":/hq/retm/ and IRIS Data Products|WT|
+|2013|New web applications released including "Tools":ds/nodes/dmc/tools/ and "Data Channels":/dms/nodes/dmc/tools/data_channels/|WT|
+|2013|ADC installed at LLNL|DM|
+|2013|"Quality Assurance Working Group":/hq/about_iris/governance/qawg (QAWG) formed|QA|
+|2013|External Data Product support updated|DP|
+|2013|"Wilber3 released":/wilber3|WT|
+|2013|IRIS Data Services announces new teams: Web Team and Quality Assurance Team|WT/QA|
+|2013|FDSN Web Services released. "More information &raquo;":http://service.iris.edu |S|
+|2012|IRIS Java Web Services Library released. MATLAB® interface for web services released. Release of 2 new services: virtual network definitions, travel time calculator.|S|
+|2012|Funding awarded to support external development of 3 products. Version 2.0 of SPUD is released. 16 data products in total managed at the DMC.|DP|
+|2012|Software Group is renamed to the Information Technology Section. Work begins on a new data quality assurance system to replace QUACK. A new Information Services Coordinator is added.|IT|
+|2011|Release of command-line client scripts. Release of 6 new services: event (earthquake), processed time series, station metadata, SAC Poles and Zeros, instrument response evaluation, Flinn-Engdahl region, distance-azimuth calculation.|S|
+|2011|New product archive and distribution system ("SPUD":http://www.iris.edu/spud ) is released. Funding awarded to support external development of 2 products. The Earth Model Collaboration product is released. 14 data products in total managed at the DMC, 5 developed internally, others contributed or supported.|DP|
+|2011|Web Services and Data Product Catalog staff move to the Products and Services Section headed by the Director of Projects. Software Group gains a Web Applications Developer|N/A|
+|2010|Second product specialist starts at the DMC. First data product released, USArray Ground Motion Visualizations.|DP|
+|2010|IRIS Software Engineers unveil "IRIS Web Services":http://www.iris.edu/ws/ |IT/S|
+|2009|Data Products Working Group formed and the Charge was developed. Product development group formed with the hiring of one product specialist and allocation of management and software engineer resources.|DP|
+|2009|Information Services Coordinator (Webmaster) position becomes integrated with the Software Group|IT|
+|2009|5 ^th^ generation of storage is purchased - the Isilon Systems RAID cluster with higher capacity disk trays, enabling disk storage for the doubling of distributed data seen anually|DM|
+|2006|IRIS participates in the EarthScope Portal project, combining USArray data with the SAFOD, PBO, and OBSIP program data in a co-operative effort. The Software Group begins developing a data product catalog system for USArray|IT|
+|2005|IRIS DMC hires a new Director of Software Engineering|IT|
+|2005|4 ^th^ generation of storage is purchased - RAID disk from Isilon Systems|DM|
+|2004|The USArray data pulse begins|N/A|
+|2002|Development of a real-time data quality assurance system called "QUACK":http://www.iris.edu/quack begins|IT|
+|2001|DMC software engineers release a CORBA-based data delivery service called "DHI":http://www.iris.edu/ds/nodes/dmc/software/dhi/ |IT|
+|2001|3 ^rd^ generation of tape storage, the StorageTek Powderhorn tape library, is put into production|DM|
+|2000|The Software Group expands and begins administration of a real-time data system called "BUD":http://www.iris.edu/dms/nodes/data/software/bud/ |IT|
+|2000|Operations moves into Electronic Data Reception with the motivation to make it easier to ingest and manage, eliminating tape-based, latent, shipments|DM|
+|1998|IRIS DMC hires its first Director of Software Engineering, forming a new Software Group|IT|
+|1997|2 ^nd^ generation of tape storage, the StorageTek Wolfcreek robotic archive, partially donated by StorageTek, is purchased and put into production|DM|
+|1994|IRIS DMC hires its first Director of Operations, forming a new Operations Section|DM|
+|1991|IRIS DMC moves to Seattle's current location, affiliated with the "UW":http://www.washington.edu |N/A|
+|1988|BREQ_FAST (Batch, Request, Fast) developed|DM|
+|1988|IRIS Data Management Center is formed, preliminarily located in Austin, TX|DM|
+
+* DM - "Data Management Group":/ds/nodes/dmc/about/sections/data-management/
+* DP - "Data Products Group":/ds/nodes/dmc/about/sections/data-products/
+* IT - "Information Technology Group":/ds/nodes/dmc/about/sections/information-technology/
+* QA - "Quality Assurance Group":/ds/nodes/dmc/about/sections/quality-assurance/
+* S - "Services Group":/ds/nodes/dmc/about/sections/services/
+* WT - "Web Team":/ds/nodes/dmc/about/sections/web-team/

@@ -1,0 +1,27 @@
+h1. miniSEED
+
+MiniSEED is the subset of the SEED standard that is used for time series data. Very limited metadata for the time series is included in miniSEED beyond time series identification and simple state-of-health flags. In particular, geographic coordinates, response/scaling information and other information needed to interpret the data values are not included.
+
+Time series are stored as generally independent, fixed length data records which each contain a small segment of contiguous series values. A reader of miniSEED is required to reconstruct longer, contiguous time series from the data record segments. Common record lengths are 512-byte (for real time streams) and 4096-byte (for archiving), other record lengths are used for special scenarios.
+
+A “file” or “stream” of miniSEED is simply a concatenation of data records. Depending on the capabilities of the intended reader the data records for multiple channels of data may be multiplexed together.
+
+More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the IRIS DMC.
+
+h2. Getting a MiniSEED File:
+
+Submit a BREQ_FAST style request to "miniseed@iris.washington.edu":mailto:miniseed@iris.washington.edu from your mail client.
+
+"BREQ_FAST Request manual":/manuals/breq_fast.htm
+
+h2. Submitting MiniSEED data to the DMC
+
+For non-realtime data the DMC is providing a @miniseed2dmc@ client to data suppliers (available at "http://www.iris.edu/pub/programs/":http://www.iris.edu/pub/programs/). This client runs at the remote suppliers site and sends Mini-SEED records to a server at the DMC. The supplier specifies either files containing records or directories containing files with records and which server at the DMC to submit data to. It is important to emphasize that the client does _not_ send files (just *records*) so the DMC has no idea of what the submitters' files were organized or named, etc. The DMC receives a stream of Mini-SEED records. 
+
+The sender can ship files that are >2Gb with this, since @miniseed2dmc@ will turn the files into packet confetti, but on the receiving end, you must make sure that you do not write large files if the operating system doesn't support it. The manual page for @miniseed2dmc@ is included in the distribution in the *doc* directory as a man page.
+
+On the DMC side we run a @ringserver@ process to catch the streaming data sent by @miniseed2dmc@ and write it out into file denominations of our choosing. In practice the DMC will run one ringserver process for each supplier. Each ringserver process will _"listen"_ for connections on a network (TCP) port, so each supplier should be assigned a port number.
+
+The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "Rick Benson":mailto:rick@iris.washington.edu or "Mea Edmunds":mailto:edmunds@iris.washington.edu at the IRIS DMC to initiate submission.
+
+@Name: ringsub.iris.washington.edu@

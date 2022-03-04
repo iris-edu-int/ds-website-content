@@ -1,0 +1,82 @@
+h1. SeedLink
+
+h2. Overview
+
+The _SeedLink_ protocol is a robust data transmission intended for use on the Internet or private circuits that support TCP/IP. The protocol is robust in that clients may disconnect and reconnect without losing data, in other words transmissions may be resumed as long as the data still exist in the servers buffer. Requested data streams may be limited to specific networks, stations, locations and/or channels. All data packets are 512-byte Mini-SEED records. Enhancements to the SeedLink protocol supported by the DMC's server allow network and station codes to be wildcarded in addition to the location and channel codes.
+
+h2. Real-time Data from the IRIS DMC
+
+The DMC runs a publicly accessible SeedLink server on the following host and port:
+
+table(table table-bordered).
+|_. host|_. port|
+|rtserve.iris.washington.edu|18000 (default SeedLink port)|
+
+All open data that the DMC receives in real-time or through real-time collection channels is available via this SeedLink server.
+
+h3. Usage Restrictions
+
+Please note the "Usage Guidelines":/ds/nodes/dmc/services/usage/ for the SeedLink service.
+
+Users are welcome to any data available via the server as long as client actions do not inhibit our capability to deliver data to other users.  Users should strive to minimize the number of connections to our server.  With SeedLink it is possible to select a nearly arbitrary selection of channels using a single connection.  The DMC reserves the right to enforce connection limits in order to ensure that the service is available to a broad range of users and to maintain a stable service.  Keep alive (heartbeat) packets should not be sent at intervals less than 4 minutes. Please read our "Expectations":#expectations policy below regarding service uptime.
+
+h2. Available Software
+
+The following software is available from the DMC at "http://ds.iris.edu/pub/programs/SeedLink/":http://ds.iris.edu/pub/programs/SeedLink/. For details about each individual software package, please visit the "software":/ds/nodes/dmc/software/ pages, or click the package name link below:
+
+* "*libslink*":/ds/nodes/dmc/software/downloads/libslink/ - A SeedLink client library written in C.
+* "*slink2orb*":/ds/nodes/dmc/software/downloads/slink2orb/ - SeedLink to "Antelope":http://www.brtt.com ORB client (licensed Antelope libraries are required).
+* "*slink2ew*":/ds/nodes/dmc/software/downloads/slink2ew/ - SeedLink to "Earthworm":http://folkworm.ceri.memphis.edu/ew-doc/ client. Windows binaries available.  The most recent release of slink2ew is in the Earthworm source code repository.
+* "*slarchive*":/ds/nodes/dmc/software/downloads/slarchive/ - A SeedLink client that writes all received data to the local disk in user defined directory and file structures.
+* "*slinktool*":/ds/nodes/dmc/software/downloads/slinktool/ - Command line SeedLink client useful for data stream inspection and server testing.
+* "*ewexport_plugin*":/ds/nodes/dmc/software/downloads/ewexport_plugin/ - An Earthworm export process plugin (data source) for a seedlink server.
+* "*orbplugin*":/ds/nodes/dmc/software/downloads/orbplugin/ - An Antelope ORB plugin (data source) for a seedlink server (licensed Antelope libraries are required).
+
+h2. Example configurations
+
+h3. slink2orb - Antelope client configuration
+
+Example command line that would go into the @Processes@ table (Tbl) in your @rtexec.pf@:
+
+pre(prettyprint). slink2orb-DMC slink2orb -S state/slink2orb-DMC -pf slink2orb-DMC rtserve.iris.washington.edu $ORB
+
+Do not forget to add @slink2orb-DMC@ to the @Run@ array (Arr) in your @rtexec.pf@ too!
+
+You need to define which channels you would like to receive in the parameter file of @slink2orb@. Example contents of @slink2orb-DMC.pf@ parameter file for use with the above instance of @slink2orb@ is below.
+
+*slink2orb-DMC.pf:*
+
+pre(prettyprint lang-sh). stations &Arr{
+    # NET_STA       [selectors]
+    IU_ANMO         BH?  
+    II_ADK          BH?
+    TA_D15A         BH?
+}
+
+This example parameter file would select @BH*@ channel data from the @IU@ network station @ANMO@, the @II@ network station @BFO@ and the @TA@ network station @D15A@.
+
+For more details regarding channel selection and other @slink2orb@ parameters consult the @slink2orb@ man page and the default @slink2orb.pf@ parameter file, both are distributed with Antelope.
+
+h2(#expectations). Expectations Regarding Real Time Data from the IRIS DMC
+
+The IRIS DMC exists primarily to serve data needed for scientific studies.  As such, there is generally a weak case for delivering data in real time.  The DMC receives most data through real time methods.  Since the data received in real time can easily be made available in real time, the DMC does so through a SeedLink server with minor latency added.  Generally, the DMC advocates for real time data transport since it is less costly to receive data at the DMC in real time rather than by delayed methods.
+
+We do not have a mandate, nor is the DMC funded, to provide 24/7 real time data services.  Therefore, interruptions in data flow may occur.  The DMC will attempt to remedy interruptions in its real time data feeds in a timely manner but we can guarantee neither the quality nor continuity in our real time data services.  All mission-oriented agencies should be aware of this limitation of real time data services from the DMC and plan accordingly.
+
+To maintain communication regarding real time data issues, the DMC manages a real time data users mailing list.  When problems with real time data flow are observed, messages will be posted to this list as the problems are discovered.  Solutions to the problems or information regarding resumption of real time data feeds will also be posted to this list.
+
+"Subscribe to receive service status notifications &raquo;":/message-center/topic/iris-rtfeeds
+
+h2(#protocol). Protocol Details
+
+The _SeedLink_ protocol can be summarized as a simple, ASCII-based, data selection phase followed by the streaming of data packets from the server. _SeedLink_ packets are composed of a small header followed by a 512-byte "mini-SEED":/ds/nodes/dmc/data/formats/miniseed record (data only SEED). The negotiation phase allows the client to request only specified data from the server for each selected data stream. A data stream is defined by a network and station code pair.
+
+By utilizing sequence numbers for each packet in a data stream the _SeedLink_ protocol allows for connections to be resumed, eliminating most data gaps. The ability to resume data streams is primarily dependent on how much data, time-wise, the remote _SeedLink_ has in its buffer.
+
+Special, out-of-band packets created by a seedlink server and recognized by @libslink@ are used to communicate server details to clients and to implement keep-alive packet swapping. These special INFO packets are XML formatted data embedded in "mini-SEED":/ds/nodes/dmc/data/formats/miniseed comment records.
+
+The protocol allows for two different modes of data transmission, uni-station and multi-station modes. Uni-station mode operates by transmitting a single data stream (data from a single station) through one network connection. In this mode the data stream does not need to be specified by the client as it is implied by the internet address and port. Multi-station mode operates by transmitting multiplexed data streams (data from multiple stations) through a single network connection. Almost all connections are negotiated as multi-station, even if only a single station is requested; uni-station mode, for most publicly accessible servers is deprecated.
+
+SeedLink was originally created as the transport layer for the "SeisComP package":http://www.seiscomp3.org/ originally developed by GEOFON.
+
+More protocol details are available from the "SeisComP SeedLink Wiki page":http://www.seiscomp3.org/wiki/doc/applications/seedlink

@@ -1,0 +1,22 @@
+h1. Metadata
+
+Metadata include station siting, instrumentation, and earthquake information which serve to enhance and support our waveform data archives.
+
+h2. Tools
+
+"Online tools for exploring metadata holdings":/ds/nodes/dmc/tools/metadata/
+
+h2. Formats
+
+h3(#dataless_seed). Dataless SEED
+
+"Dataless SEED":/ds/nodes/dmc/data/formats/#dataless_seed is a subset of the SEED data format, and includes instrument responses, instrument coordinates, compression type, etc.. A dataless volume is commonly used to populate a metadata database or in combination with "MiniSEED":/ds/nodes/dmc/data/formats/#mini-seed to convert time series to an alternate format such as "full SEED":/ds/nodes/dmc/data/formats/#seed (using the IRIS DMC's "rdseed":/ds/nodes/dmc/software/downloads/rdseed/ software).
+
+h3(#stationxml). StationXML
+
+A modern alternative to dataless SEED volumes to exchange seismological metadata is the FDSN's "StationXML":http://www.fdsn.org/xml/station/ schema.
+
+h3(#sacpz). SAC Poles and Zeros
+
+A SAC Poles and Zeros file is used to provide instrument response metadata for timeseries data in SAC format.
+See this "screencast":http://eqseis.geosc.psu.edu/%7Ecammon/HTML/Classes/AdvSeismo/iresp/iresp.html.

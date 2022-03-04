@@ -1,0 +1,86 @@
+h1. Forms
+
+<notextile>
+<div class="row">
+<div class="col-md-6">
+</notextile>
+
+h2. General IRIS Forms
+
+* "Contact Us":/ds/nodes/dmc/forms/contact/
+* "Become a Member of IRIS":/ds/nodes/dmc/forms/iris_membership/
+* "Post a job/employment opportunity":/ds/nodes/dmc/forms/job_posting/
+
+h3. Bulkmail
+
+* "Request to use the IRIS Bulkmail Service":/ds/nodes/dmc/forms/bulkmail/
+
+<notextile>
+</div>
+<div class="col-md-6">
+</notextile>
+
+
+h3. Mailing Lists
+
+* "IRIS Mailing Lists":/hq/about_iris/mailing_lists
+** "IRIS E&amp;O Teachable Moments":http://www.iris.washington.edu/mailman/listinfo/eno_quakes
+** "IRIS DMC Software Announcement List":http://www.iris.washington.edu/mailman/listinfo/software-info
+
+<notextile>
+</div>
+</div>
+</notextile>
+
+h2. IRIS DMC Forms
+
+* "Data Product Suggestions":/ds/nodes/dmc/forms/product-suggestion/
+
+h3. Assembled Data
+
+* "Assembled ID Request Form":/ds/nodes/dmc/forms/assembled-id/
+* "Assembled Data Request Form":/ds/nodes/dmc/forms/assembled-data/
+* "Restricted Assembled Data Registration Request Form":/ds/nodes/dmc/forms/restricted-data-registration/
+* "Assembled Data Pickup":/pub/userdata/
+
+h3. Data Access
+
+* "Data Reports":/data/reports
+
+h3. Data Requests
+
+* "BREQ_FAST-formatted data requests":/ds/nodes/dmc/forms/breqfast-request/
+* "Dataless Request Form":/ds/nodes/dmc/forms/breqfast-request/
+* "Submit information about your data center":/data/DataCenterForm.htm
+
+h3. Networks
+
+* "FDSN Permanent Network Code Request Form":http://www.fdsn.org/forms/netcode_perm.htm
+* "Temporary Network Code Request Form":http://www.fdsn.org/forms/netcode_temp.htm
+
+h3. Download IRIS Data Services Software
+
+* "PDCC":/ds/nodes/dmc/forms/pdcc/
+* "PQLX":/ds/nodes/dmc/forms/pqlx/
+* "SAC":/ds/nodes/dmc/forms/sac/
+
+Many software packages are distributed through the "IRIS GitHub pages":https://github.com/iris-edu/.
+
+IRIS hosts a number of third-party and legacy software projects on the "SeisCode":http://seiscode.iris.washington.edu/  community software repository.
+
+Legacy software:
+
+* "Jrdseed":/ds/nodes/dmc/forms/jrdseed/
+* "JWEED":/ds/nodes/dmc/forms/jweed/
+* "rdseed":https://github.com/iris-edu-legacy/rdseed
+
+h3. Temporary Deployments
+
+* "Mobilization form":/stations/mob.htm
+* "OBSIP Data Submission form":/ds/nodes/dmc/forms/obsip-data-submission/
+* "PASSCAL Experiment forms":http://www.passcal.nmt.edu/content/forms
+* "Instrument request form":http://www.passcal.nmt.edu/inst_request
+
+h3. Useful IRIS HQ forms
+
+* "Travel form":http://www.iris.edu/hq/forms/travel_authorization

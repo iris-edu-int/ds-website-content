@@ -1,0 +1,27 @@
+h1. IRIS Mapping Tools
+
+The DMC offers several options for viewing network station locations.
+
+h2. Google Map Service (GMAP)
+
+The Google Map generator creates maps based on federated FDSN datacenter metadata holdings. Requesting data directly from the IRIS FedCatalog web service the GMAP tool creates dynamic station maps that can be panned and zoomed. The GMS can produce network, single station or arbitrary station set maps. Users can generate a kml file to view stations in Google Earth.
+
+"GMAP":/gmap | "Learn more &raquo;":/ds/newsletter/vol8/no3/new-web-interfaces-the-metadata-aggregator-mda-and-google-map-service/
+
+h2. IRIS Earthquake Browser (IEB)
+
+The IEB combines the DMC's large database of earthquakes with the popular Google Maps web interface. The IEB is useful both educationally and as a research tool. With the IEB you can quickly find earthquakes in any region of the globe and then import this information into the GEON Integrated Data Viewer (IDV) where the hypocenters may be visualized in three dimensions. 
+
+"IEB":/ieb/ | "Learn more &raquo;":/ds/newsletter/vol9/no2/iris-earthquake-browser/
+
+h2. Metadata Aggregator (MDA)
+
+The MetaData Aggregator (MDA) returns metadata summaries from the IRIS DMC database including data availability and links to further services. Five levels of summary are available: network list, network, station, location and channel.
+
+"MDA":/mda | "Learn more &raquo;":/ds/newsletter/vol8/no3/new-web-interfaces-the-metadata-aggregator-mda-and-google-map-service/
+
+h2. SeismiQuery
+
+A Web interface into our Oracle database of data holdings including all timeseries information and all meta data, like responses, sensor locations, etc. Users are encouraged to search the database before making a request. SeismiQuery is also used to extract channel response files and can be used to make data requests (like BREQ_FAST).
+
+"SeismiQuery":/SeismiQuery/ | "Learn more &raquo;":http://www.iris.edu/SeismiQuery/help.html

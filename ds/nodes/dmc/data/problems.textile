@@ -1,0 +1,7 @@
+h1. Problems
+
+p(lead). Despite the best laid plans by network operators and the DMC staff, sometimes things go wrong. This page provides links to various information sources to help you and also display the current status of data problems.
+
+h2. A list of all data related problems
+
+* "Problems that resulted in re-archiving":/ds/nodes/dmc/data/problems/rearchive/

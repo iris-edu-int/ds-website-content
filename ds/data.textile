@@ -1,0 +1,5 @@
+h1. Data at IRIS
+
+<notextile>
+<script>window.location = '/ds/nodes/dmc/data/';</script>
+</notextile>

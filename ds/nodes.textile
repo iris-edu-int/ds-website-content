@@ -1,0 +1,23 @@
+h1. Nodes
+
+The IRIS Data Management System has a series of *internal* and *external* nodes.
+
+<notextile>
+<figure style="float:right">
+  <img src="/static/img/dms/ds-schematic.png" />
+  <figcaption style="font-weight:bold;text-align:center;">Nodes of Data Services</figcaption>
+</figure>
+</notextile>
+
+h2. Internal Nodes
+
+* "Data Management Center (DMC)":/ds/nodes/dmc
+
+h2. External Nodes
+
+* "IRIS/USGS Data Collection Center, ASL":https://earthquake.usgs.gov/contactus/albuquerque/
+* "IRIS/IDA Data Collection Center, IDA":http://ida.ucsd.edu/
+* "PASSCAL Instrument Center, PIC":http://www.passcal.nmt.edu/
+* "University of Washington,UW":http://www.geophys.washington.edu/
+* "Array Network Facility, ANF":http://anf.ucsd.edu/
+* "Kazakhstan Seismic Data Center, KZ":http://www.kndc.kz/index.php?lang=en

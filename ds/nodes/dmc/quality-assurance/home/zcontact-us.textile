@@ -1,0 +1,17 @@
+h1. Contact Us
+
+There is a Message Center List available to provide a forum for QA discussion by the community (subscription required):
+
+"http://ds.iris.edu/message-center/topic/mustang-users/":http://ds.iris.edu/message-center/topic/mustang-users/
+
+And a Message Center List for MUSTANG-related announcements (including service outages and downtimes, etc.):
+
+"http://ds.iris.edu/message-center/topic/mustang-qa/":http://ds.iris.edu/message-center/topic/mustang-qa/
+
+Issues regarding Quality Assurance at the IRIS DMC can be addressed to this Message Center List :
+
+"http://ds.iris.edu/message-center/topic/qa-issues/":http://ds.iris.edu/message-center/topic/qa-issues/
+
+IRIS DMC QA Staff can be contacted directly at:
+
+"dmc_qa&#64;iris&#46;washington&#46;edu":mailto:dmc_qa&#64;iris&#46;washington&#46;edu

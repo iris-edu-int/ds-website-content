@@ -1,0 +1,32 @@
+h1. All Operating USArray TA Stations (_US-TA)
+
+<div class="row">
+<div class="col-xs-7">
+<p>Download this station list in the following formats:</p>
+<ul>
+  <li><a href="/files/earthscope/usarray/_US-TA-OpStationList.xls">Excel Spreadsheet</a></li>
+  <li><a href="/files/earthscope/usarray/_US-TA-OpStationList.txt">Tab Separated Value (txt) file</a></li>
+</ul>
+<p><a href="/gmap/_US-TA?timewindow=NOW">View a Google station map &raquo;</a><br/>
+A <a href="#NETSUM">network station summary</a> is below the station list.<br/>
+The station table can be sorted by clicking on the column headers.</p>
+</div>
+<div class="col-xs-5 alert alert-info">
+<h4>Available station views:</h4>
+<ul>
+  <li>All stations: <a href="../ALL-operational/">ALL (Operational)</a> | <a href="../ALL/">ALL</a></li>
+  <li>Flexible Array: <a href="../_US-FA-operational/">_US-FA (Operational)</a> | <a href="../_US-FA/">_US-FA</a></li>
+  <li>Magnetotelluric Array: <a href="../_US-MT-operational/">_US-MT (Operational)</a> | <a href="../_US-MT/">_US-MT</a></li>
+  <li>Transportable Array: <a href="../_US-TA-operational/">_US-TA (Operational)</a> | <a href="../_US-TA/">_US-TA</a></li>
+  <li>Reference Array: <a href="../_US-REF/">_US-REF</a></li>
+</ul>
+</div>
+</div>
+
+{% ssi "/wwwshared/HTML/files/earthscope/usarray/_US-TA-OpStationList.table" %}
+
+<script type="text/javascript">
+  $(function() {
+    $("#table0").addClass('tablesorter-blue').tablesorter({sortList: [[1,0]]});
+  });
+</script>

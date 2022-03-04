@@ -1,0 +1,38 @@
+h1. SEED
+
+The Standard for the Exchange of Earthquake Data (SEED) is a data format intended primarily for the archival and exchange of seismological time series data and related metadata.  The format is maintained by the International "Federation of Digital Seismograph Networks":http://www.fdsn.org/ (FDSN) and documented in the "SEED Manual":http://www.fdsn.org/pdf/SEEDManual_V2.4.pdf (PDF format).  Originally designed in the late 1980s, the format has been enhanced and refined a number of times and remains in widespread use.
+
+h2. miniSEED
+
+miniSEED is the subset of the SEED standard that is used for time series data.  Very limited metadata for the time series is included in miniSEED beyond time series identification and simple state-of-health flags.  In particular, geographic coordinates, response/scaling information and other information needed to interpret the data values are not included.
+
+Time series are stored as generally independent, fixed length data records which each contain a small segment of contiguous series values.  A reader of miniSEED is required to reconstruct longer, contiguous time series from the data record segments.  Common record lengths are 512-byte (for real time streams) and 4096-byte (for archiving), other record lengths are used for special scenarios.
+
+A "file" or "stream" of miniSEED is simply a concatenation of data records.  Depending on the capabilities of the intended reader the data records for multiple channels of data may be multiplexed together.
+
+More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the IRIS DMC.
+
+h2. Dataless SEED
+
+A dataless SEED volume is the metadata counterpart to miniSEED that contains the geographic coordinates and instrument response information often needed to process the time series data.  A dataless can contain a complete and comprehensive history of metadata for one or many networks and stations.  A dataless volume does not contain any time series values.
+
+A dataless volume is commonly used to populate a metadata database or in combination with miniSEED to convert time series to an alternate format (using the IRIS DMC's  "rdseed":/dms/nodes/dmc/software/downloads/rdseed/ software).
+
+A modern alternative to dataless SEED volumes to exchange seismological metadata is the FDSN's "StationXML":http://www.fdsn.org/xml/station/ schema.
+
+h2. SEED or full-SEED
+
+A so-called "full SEED" volume is the combination of time series values along with comprehensive metadata.  In essence a full SEED volume is the combination of miniSEED with a matching dataless volume in a single file.
+
+p(alert alert-info). The full SEED format has been retired. See "this article":/ds/newsletter/vol21/no1/509/ for more information.
+
+h2. Data identification nomenclature
+
+The SEED format uses 4 name components to uniquely identify a time series and provide attribution to the owner of the data:
+
+* *Network code*: a 1 or 2 character code identifying the network/owner of the data.  These codes are assigned by the FDSN to provide uniqueness to seismological data, new codes "may be requested":http://www.fdsn.org/networks/request/.
+* *Station code*: a 1 to 5 character identifier for the station recording the data.
+* *Location ID*: a 2 character code used to uniquely identify different data streams at a single station.  These IDs are commonly used to logically separate multiple instruments or sensor sets at a single station.
+* *Channel codes*: a 3 character combination used to identify the 1) band and general sample rate 2) the instrument type and 3) the orientation of the sensor.  A convention for these codes has been established and is documented in Appendix A of the "SEED Manual":/dms/nodes/dmc/data/formats/seed-channel-naming/.
+
+Another field, referred to as the *Quality Indicator*, is commonly used to logically separate versions of the same time series.  For example, the raw recorded time series and a quality controlled copy (e.g. with timing corrections applied).

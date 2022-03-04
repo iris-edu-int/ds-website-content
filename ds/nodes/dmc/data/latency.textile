@@ -1,0 +1,62 @@
+h1. Latency Measurements at the IRIS DMC
+
+h2. Introduction
+
+Latency represents a measure of the time between when a sample of ground motion is made by a field acquisition system and when the data becomes available somewhere downstream.  While the concept seems clear, there are many different ways in which latency could be measured.  This document identifies how the IRIS DMC measures latency.
+
+The following diagram shows a series of recorded data blocked into discrete data records.  The terminology used in the following definitions is specified by this diagram.
+
+<img src="/media/flatpages/data/latency_diagram.png">
+
+_where_
+
+*T ~D~* represents the time of the last sample in a data record
+*T ~A~* represents the time the data record became available.  This could be the time a data record was written to disk or the time a data record became available in memory.
+*T ~M~* represents the wall clock time a feed latency measurement was made.
+
+There are six specific latencies that apply at the DMC
+
+h2. Input (Data being received at the DMC)
+
+* Data Latency
+* Feed Latency
+* Total Latency
+
+For input, TA refers to the time the BUD system receives a data record. 
+
+h2. Output (Data being served from the DMC)
+
+* Data Latency
+* Feed Latency
+* Total Latency
+
+For output, TA refers to the time that a specific data record becomes available from a DMC data server.
+
+All latency measurements are made on specific time series channels. The Network, Station, Location and channel descriptors will always be specified.
+
+h2. Input Latency Measurements
+
+Measures of Latency for data entering the DMC.  These measures are from the perspective of data entering the IRIS BUD system.
+
+*DMC Input Data Latency (T ~A~ - T ~D~)* is defined to be the difference in time from when the BUD system receives a data record and the time of the last sample in the data record for which latency is being measured. The measure of Input Data Latency does not change for a given data record.
+
+*DMC Input Feed Latency (T ~M~ – T ~A~)* is defined to be the difference in time from when the feed latency measurement is made to the last time some data from a given channel becomes available in the BUD system.  The Input Feed latency can change with time and depends upon when the feed latency measurement is made (*T ~M~*).
+
+*DMC Input Total Latency (T ~M~ – T ~D~)* is defined to be the difference in time from when the feed latency measurement is made and the time of the last sample in the data record. It should be obvious that the Input Total Latency is the sum of the Input Data Latency and the Input Feed Latency.
+
+h2. Output Latency Measurements
+
+Measures of Latency for data leaving the DMC. Output Latency measurements are specific to a particular IRIS DMC data server, such as the SeedLink server.
+
+Operational downtime may result in latency being introduced within the DMC.  Server downtime or telecommunication problems could introduce latencies of this type.
+
+*DMC Output Data Latency (T ~A~ - T ~D~)* is defined to be the difference in time from when a data record is available from a data server at the IRIS DMC and the time of the last sample in the data record in question. The measure of Output Data Latency does not change for a given data record.
+
+*DMC Output Feed Latency (T ~M~ – T ~A~)* is defined to be the difference in time from when the feed latency measurement is made to the last time some data from a given channel was available from the data server. The measure of Output Feed Latency will change with time and depends upon when the feed latency measurement is made (*T ~M~*).
+
+*DMC Output Total Latency (T ~M~ – T ~D~)* is defined to be the difference in time from when the feed latency measurement is made and the time of the last sample in the data record. It should be obvious that the Output Total Latency is the sum of the Output Data Latency and the Output Feed Latency.
+
+ 
+h2. Frequency of Measurements
+
+As of July 2007 the IRIS DMC was receiving data from approximately 15,000 seismic channels. It is computationally impossible to make latency measurements for every data record for all of these channels. For this reason, it is the DMC’s approach to take snapshots of latencies for all channels on the order of every few hours. The rate at which latency is measured may vary within different systems.

@@ -1,0 +1,3 @@
+h1. Other Resources
+
+"Data Problem Reports":http://www.iris.edu/data/dpr.htm - search submitted data problem reports by station and network. This is not an exhaustive listing of all data problems that may exist in the archive.

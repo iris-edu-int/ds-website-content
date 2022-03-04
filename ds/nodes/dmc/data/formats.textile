@@ -1,0 +1,45 @@
+h1. Data Formats
+
+The IRIS DMC provides data to users in several different formats. 
+
+h2. SAC
+
+This is a format defined by the "SAC software suite":/ds/nodes/dmc/manuals/sac/, although it is supported by many other tools at this point. This is widely used and makes a good starting point for data processing tasks.
+
+The SAC data format itself includes only waveform data; it is usually accompanied by separate metadata files in Poles and Zeros (SACPZ) format.
+
+"More about SAC":/files/sac-manual/manual/file_format.html
+
+h2. SEED
+
+The Standard for the Exchange of Earthquake Data (SEED) is a data format intended primarily for the archival and exchange of seismological time series data and related metadata.
+
+SEED is designed for archival rather than processing, so most use cases should use a different format like SAC.
+
+"More about SEED":/ds/nodes/dmc/data/formats/seed/
+
+h2. MiniSEED
+
+MiniSEED is a stripped down version of SEED containing only waveform data. There is no station and channel metadata included.
+
+"More about miniSEED":/ds/nodes/dmc/data/formats/miniseed/
+
+h2. Dataless SEED
+
+A dataless SEED volume is the metadata counterpart to miniSEED. It contains only station and channel metadata, without any time series values.
+
+"More about dataless SEED":/ds/nodes/dmc/data/formats/dataless-seed/
+
+h2. Simple ASCII
+
+This is a simple text-based data format, suitable for importing into a spreadsheet or other tool where specialized data parsing is not available or required.
+
+Note that this is a very simple format, and is not well suited for serious data processing.
+
+"More about Simple ASCII":/ds/nodes/dmc/data/formats/simple-ascii/
+
+h2. GeoCSV
+
+This is very similar to the Simple ASCII format, but includes some additional metadata and conforms with a well-defined "standard":http://geows.ds.iris.edu/documents/GeoCSV.pdf.
+
+"More about GeoCSV":http://geows.ds.iris.edu/documents/GeoCSV.pdf

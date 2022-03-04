@@ -1,0 +1,14 @@
+h1. Deprecated Software
+
+The software that you have tried to access is no longer supported by the IRIS DMC.
+
+h2. What can I do now?
+
+There are several options to try:
+
+# Check that the software has moved to the new DMC "Software pages":/ds/nodes/dmc/software/downloads/
+# Check that the software has moved to a IRIS "SeisCode":https://seiscode.iris.washington.edu/ project.
+# Check if the software is still available under:
+** "*http://ds.iris.edu/pub/programs/*":/pub/programs/
+** "*http://ds.iris.edu/pub/*":/pub/
+# "Contact the DMC":/ds/nodes/dmc/forms/contact/.

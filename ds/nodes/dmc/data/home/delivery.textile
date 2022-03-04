@@ -1,0 +1,43 @@
+h1. Data Delivery
+
+; "Web Services":http://service.iris.edu/
+: This is the base delivery mechanism for most IRIS data.  It can be accessed directly, but a variety of convenient wrappers are available.
+; "Application Programming Interfaces (APIs)":http://service.iris.edu/clients/
+: APIs are available via "Java":/ds/nodes/dmc/software/downloads/iris-ws/, "Matlab":/ds/nodes/dmc/software/downloads/irisFetch.m/, and "Python":https://seiscode.iris.washington.edu/projects/obspy libraries, as well as command line "fetch scripts":https://seiscode.iris.washington.edu/projects/ws-fetch-scripts.
+; "Web Tools":/ds/nodes/dmc/tools/
+; "Downloadable Software":/ds/nodes/dmc/software/
+; "Other Data Centers":/ds/nodes/dmc/data/other-data-centers/
+; "How to Cite Data Sources":http://www.iris.edu/hq/iris_citations
+
+h3. Time Series Data
+
+; Web and Email-based Tools
+: "BREQ_FAST":/ds/nodes/dmc/manuals/breq_fast/ takes requests via email and delivers data via FTP/HTTP.
+: "SeismiQuery":/SeismiQuery/ provides low-level access to IRIS data via web forms.
+: "Wilber3":/wilber3/ offers a rich UI for acquiring data related to a given seismic event.
+: See our "full set of web tools":/ds/nodes/dmc/tools/.
+; Downloadable Software
+: "SAC":/ds/nodes/dmc/software/downloads/sac/ (Seismic Analysis Code) is a general purpose interactive program designed for the study of sequential signals, especially time series data.
+: "JWEED":/ds/nodes/dmc/software/downloads/jweed/ is a Java program for requesting data related to events.
+: "SEEDLink":/ds/nodes/dmc/services/seedlink/ is a protocol for streaming real-time data.
+: See our "full set of software tools":/ds/nodes/dmc/software/.
+
+h3. Metadata
+
+; Web Tools
+: "Metadata Aggregator":/mda/ (MDA) provides a browsable list of all networks and stations archived at the DMC.
+: "GMap":/gmap/ displays networks on an interactive map.
+: "BUD":/data/bud/ provides information on near real-time holdings.
+: "New Data":/data/new/ added recently to the DMC archive.
+
+h3. Other Data Types
+
+; Assembled Data
+: "Request assembled data":/ds/nodes/dmc/forms/assembled-data/
+: "Assembled request status":/ds/nodes/dmc/data/request-status/
+; Event Data
+: "Interactive Earthquake Browser":/ieb/ (IEB) shows recent earthquakes on an interactive map.
+
+h3. About IRIS Data
+
+"Data delivery statistics":/data/distribution/

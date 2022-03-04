@@ -1,0 +1,20 @@
+h1. Job Announcements
+
+IRIS maintains a mailing list and web page for employment opportunities in the seismological community. 
+
+h2. Looking for job listings
+
+Job postings are sent via the "Job Announcements":/message-center/topic/jobs/ mailing list, and listed on the "IRIS website":/hq/employment.
+
+h2. Posting a job listing
+
+You can post a job by sending email to "$":mailto:jobs@lists.ds.iris.edu, or by filling out our "web form":/ds/nodes/dmc/forms/job_posting/. Your posting will be reviewed and then forwarded to the subscriber list and posted on the web page.
+
+h3. Job posting guidelines
+
+When submitting a job listing, please follow these guidelines:
+
+* Put the job description in the *text of the message* -- do not include PDF or other email attachments.
+* Put the *job title in the subject*.
+* Include a *closing date* for the position.
+* Send your message *exactly as it should appear* to users -- the text will not be edited, so if it starts with "Dear IRIS, please post this job" then that will appear in the final message.

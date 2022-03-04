@@ -1,0 +1,29 @@
+h1. Facility
+
+The Data Management Center is located at:
+
+
+9706 4th Ave, Suite 303
+Seattle, Washington, 98115
+"Travel Tips":http://www.iris.edu/hq/about_iris/travel_tips/data_management_center
+
+The Data Management Center is a state-of-the-art data center located in Seattle, Washington. We have over twenty full-time staff members dedicated to ensuring the highest quality seismic data is readily available to scientists around the globe.
+
+The DMC data storage operates on a Hitachi Virtual Storage Platform with 1.2PB of usable disk. We discontinued the use of tape for near-line storage in 2009.
+
+The DMC mostly works in a "VMware ESXi":https://www.vmware.com/products/esxi-and-esx.html virtual machine environment. The advantages for this setup include:
+
+* Lower power usage
+* More effective crash recovery
+* Ease of maintainence
+* Greater ability to tune
+* Greater ability to scale
+
+We welcome visitors, and commonly host scientists for collaborative work from within the United States and from member institutions around the globe.
+
+; DMC Physical Systems
+: !/media/flatpages/dmc/DMC_Physical_Systems_2020.jpg!:/media/flatpages/dmc/DMC_Physical_Systems_2020.pdf
+; DMC Software Stack
+: !/media/flatpages/dmc/DMC_Software_Stack.jpg!:/media/flatpages/dmc/DMC_Software_Stack.pdf
+; ADC1 Physical Systems
+: !/media/flatpages/dmc/ADC1_Physical_Systems_2020.jpg!:/media/flatpages/dmc/ADC1_Physical_Systems_2020.pdf

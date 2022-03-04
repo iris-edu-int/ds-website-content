@@ -1,0 +1,78 @@
+h1. Timeseries Data
+
+Most of the data collected and archived at the DMC is *time-series data* ^"1":#footnote1^. The following types of sensor-recorded time-series data are currently collected, archived, and can be downloaded by users:
+
+<notextile>
+<div class="row-fluid">
+  <div class="span6">
+</notextile>
+
+h2. Seismological
+
+* Broadband Seismometers
+* Strong Motion
+** Buldings
+** Structures
+** Free Field
+* Geophones
+
+<notextile>
+  </div>
+  <div class="span6">
+</notextile>
+
+h2. Meterological
+
+* Wind Speed
+* Wind Direction
+* Temperature
+* Humidity
+* Rain Gauge
+* Solar Radiation
+** Insolation/Pyranometer
+* Microbarograph
+** Relative/Absolute
+* Infrasound
+** Microphones
+
+<notextile>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span6">
+</notextile>
+
+h2. Geophysical
+
+* Magnetotelluric
+** Magnetometer
+** Electric Field
+* Strainmeter
+** Dilatational
+** Tensor
+* Tidal Pendulum
+* Gravimeter
+** Conventional
+** Superconducting
+* Creep Meters
+
+<notextile>
+  </div>
+  <div class="span6">
+</notextile>
+
+h2. Water Column
+
+* Water Current
+* Depth
+* Temperature
+* Water Level
+
+<notextile>
+  </div>
+</div>
+</notextile>
+ 
+h2. Notes
+
+p(#footnote1). 1 - The DMC also archives _metadata_ which is critical to the integrity of the time-series data

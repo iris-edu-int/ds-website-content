@@ -1,0 +1,35 @@
+h1. EarthScope
+
+h1. <small>Seismic, Strain and MT Data at the IRIS DMC</small>
+
+<img src="/media/_s/img/ds/nodes/dmc/earthscope/earthscope-snow.jpg" width="100%" class="img-rounded" />
+
+h2. What is EarthScope?
+
+EarthScope is a bold undertaking to apply modern observational, analytical and telecommunications technologies to investigate the structure and evolution of the North American continent and the physical processes controlling earthquakes and volcanic eruptions.
+
+EarthScope will provide a foundation for fundamental and applied research throughout the United States that will contribute to the mitigation of risks from geological hazards, the development of natural resources, and the public's understanding of the dynamic Earth.
+
+"EarthScope website &raquo;":http://www.earthscope.org/
+
+h2. PBO
+
+The Plate Boundary Observatory (PBO) component of EarthScope is a geodetic observatory designed to study the three-dimensional strain field resulting from deformation across the active boundary zone between the Pacific and North American plates in the western United States. The observatory consists of arrays of Global Positioning System (GPS) receivers and strainmeters which will be used to deduce the strain field on timescales of days to decades and geologic and paleoseismic investigations to examine the strain field over longer time scales.
+
+"More information &raquo;":/ds/nodes/dmc/earthscope/pbo/
+
+h2. SAFOD
+
+The San Andreas Fault Observatory at Depth (SAFOD) is a deep borehole observatory that will directly measure the physical conditions under which plate boundary earthquakes occur.
+
+"More information &raquo;":/ds/nodes/dmc/earthscope/safod/
+
+h2. USArray
+
+The USArray component of the EarthScope experiment is a continental-scale seismic observatory designed to provide a foundation for integrated studies of continental lithosphere and deep Earth structure over a wide range of scales. USArray will provide new insight and new data to address fundamental questions in earthquake physics, volcanic processes, core-mantle interactions, active deformation and tectonics, continental structure and evolution, geodynamics, and crustal fluids (magmatic, hydrothermal, and meteoric).
+
+"More information &raquo;":/ds/nodes/dmc/earthscope/usarray/
+
+h2. Statistics
+
+* "EarthScope Archiving & Distribution Statistics at the IRIS DMC &raquo;":/ds/nodes/dmc/earthscope/stats/

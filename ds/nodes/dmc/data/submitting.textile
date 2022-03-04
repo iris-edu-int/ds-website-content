@@ -1,0 +1,71 @@
+h1. Submitting Data to the DMC
+
+h2. Submitting SEED data
+
+Data can be submitted to the DMC by tape or over the Internet. Network operators are encouraged to submit data in "SEED":/ds/nodes/dmc/data/formats/seed/ format in near-real time . This "concurrent" method of data submission is beneficial to the network operator because much of the data handling and archiving issues are removed from their routine and they are able to request their data from the DMC almost immediately (depending on how the data is sent to the DMC).
+
+ The following is a breakdown of the steps that network operators need to take before and during data transfer to the DMC:
+
+h3. Before data is sent:
+
+* "Get an FDSN network code":http://www.fdsn.org/networks/request/ (This is administrated by the FDSN)
+* Submit test volume(s) (Typically, a network submits miniSEED data, and if this is the case, we will need a dataless SEED volume (metadata) and miniSEED data volume(s). This will allow the DMC to run the data through an extensive sanity-checking process and eliminating problems before they get into the permanent holdings.)
+* Get a tape label (template form) from "Gale Cox":mailto:gale@iris.washington.edu and correctly indicate number of volumes/tapes
+OR
+contact "Rick Benson":mailto:rick@iris.washington.edu to set up an FTP directory
+* Make clear any special considerations
+
+h3. Accepted Data Formats
+
+* Full SEED
+** must pass verseed check
+** must be SEED version 2.3
+* Dataless Seed and miniSEED:
+** miniSEED must contain Blockette 1000's and be SEED v2.4
+** dataless must represent entire network for all time ^1^
+** ending effective times should be for the last station day of the last year of deployment
+** data record length = 1k or 4k for miniSEED, but 4k for dataless SEED
+
+fn1. The initial dataless SEED volume should be all-inclusive for the network data that is being submitted. Once the data begins routinely flowing, dataless volumes can be submitted for either stations that have changed their operating parameters, or can continue to be all-inclusive. Dataless volumes can reflect the changed metadata only.
+
+h3. Media formats 
+
+Data can be submitted on DLT, 4mm, 8mm, DVD, USB, etc.
+The data should be written to media using either dd or tar.
+
+h3. On-line transfers
+
+* Before shipping data, contact "Rick Benson":mailto:rick@iris.washington.edu so that we can create the appropriate directories, on the appropriate machine, and permit ftp utilization between data centers.
+* Send dataless SEED. Once received, we can enable automated archiving.
+
+The data should preferably include:
+
+* Entire network days of data, with the exception of large networks where data volumes would be too large and unwieldy for internet transfers or where networks receive data from sites within their network at various times.
+* Checksum file for each file transferred, using the 'cksum' utility. Example:
+@00097.CI.2000.279.seed 00097.CI.2000.279.cksum@
+The contents of the cksum file is the output of this:
+@cksum 00097.CI.2000.279.seed >& 00097.CI.2000.279.cksum@
+When the two files arrive to the DMC, we generate a checksum file and compare it with the contents of what is sent:
+@cksum 00097.CI.2000.279.seed |diff - 00097.CI.2000.279.cksum@
+
+h2. Submitting miniSEED Data
+
+h3. DMC's miniseed2dmc client
+
+For non-realtime data the DMC is providing a "miniseed2dmc client":https://github.com/iris-edu/miniseed2dmc to data suppliers. This client will run at the remote suppliers site and send Mini-SEED records to a server at the DMC. The supplier runs the client and specifies either files containing records or directories containing files with records and which server at the DMC to submit data to. It is important to emphasize that the client does not send files (just records) so the DMC has no idea of what the submitters' files were organized or named, etc. The DMC receives a stream of Mini-SEED records.
+
+*Furthermore:* The sender can ship files that are >2Gb with this, since miniseed2dmc will turn the files in to packet confetti, but on the receiving end, you must make sure that you do not write large files if the OS doesn't support it. The manual page for miniseed2dmc is included in the distribution in the "doc" directory as a man page.
+
+On the DMC side we run a ringserver process to catch the streaming data sent by miniseed2dmc and write it out into file denominations of our choosing. In practice the DMC will run one ringserver process for each supplier. Each ringserver process will "listen" for connections on a network (TCP) port, so each supplier should be assigned a port number.
+
+The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "Rick Benson":mailto:rick@iris.washington.edu at the IRIS DMC to initiate submission.
+
+Server name: @ringsub.iris.washington.edu@
+ 
+h2. Submitting Assembled (non-SEED) Data Sets
+
+* "Request assembled data set indentification number":/ds/nodes/dmc/forms/assembled-id/. This form includes all the information we will need to assist you with your submission.
+* "Contact IRIS":mailto:assembled_data@iris.washington.edu before sending any data via ftp
+* Please include a report
+
+Questions? Please "contact us":mailto:comments@iris.washington.edu.

@@ -1,0 +1,39 @@
+h1. Data Management
+
+h2. Purpose
+
+The Data Management section at the IRIS DMC is composed of technical staff whose primary function is to manage (archive and distribute) all perpetually archived continuous data at the IRIS Data Management Center.
+
+Since 1990, the DMC is also been the primary International Federation of Digital Seismograph Networks (FDSN) Continuous Data archive. This turning point toward archiving continuous data forged the path toward impressive discoveries that continue to this day.
+
+This includes responsibility for data archiving, waveform and metadata quality control, long-term curation (updates to formats, enhanced protection, perpetually viable, etc), and world-wide data distribution to a global community that has seen 25 years of continuous service, has changed the science of seismology by being the largest open, researched-based facility, for seismology in the world.
+
+The Data Management section is the facilitating group within the DMC for collecting data from more than 170 permanent networks and 300 temporary networks, ensuring that access to these data is properly ordered, constructed in the SEED (Standard for the Exchange of Earthquake Data) format and distributed in a timely manner regardless of how large the request is using a parallelized processing system. At this time, 180 terabytes of digital geophysical data from the time period 1970 to present is managed using best practices related to data storage, updating and repairing reported problems with collected data, and distributing approximately 300 terabytes of data each year, which is 10 times the amount of collected data annually (30 terabytes). Additionally, a large archive of historical data, non-SEED format data, and collections of other parametric data are managed by this section.
+
+Additionally, all of these data are co-located and managed in an offsite Active Backup currently located at the UNAVCO facility in Boulder, CO.
+
+h2. Overview
+
+The Data Management Section performs these primary functions:
+
+* Ingest waveform data (Archive)
+* Synchronization of data holdings with network providers
+* System administration
+* Manage waveform data and metadata, including removing/replacing
+* Process all customized user requests
+* Transcribe data to new technologies on average every 4 years
+* Report data usage to contributing network operators
+* Report data usage to users, enabling attribution
+* Perform Quality Control on subsets of data
+* Sync holdings with Active Backup in Boulder, CO
+
+h2. Primary tasks
+
+The IRIS DMC Data Management Section is currently engaged in the following tasks:
+
+* Porting all of our core server machines to RedHat Enterprise Virtualization (RHEV) running RedHat Enterprise Linux (RHEL). Eliminating support of Solaris on SUN hardware platforms.
+* Acquiring the next generation of RAID storage hardware
+* Porting all request processing and archiving software to RedHat Linux
+* Upgrading firewalls, network, and backup infrastructure
+* Servicing over 1 million customized requests annually
+* Archiving approximately 30 terabytes of waveform data annually

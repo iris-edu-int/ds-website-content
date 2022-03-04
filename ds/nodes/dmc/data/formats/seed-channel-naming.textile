@@ -1,0 +1,428 @@
+h1. SEED Channel Naming
+
+h2. Source
+
+bq. "SEED Manual Appendix A: Channel Naming":http://www.fdsn.org/seed_manual/SEEDManual_V2.4_Appendix-A.pdf
+Contributed by Scott Halbert
+
+<div class="alert alert-info">Also see our interactive "Time Series Data Channels":/ds/nodes/dmc/tools/data_channels/ tool</div>
+
+h2. Band Code
+
+The first letter specifies the general sampling rate and the response band of the instrument. (The @A@ code is reserved for administrative functions such as miscellaneous state of health.)
+
+table(table table-bordered table-striped).
+|_. Band code|_. Band type|_. Sample rate (Hz)|_. Corner period (sec)|
+|@F@| ... |≥ 1000 to < 5000|≥ 10 sec|
+|@G@| ... |≥ 1000 to < 5000|< 10 sec|
+|@D@| ... |≥ 250 to < 1000|< 10 sec|
+|@C@| ... |≥ 250 to < 1000|≥ 10 sec|
+|@E@|Extremely Short Period|≥ 80 to < 250|< 10 sec|
+|@S@|Short Period|≥ 10 to < 80|< 10 sec|
+|@H@|High Broad Band|≥ 80 to < 250|≥ 10 sec|
+|@B@|Broad Band|≥ 10 to < 80|≥ 10 sec|
+|@M@|Mid Period|> 1 to < 10||
+|@L@|Long Period|≈ 1||
+|@V@|Very Long Period|≈ 0.1||
+|@U@|Ultra Long Period|≈ 0.01||
+|@R@|Extremely Long Period|≥ 0.0001 to < 0.001||
+|@P@|On the order of 0.1 to 1 day ^1^ |≥ 0.00001 to < 0.0001||
+|@T@|On the order of 1 to 10 days ^1^ |≥ 0.000001 to < 0.00001||
+|@Q@|Greater than 10 days ^1^ |< 0.000001||
+|@A@|Administrative Instrument Channel|variable|NA|
+|@O@|Opaque Instrument Channel|variable|NA|
+
+1. These are approximate values. The sample rate should be used for the correct Band Code.
+
+h2. Instrument Code and Orientation Code
+
+The second letter specifies the family to which the sensor belongs. In essence, this identifies what is being measured. Each of these instrument types are detailed in this section.
+
+The third letter in the channel name is the _Orientation Code_, which provides a way to indicate the directionality of the sensor measurement. This code is sometimes used for a purpose other than direction, which is instrument-specific. When orthogonal directions are used, there are traditional orientations of North (@N@), East (@E@), and Vertical (@Z@), as well as other orientations that can readily be converted to traditional ones. These options are detailed with each instrument type. Use @N@ or @E@ for the orientation when it is within 5 degrees of north or east. Use @1@ or @2@ when orientations are more than 5 degrees from north or east. Put the actual orientation of the sensor in the dip and azimuth fields of blockette @52@. 
+
+h2. Seismometer
+
+Measures displacement/velocity/acceleration along a line defined by the dip and azimuth.
+
+table(table table-bordered table-striped).
+|\2. *Instrument Code*|
+|@H@|High Gain Seismometer|
+|@L@|Low Gain Seismometer|
+|@G@|Gravimeter|
+|@M@|Mass Position Seismometer|
+|@N@ ^*^|Accelerometer|
+
+<notextile>*</notextile> historically some channels from accelerometers have used instrumentation codes of L and G. The use of N is the FDSN convention as defined in August 2000.
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z N E@|Traditional (Vertical, North-South, East-West)|
+|@A B C@|Triaxial (Along the edges of a cube turned up on a corner)|
+|@T R@|For formed beams (Transverse, Radial)|
+|@1 2 3@|Orthogonal components but non traditional orientations|
+|@U V W@|Optional components|
+|Dip/Azimuth:|Ground motion vector (reverse dip/azimuth if signal polarity incorrect)|
+|Signal Units:|@M@, @M/S@, @M/S**2@, (for G & M) @M/S**2@ (usually)|
+|Channel Flags:|@G@|
+
+h2. Tilt Meter
+
+Measures tilt from the horizontal plane. Azimuth is typically N/S or E/W.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@A@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@N E@|Traditional|
+|Dip/Azimuth:|Ground motion vector (reverse dip/azimuth if signal polarity incorrect)|
+|Signal Units:|Radians|
+|Channel Flags:|@G@|
+
+h2. Creep Meter
+
+Measures the absolute movement between two sides of a fault by means of fixing a metal beam on one side of the fault and measuring its position on the other side. This is also done with light beams.
+
+The orientation and therefore the dip and azimuth would be perpendicular to the measuring beam (light or metal), which would be along the average travel vector for the fault. Positive/Negative travel would be  arbitrary, but would be noted in the dip/azimuth. Another type of Creep Meter involves using a wire that is  stretched across the fault. Changes in wire length are triangulated to form movement vector.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@B@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Dip/Azimuth:|Along the fault or wire vector|
+|Signal Units:|@M@|
+|Channel Flags:|@G@|
+
+h2. Calibration Input
+
+Usually only used for seismometers or other magnetic coil instruments. This signal monitors the input signal to the coil to be used in response evaluation. Usually tied to a specific instrument. Sometimes all instruments are calibrated together, sometimes horizontals are done separately from verticals.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@C@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@A B C D@|For when there are only a few cal sources for many devices.
+|\2. Blank if there is only one calibrator at a time or, Match Calibrated Channel (is. @Z@, @N@ or @E@)|
+
+h2. Pressure
+
+A barometer, or microbarometer measures pressure. Used to measure the weather pressure or sometimes for state of health monitoring down hole. This includes infrasonic and hydrophone measurements.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@D@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@O@|Outside|
+|@I@|Inside|
+|@D@|Down Hole|
+|@F@|Infrasound|
+|@H@|Hydrophone|
+|@U@|Underground|
+|Dip/Azimuth:|Not applicable - Should be zero.|
+|Signal Units:|@Pa@ (Pascals)|
+|Channel Flags:|@W@ or @H@|
+
+h2. Electronic Test Point:
+
+Used to monitor circuitry inside recording system, local power or seismometer. Usually for power supply voltages, or line voltages.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@E@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|\2. Designate as desired, make mnemonic as possible, use numbers for test points, etc.|
+|Dip/Azimuth:|Not applicable|
+|Signal Units:|@V@, @A@, @Hz@, Etc.|
+|Channel Flags:|@H@|
+
+h2. Magnetometer
+
+Measures the magnetic field where the instrument is sitting. They measure the part of the field vector that is aligned with the measurement coil. Many magnetometers are three axis. The instrument will typically be oriented to local magnetic north. The dip and azimuth should describe this in terms of the geographic north.
+
+*Example:* Local magnetic north is 13 degrees east of north in Albuquerque. So if the magnetometer is pointed to magnetic north, the azimuth would be + 103 for the E channel. Some magnetometers do not record any vector quantity associated with the signal, but record the total intensity. So, these would not have any dip/azimuth.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@F@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z N E@|Magnetic| 
+|Signal Units:|@T@ - Teslas| 
+|Channel Flags:|@G@|
+
+h2. Humidity
+
+Absolute/Relative measurements of the humidity. Temperature recordings may also be essential for meaningful results.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@I@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@O@|Outside Environment|
+|@I@|Inside Building|
+|@D@|Down Hole|
+|@1 2 3 4@|Cabinet Sources|
+|\2. All other letters available for mnemonic source types.|
+|Dip/Azimuth:|Not applicable - Should be zero.|
+|Signal Units:|@%@|
+|Channel Flags:|@W@|
+
+h2. Rotational Sensor
+
+Measures solid-body rotations about an axis, commonly given in “displacement” (radians), velocity (radians/second) or acceleration (radians/second^2).
+
+table(table table-bordered table-striped).
+|\2. *Instrument Code*|
+|@J@|High Gain Seismometer|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z N E@|Traditional (Vertical, North-South, East-West)|
+|@A B C@|Triaxial (Along the edges of a cube turned up on a corner)|
+|@T R@|For formed beams (Transverse, Radial)|
+|@1 2 3@|Orthogonal components but non traditional orientations|
+|@U V W@|Optional components|
+|Dip/Azimuth:|Axis about which rotation is measured following right-handed rule.|
+|Signal Units:|@rad@, @rad/s@, @rad/s^2@ – following right-handed rule|
+|Channel Flags:|@G@|
+
+h2. Temperature
+
+Measurement of the temperature at some location.
+
+Typically used for measuring:
+
+# Weather - Outside Temperature
+# State of Health
+## Inside recording building
+## Down hole
+## Inside electronics
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@K@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@O@|Outside Environment|
+|@I@|Inside Building|
+|@D@|Down Hole|
+|@1 2 3 4@|Cabinet sources|
+|\2. All other letters available for mnemonic types.|
+|Dip Azimuth:|Not applicable - Should be zero.|
+|Signal Units:|deg @C@ or deg @K@|
+|Channel Flags:|@W@ or @H@|
+
+h2. Water Current
+
+This measurement measures the velocity of water in a given direction. The measurement may be at depth, within a borehole, or a variety of other locations.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@O@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Dip/Azimuth:|Along current direction|
+|Signal Units:|@M/S@| 
+|Channel Flags:|@G@|
+
+h2. Geophone
+
+Very short period seismometer, with natural frequency 5 - 10 Hz or higher.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@P@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z N E@|Traditional|
+|Dip/Azimuth:|Ground Motion Vector (Reverse dip/azimuth if signal polarity incorrect)|
+|Signal Units:|@M@, @M/S@, @M/S@|
+|Channel Flags:|@G@|
+
+h2. Electric Potential
+
+Measures the Electric Potential between two points. This is normally done using a high impedance voltmeter connected to two electrodes driven into the ground. In the case of magnetotelleuric work, this is one parameter that must be measured.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@Q@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Signal Units:|@V@ - Volts|
+|Channel Flags:|@G@|
+
+h2. Rainfall
+
+Measures total rainfall, or an amount per sampling interval.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@R@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Dip/Azimuth:|Not applicable - Should be zero.|
+|Signal Units:|@M@, @M/S@|
+|Channel Flags:|@W@|
+
+h2. Linear Strain
+
+One typical application is to build a very sensitive displacement measuring device, typically a long quartz rod. One end is affixed to a wall. On the free end, a pylon from the floor reaches up to the rod where something measures the position of the pylon on the rod (like a large LVDT).
+
+There are also some interferometry projects that measure distance with lasers. Dip/Azimuth are the line of the movement being measured. Positive values are obtained when stress/distance increases, negative, when they decrease.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@S@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z N E@|Vertical, North-South, East-West|
+|Dip/Azimuth:|Along axis of instrument|
+|Signal Units:|@M/M@|
+|Channel Flags:|@G@|
+
+h2. Tide
+
+Not to be confused with lunar tidal filters or gravimeter output. Tide instruments measure the depth of the water at the monitoring site.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@T@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@Z@|Always vertical|
+|Dip/Azimuth:|Always vertical|
+|Signal Units:|@M@ - Relative to sea level or local ocean depth|
+|Channel Flags:|@G@|
+
+h2. Bolometer
+
+Infrared instrument used to evaluate average cloud cover. Used in astronomy to determine observability of sky.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@U@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Dip/Azimuth:|Not applicable - Should be zero.|
+|Signal Units:|Unknown|
+|Channel Flags:|@W@|
+
+h2. Volumetric Strain
+
+Unknown
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@V@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|Unknown||
+|Dip/Azimuth:|Not Applicable - Should be zero.|
+|Signal Units:|@M**3/M**3@|
+|Channel Flags:|@G@|
+
+h2. Wind
+
+Measures the wind vector or velocity. Normal notion of dip and azimuth does not apply.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@W@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@S@|Wind speed|
+|@D@|Wind Direction Vector - Relative to geographic North|
+|Dip/Azimuth:|Not Applicable - Should be zero.|
+|Channel Flags:|@W@|
+
+h2. Derived or Generated Channel
+
+Time series derived from observational data or entirely generated by a computer aseismograms.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@X@|
+
+table(table table-bordered table-striped).
+|*Orientation Code*|
+|Similar to the observable data that was modified or the observable equivalent for generated time series (synthetics). See Orientation Codes for the corresponding observed channel.<br/><br/>*Further Usage:*<br/>In order to document the provenance of the data, SEED header information must be available that documents the algorithms, processes, or systems that modified or generated the time series. A Channel  Comment Blockette (059), providing a Uniform Resource Locator (URL), must be included. The information available at the URL must identify the processes that were applied to modify or generate the time series. This information must reference the FDSN web site ("http://www.fdsn.org/synthetic":http://www.fdsn.org/synthetic).<br/><br/>In addition to the requirement to include a B059, it is required to put a short description of the process/instrument in the 30 character channel comment (field 7 of B052).|
+
+h2. Non-specific Instruments
+
+The instrument code in SEED format covers most commonly used instruments that generate time series. For instruments not specifically covered by an existing instrument code the Y instrument code can be used.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@Y@|
+
+table(table table-bordered table-striped).
+|*Orientation Code*|
+|Instrument Specific. Should be documented in the URL referenced below.<br/><br/>*Further Usage:*<br/>In order to document the instrument type and provenance of the data, SEED header information must be available that documents the instrument that was used to generate the time series. A Channel Comment Blockette (059) must be provided in the SEED metadata. The Channel Comment Blockette should provide a short description of the instrument, the type of measurement it makes and provide a Uniform Resource Locator (URL) referencing the FDSN web site ("http://www.fdsn.org/":http://www.fdsn.org/) that fully describes the instrumentation.<br/><br/>In addition to the requirement to include a B059, it is required to put a short description of the process/instrument in the 30 character channel comment (field 7 of B052).|
+
+h2. Synthesized Beams
+
+This is used when forming beams from individual elements of an array. Refer to blockettes 35, 400, & 405.
+
+table(table table-bordered table-striped).
+|*Instrument Code*|
+|@Z@|
+
+table(table table-bordered table-striped).
+|\2. *Orientation Code*|
+|@I@|Incoherent Beam|
+|@C@|Coherent Beam|
+|@F@|FK Beam|
+|@O@|Origin Beam|
+|Dip/Azimuth:|Ground motion vector (reverse dip/azimuth if signal polarity incorrect)|
+|Signal Units:|@M@, @M/S@, @M/S**2@, (for G & M) @M/S**2@ (usually)|
+|Channel Flags:|@G@|
+
+h2. Channel Code
+
+We suggest that two sequences be reserved for special channels: the @LOG@ channel for the console log, and the @SOH@ channel for the main state of health channel. Subsidiary logs and state of health channels should begin with the @A@ code; the source and orientation fields can then be used in any way.
+
+Here are some typical channel arrangements used by a GSN system:
+
+table(table table-bordered table-striped).
+|_. Channel|_. Description|
+|@EHZ/EHN/EHE@|Short Period 100 sps|
+|@BHZ/BHN/BHE@|Broad Band 20 sps|
+|@LHZ/LHN/LHE@|Long Period 1 sps|
+|@VHZ/VHN/VHE@|Very Long Period 0.1 sps|
+|@BCI@|Broad Band Calibration Signal|
+|@ECI@|Short Period Cal|
+|@LOG@|Console Log|
+|@ACE@|Administrative Clock Error|
+|@LCQ@|1hz Clock Quality|
+|@OCF@|Opaque Configuration File|
+
+h2. Note
+
+*Log Records:* Log records has a channel identifier code of @LOG@ and a sample rate of zero. The number of samples field is the number of characters in the record (including the carriage return and line feed that terminates each line). Log messages are packed into records until a message falls into a new minute. Log records have no blockettes, so the strings start at offset @48@. For examples of Log Records, @ACE@, and @OCF@ channels, refer to the end of Appendix E.

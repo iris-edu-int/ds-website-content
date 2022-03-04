@@ -1,0 +1,20 @@
+h1. Dataless SEED
+
+h2. What is a dataless SEED volume?
+
+A _dataless SEED_ volume contains the metadata for a request only, including instrument responses, instrument coordinates, compression type, etc.. This dataless volume can be used in combination with a "miniSEED":/ds/nodes/dmc/data/formats/miniseed volume (as extracted from the BUD filesystem) with @rdseed@. A dataless, by definition, contains no "data", in the sense that no waveform data are included, only headers.
+
+h2. Getting a Dataless SEED File:
+
+# Generate a request for a dataless using the ["online form":/data/DatalessRequest.htm]
+# Submit a BREQ_FAST style request to "dataless@iris.washington.edu":mailto:dataless@iris.washington.edu from your mail client.
+# Get a dataless from the ["BUD Query Interface":/bud_stuff/bud/bud_start.pl?BUDDIR=/budnas/virtualnets/ALL].
+# Download network dataless SEED files from the ["IRIS FTP site":http://www.iris.edu/pub/RESPONSES/DATALESS_SEEDS/].
+
+     
+
+     
+
+     
+
+     

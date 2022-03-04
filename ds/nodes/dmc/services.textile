@@ -1,0 +1,33 @@
+h1. Services
+
+h2. Web Services
+
+The DMC offers several Common Service APIs to help you acquire data and metadata. These include:
+
+* "Web Service Interfaces":http://service.iris.edu/
+* "Java WS Library":/ds/nodes/dmc/manuals/iris-ws/
+* "MATLAB Library":/ds/nodes/dmc/software/downloads/irisfetch.m/
+
+h2. Real time Streaming Service
+
+* "SeedLink":/ds/nodes/dmc/services/seedlink/
+
+h2. Map Service
+
+The IRIS DMC Google Map Service generator creates maps based on IRIS DMC metadata holdings. Either a network or single station map can be generated. Each map produced includes a link to the same data as a KML NetworkLink appropriate for Google Earth. Network and station parameters can be specified directly in the URI path.
+
+"More information &raquo;":/gmap/
+
+h2. Network Codes
+
+The "FDSN":http://www.fdsn.org assigns network codes to provide uniqueness to seismological data streams. 
+
+"All network codes &raquo":http://www.fdsn.org/networks/
+
+h2. Guidelines for using web services
+
+"Please visit our page that outlines usage guidelines":/ds/nodes/dmc/services/usage/
+
+h2. Guidelines for using the real time "SeedLink streaming service":/ds/nodes/dmc/services/seedlink/
+
+Users of the DMC's "SeedLink streaming service":/ds/nodes/dmc/services/seedlink/ *should not sustain more than 5 concurrent connections*.

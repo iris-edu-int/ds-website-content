@@ -1,0 +1,35 @@
+h1. SAFOD Data at the DMC
+
+h2. Overview
+
+<notextile>
+<div class="pull-right">
+<img src="/media/_s/img/ds/nodes/dmc/earthscope/safod/observatory-safod.jpg" width="250" />
+</div>
+</notextile>
+
+The San Andreas Fault Observatory at Depth (SAFOD) is a deep borehole observatory that will directly measure the physical conditions under which plate boundary earthquakes occur. The SAFOD site is located in the Parkfield region of northern California. Phase 2 drilling began on June 13, 2005.
+
+"More information &raquo;":http://www.earthscope.org/science/observatories/safod/
+
+SAFOD is designed to directly sample fault zone materials (rock and fluids), measure a wide variety of fault zone properties, and monitor a creeping and seismically active fault zone at depth. A 3.2-km-deep hole will be drilled through the San Andreas fault zone close to the hypocenter of the 1966 M~6 Parkfield earthquake, where the San Andreas fault slips through a combination of small-to-moderate magnitude earthquakes and aseismic creep. The drill site will be located sufficiently far from the San Andreas fault (as determined by geologic observations, microearthquake locations, and geophysical imaging) to allow for drilling and coring deviated holes through the fault zone starting at a vertical depth of about 3 km and continuing through the fault zone until relatively undisturbed country rock is reached on the other side.
+
+The IRIS DMC serves as an archive for data from a project conducted at the SAFOD borehole by the company Paulsson Geophysical Services. These data were collected from April 29 to May 11, 2005. This is an array consisting of 240 elements over 80 levels, and recorded at 4kHz. The data was transferred on LTO-2 tape media and stored at the DMC on the tape-based mass storage StorageTek Powderhorn hardware.
+
+h2. SAFOD Assembled Dataset (Active Source)
+
+There are three basic data sets contained in these recordings.
+
+# *Continuous recording:* During the recording period, digital helicorders and bi-hourly spectrograms of the Northern Califorina Seismic Network were scanned to prepare a preliminary catalog of local earthquakes. This unedited list is contained in the file "PrelimCatalog.txt":/data/reports/2005/05-022/PrelimCatalog.txt. *[Assembled data #05-022]*
+# *Zero offset check shots:* Small (5-10 lb) explosions were fired on the SAFOD site into the Paulsson Geophysical array (P/GSI) during deployment when the array was locked at each of the three positions. Information on the shots are contained in the file "small_offset_shot_locs.doc":/data/reports/2005/05-022/small_offset_shot_locs.doc and a map of the layout is in "Small Offset Shot Map.pdf":/data/reports/2005/05-022/Small_Offset_Shot_Map.pdf.
+# *Virtual events:* created by 80 lb explosions detonated very close to seismic stations in the PASO Tres Array of Steve Roecker and Cliff Thurber. The shot locations and origin times are in the file "Pasotres_shottimes.pdf":/data/reports/2005/05-027/Pasotres_shottimes.pdf. *[Assembled data #05-027]*
+
+h2. Requesting SAFOD Data from the Assembled Holdings at the DMC
+
+Users can view the Assembled SAFOD data sets from our "SeismiQuery page":/SeismiQuery/assembled.phtml
+
+Search using report no. *05-022* or the nickname *SAFOD*. This is the main data set described in the "Readme file":/data/reports/2005/05-022/SAFOD_P-GSI_Readme.pdf. *The total volume exceeds 2 TeraBytes (TB)*, so you may wish to contact the IRIS DMC first.
+
+The *Virtual Event* data can be requested using report no. *05-027*. SAFOD assembled data is distributed in 2GB tar files, which contain about 34 individual ~16sec shots.
+
+* "Create an assembled data request":/ds/nodes/dmc/forms/assembled-data/

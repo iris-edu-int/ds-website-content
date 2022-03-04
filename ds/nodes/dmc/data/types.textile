@@ -1,0 +1,38 @@
+h1. Types of Data
+
+The DMC collects and archives a number of different types of data.
+
+h2. Time Series Data 
+
+"Time Series Data":/ds/nodes/dmc/data/types/waveform-data/ (or Waveform Data) includes sensor recordings of a variety of (primarily seismological) measurements.  This is the primary type of data available from the DMC.
+
+<div class="alert alert-info">
+*Learn more:* "Time Series Data Channel Wizard":/ds/nodes/dmc/tools/data_channels/: Time-series data is collected for many types of data, identified using a system of channel codes. Learn about these channel codes using this online tool.
+</div>
+
+h2. Event Data
+
+"Event Data":/ds/nodes/dmc/data/types/events/ provides information about earthquakes and other seismic events.
+
+h2. Metadata
+
+"Metadata":/ds/nodes/dmc/data/types/metadata/ include station siting and instrumentation information.
+
+h2(#historical). Historical Data
+
+The IRIS DMC archives historical seismic data including scanned seismograms and other information from pre-digital sources.
+
+<notextile>
+  <blockquote>
+    <p>... old seismograms, if properly interpreted, provide invaluable information on earthquakes in the past, and every effort should be made to save them, regardless of their quality, from possible loss and to make copies in an easily readable form.</p>
+    <small>Hiroo Kanamori (1988)</small>
+  </blockquote>
+</notextile>
+
+h4. SeismoArchives <small>Seismogram Archives of Significant Earthquakes of the World</small>
+
+The SeismoArchives website features scanned seismograms from historical earthquakes.
+
+The main purpose of these online SeismoArchives is to preserve seismograms and related materials in computer data files so that they are readily accessible online as source materials for research.
+
+"Visit the SeismoArchives &raquo;":/seismo/

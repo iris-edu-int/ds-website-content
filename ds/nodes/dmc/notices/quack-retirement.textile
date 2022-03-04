@@ -1,0 +1,18 @@
+h1. QUACK is no longer in service
+
+As of the start of 2016, QUACK has been removed from service.
+
+The new MUSTANG QA system is now running on all seismic networks entering the DMC and QA metrics should now be accessed through MUSTANG web services. 
+
+We hope users of QUACK will experience a comfortable transition to using MUSTANG to gather quality control statistics, PDF plots, and other information as relates to IRIS data holdings.  You can access MUSTANG using a web browser, command line tools, the @IRISMustangMetrics@ R package on CRAN, and clients like the MUSTANG Databrowser and LASSO.
+
+Please explore the following URLs for more information on how to get started:
+
+MUSTANG web service providing statistical data:  "$":http://service.iris.edu/mustang/measurements/1
+MUSTANG databrowser web tool:  "$":/mustang/databrowser
+LASSO station quality tool:  "$":http://lasso.iris.edu
+CRAN repository for the IRIS metrics API written in R: "$":https://cran.r-project.org/web/packages/IRISMustangMetrics
+
+The helicorder plots are still available at "$":/servlet/webicorder/.
+
+Further information about IRIS Quality Assurance can be found at "$":/ds/nodes/dmc/quality-assurance/.

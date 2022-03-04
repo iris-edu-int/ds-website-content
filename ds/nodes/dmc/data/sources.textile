@@ -1,0 +1,65 @@
+h1. Seismic Data Sources
+
+h2(#perm). Permanent Networks
+
+Permanent networks provide "passive":/ds/nodes/dmc/data/types/waveform-data/#passive data only.
+
+h3. Global Seismographic Network 
+
+The IRIS Global Seismographic Network (GSN) is one of the four major components of IRIS Consortium. The goal of the GSN is to deploy 128 permanent seismic recording stations uniformly over the earth's surface. 
+
+"Learn more about the GSN":http://www.iris.edu/hq/programs/gsn.
+ 	 
+h3. FDSN
+
+The "International Federation of Digital Seismograph Networks":http://www.fdsn.org (FDSN) is a global organization. Its members are responsible for the installation and maintenance of broad-band seismographs either within their geographic borders or globally.
+ 
+"List of Permanent FDSN Network Codes":http://www.iris.edu/mda/#pnetlist
+"Request a permanent FDSN Network Code":http://www.fdsn.org/forms/netcode_perm.htm
+Data "shipment statistics":/data/distribution/ for FDSN and other data
+ 	 
+h3. Regional Networks
+
+Several regional networks contribute data to the IRIS archive or have open access to their data sets. 
+
+"List of regional networks":/ds/nodes/dmc/data/sources/regional/
+ 	 
+h3. Virtual Networks at the IRIS DMC
+
+A virtual network is a group of stations and/or seismic networks. 
+
+"List of virtual networks":http://www.iris.edu/mda/#vnetlist
+ 	 
+h2(#temp). Temporary Networks and Experimental Data
+
+Temporary networks may include both "passive":/ds/nodes/dmc/data/types/waveform-data/#passive and "active":/ds/nodes/dmc/data/types/waveform-data/#active data.
+
+h3. PASSCAL
+
+The Program for the Array Seismic Studies of the Continental Lithosphere (PASSCAL) is another one of the four major componenets of IRIS. PASSCAL operates a pool of over 400 portable seismic instruments to record active source reflection data, active source refraction data or natural source recordings of earthquakes. 
+
+"Learn more about PASSCAL":http://www.iris.edu/hq/programs/passcal.
+
+h3. Other Sources
+
+IRIS also has an archive of other temporary deployments from several different sources including:
+
+* United States Geological Survey ("USGS":http://earthquake.usgs.gov/)
+* Seismic Equipment InfraStructure in the UK ("SEIS-UK":http://www.le.ac.uk/seis-uk/)
+* U.S. National Ocean Bottom Seismograph Instrument Pool ("OBSIP":http://www.obsip.org/)
+
+"List of Temporary FDSN Network Codes":http://www.iris.edu/mda/#tnetlist
+"Request a temporary FDSN Network Code":http://www.fdsn.org/networks/request/temp/
+"Temporary deployment mobilization form":http://www.iris.edu/stations/mob.htm
+ 	 
+h2(#event). Event Catalog Data
+
+IRIS archives "event data":/ds/nodes/dmc/data/types/events/ produced by various contributors.
+
+h3. National Earthquake Information Center, World Data Center for Seismology, Denver, Colorado
+
+The "NEIC":http://earthquake.usgs.gov/regional/neic/ is responsible for determining, as rapidly and as accurately as possible, the location and size of all destructive earthquakes that occur worldwide; and collecting and providing an extensive seismic database.
+	
+h3. International Seismological Centre, United Kingdom
+
+The "ISC":http://www.isc.ac.uk/ is a non-governmental organization charged with the final collection, analysis and publication of standard earthquake information from all over the world.

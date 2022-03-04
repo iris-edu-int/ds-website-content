@@ -1,0 +1,27 @@
+h1. Retirement Notice
+
+h2. All web services interfaces have moved
+
+<div class="alert alert-info">
+
+Please visit:
+
+"http://service.iris.edu":http://service.iris.edu
+
+*Surprised?*
+
+If this transition caught you by surprise, we strongly recommend that you sign up for our "webservices mailing list":/message-center/topic/webservices/ to receive notifications of future changes.
+
+</div>
+
+h2. Web Service Clients
+
+<div class="alert alert-info">
+
+The current web service clients are listed on the following page:
+
+"http://service.iris.edu/clients/":http://service.iris.edu/clients/
+
+</div>
+
+_Last updated: 2014-04-01 by DS Webmaster_

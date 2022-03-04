@@ -1,0 +1,33 @@
+h1. Other Data Centers
+
+h2. FDSN Web Services
+
+"FDSN web services":http://www.fdsn.org/webservices/ provide a standard for accessing (mostly) passive source miniSEED data, and have been widely adopted.
+
+"Data Centers Supporting FDSN Web Services":http://www.fdsn.org/webservices/datacenters/
+
+"Web Service Federation":/ds/nodes/dmc/data/federation/ provides a way to seamlessly access FDSN web service data across data centers.
+
+h2. Active Source Data Centers
+
+* "National Archive of Marine Seismic Surveys":http://walrus.wr.usgs.gov/NAMSS/
+* "Marine Seismic Data Center":http://www.ig.utexas.edu/sdc/
+* "Marine Geoscience Data System":http://www.marine-geo.org/
+
+h2. High Rate GPS Data Centers
+
+table(table table-bordered table-shaded).
+|_. Source Website |_. Notes |_. Contact |
+| "USGS":http://earthquake.usgs.gov/monitoring/gps/ | Processing of all continuous GPS in continental U.S. Includes one day solutions updated daily and 5-min high rate solutions updated daily. 1Hz GPS is available for a subset of stations and updated daily | Jessica Murray, USGS Menlo Park |
+| "UNAVCO":http://www.unavco.org/data/gps-gnss/ftp/ftp.html | Provides a guide for the layout of UNAVOC's FTP data servers and provides links to direct FTP access to UNAVCO holdings of GPS/GNSS data. |  (Unknown) |
+| "Nevada Geodetic Laboratory":http://geodesy.unr.edu/billhammond/gpsnetmap/GPSNetMap.html | Processing of international networks. One day solutions and 5-min high rate solutions are updated variably at time scales of daily, weekly, and monthly | Bill Hammond, University of Nevada, Reno |
+| "Central Washington University":http://www.geodesy.cwu.edu/realtime | 1/3 of the PANGA network processed in real-time. 1Hz GPS made available in real time | Tim Melbourne, Central Washington University |
+| "SOPAC":http://sopac.ucsd.edu/ | SOPAC provides the following services and products to the scientific community:
+* Precise near real-time and predicted GPS satellite orbits,
+* Precise polar motion and Earth rotation variations,
+* On-line GARNER data archive of continuously operating GPS tracking stations, for data collected since 1990,
+* Time series of daily three-dimensional positions for the global and California stations with respect to the International Terrestrial Reference Frame (ITRF),
+* Software for remote downloading of continuous GPS data,
+* Consultation on installation and operations of continuous GPS arrays. | Yehuda Bock, Scripps Institution of Oceanography |
+| "SCIGN":http://www.scign.org/realtime | Southern California Integrated GPS Network (SCIGN) | Ken Hudnut, USGS Pasadena |
+| "GNS":http://magma.geonet.org.nz/resources/network/netmap.html | An interactive, multi-layered map displaying the locations of GeoNet's continuous GPS network (cGPS), seismograph sites, strong-motion detection sites and tsunami gauge sites. | (Unknown) |

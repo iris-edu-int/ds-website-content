@@ -1,0 +1,55 @@
+h1. About MUSTANG
+
+The @Modular Utility for STAtistical kNowledge Gathering@ system is an ambitious project designed to bring data quality analysis web services to IRIS DMC, covering the entirety of the data archive, from past to present time. It provides station operators and earth scientists ready access to measurements that are scientifically useful and reflect the state of instrumentation that record seismic data.
+
+The goal of MUSTANG is to provide greater visibility of instrument health as well as store a quantitative record of data quality for the purposes of selective data access by scientists.
+
+h3. The MUSTANG system is designed along the following principles:
+
+*MODULARITY* - Constructed of discrete components, the system can be adapted with enhanced functions and can be distributed among a number of compute resources.
+
+*SERVICE-ORIENTED* - Almost all data access is carried out using web services, allowing components to work together with little concern for the implementation details. Programmatic access to quality metrics allows for powerful visualization and analytics to be carried out on user's client systems.
+
+*EXTENSIBILITY* - Metrics calculations are carried out using R utilities in an environment that allows new metrics to be prototyped and deployed. R is commonly used for analytics, providing an avenue for outside contribution by subject matter experts.
+
+*COMPREHENSIVENESS* - MUSTANG looks at the entire SEED archive at IRIS DMC, providing a complete history of seismic data quality for digital seismic networks.
+
+*CORRECTNESS* - MUSTANG is designed so that metrics will stay up to date.  In development is a system to automatically trigger recalculation of metrics when changes are detected in the archive or the metadata (coming soon).
+
+h3. Metrics as a Web Service
+
+A service-oriented approach is employed with MUSTANG to provide valuable metrics to you when you need it (and how you need it). Web services allow users to access MUSTANG data using a web URL, through a web browser, a program, or even a text terminal.
+
+pre(pre-x-scrollable). http://service.iris.edu/mustang/measurements/1/query?metric=max_stalta&network=IU&station=ANMO&channel=BHZ&startafter=2012-10-01&endbefore=2013-01-01
+
+_(returns a list of daily max STA/LTA values for IU.ANMO.00.BHZ and IU.ANMO.10.BHZ for the fourth quarter of 2012)_
+
+To help you get started using this form of querying, a useful web page with documentation can be found on the @MUSTANG measurements service page@:
+
+"http://service.iris.edu/mustang/measurements/1":http://service.iris.edu/mustang/measurements/1
+
+There, you will find how-to examples, detailed metrics descriptions, and a URL builder tool that can help you construct queries.
+
+Any environment that is capable of making an HTTP call and capturing the return values can be used to access MUSTANG. You can get XML, Text, CSV, JSON, and in some cases plot images from a service call. The data can then be manipulated and analyzed by utilities like Matlab, Rstudio, MS Excel, IPython, and many others. You can use something as simple as "wget or curl from a terminal command line":http://service.iris.edu/mustang/measurements/docs/1/help/ to access MUSTANG.
+
+
+h3. Clients
+
+We are also working on client tools to make MUSTANG more accessible and useful. Two tools currently available for this purpose are:
+
+# "MUSTANG Databrowser":http://ds.iris.edu/mustang/databrowser : metric measurement plots and boxplots
+# "MUSTANGular":http://ds.iris.edu/mustang/mustangular : color-code map view of metric measurements
+# "LASSO":http://lasso.iris.edu : group metric measurements in a chart view
+
+
+h3. Citations and DOIs
+
+To cite the MUSTANG system or reference the use of MUSTANG metrics:
+
+* Assuring the Quality of IRIS Data with MUSTANG
+Robert Casey, Mary E. Templeton, Gillian Sharer, Laura Keyson, Bruce R. Weertman, Tim Ahern
+Seismological Research Letters (2018) 89 (2A): 630-639.
+DOI: "https://doi.org/10.1785/0220170191":https://doi.org/10.1785/0220170191
+
+
+"Go back to Quality Assurance home page":/ds/nodes/dmc/quality-assurance/

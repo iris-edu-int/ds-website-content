@@ -1,0 +1,3 @@
+h1. Recent shipments (obsolete)
+
+<!-- This page is now hardcoded in Django -->

@@ -1,0 +1,14 @@
+h1. Data Types
+
+; "Time Series data":/ds/nodes/dmc/data/types/waveform-data/
+: Continuous seismic instrument recordings from thousands of stations worldwide.  This is the primary IRIS archive.
+; "Metadata":/ds/nodes/dmc/data/types/metadata/
+: Includes information such as recording instrument characteristics and data quality; this is generally used to determine the waveform data to request.
+; "Event data":/ds/nodes/dmc/data/types/events/
+: Catalog of 4 million+ events, this is useful in determining the timeframe for retrieving useful data.
+; "Assembled data":/ds/nodes/dmc/data/types/waveform-data/#assembled
+: Discrete collections of waveform data, generally recorded over a period of weeks or months.  Assembled data are often "active source":/ds/nodes/dmc/data/types/waveform-data/#active, meaning that they include artificial seismic events such as explosive blasts intended to seismically map a given region.
+; "Data products":/ds/products/
+: Calculated datasets providing a higher-level view of the raw data.  For example, the "GMV":/ds/products/usarraygmv/ product is an animated map showing ground movement across hundreds of stations during an earthquake.
+; "Historical data":/seismo/
+: Scanned seismograms and other information from pre-digital sources.

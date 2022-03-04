@@ -1,0 +1,28 @@
+h1. Services
+
+h2. Purpose
+
+The services section is responsible for the development and operation of web service interfaces that provide access to the various repositories of data and information managed at the DMC. These interfaces provide a modern access mechanism to users and are designed for use as the foundation for a variety of different usage requirements, from simple access to raw data to components of complex workflows. The service interfaces and related tools are designed and documented for use by a wide audience, from professional software developers to research scientists with limited technical experience. Data processing and reformatting capabilities allow users unfamiliar with seismic data formats, such as researchers in related fields, to use data from the DMC.
+
+h2. Overview
+
+The services group consists of software engineers and a quality assurance engineer. The software engineers design and operate a web service architecture with fifteen different interfaces and more in development.
+
+For high availability and future scalability the architecture is designed with redundant backend instances for each interface. The functionality is highly modularized with each service supporting a few specific tasks to maximum flexibility. For ease of use by the widest possible audience the interfaces are designed and documented for use by both non-technical users and professional software developers.
+
+In addition to providing access to raw time series data, the web services allow signal processing and reformatting to be applied prior to being delivered to the user. The signal processing performed at the DMC reduces the amount of processing required by the user with many other benefits such as the ability to produce data plots in Earth units. The reformatting capability increases the potential user base of DMC managed data to users that are unfamiliar with seismic data formats.
+
+The service group also supports resources and tools that allow researchers to easily use the web service interfaces. Simple scripts are maintained that allow access to data in a command-line environment, such scripts fit naturally into many existing workflows for seismic data processing. A MATLAB® interface has been developed to provide access to data, via the service interfaces, from within that environment. A Java library has been developed to act as an abstraction layer between data access and Java programs. These developments serve to insulate the technicalities of the service interface from users, in the case of MATLAB® and Java the user is also insulated from data formats as the data are returned in a manner native to the environment.
+
+The web services serve as an abstraction layer for internal access to data and information; they are increasingly being used to support other data access mechanisms offered by the DMC. Decoupling the access mechanisms from the backend systems allows for easier evolution of the backend systems and reduced overall maintenance requirements.
+
+h2. Primary tasks
+
+The web services group is currently engaged in the following activities:
+
+* Implementation of the International Federation of Digital Seismograph Stations (FDSN) standard data access services
+* Major upgrades to the event and station services to support EarthCube activities and more use cases
+* Development of an on-demand synthetic seismogram service based on an archive of empirical Green’s functions
+* Development of a seismogram rotation service
+* Development of SeisCode: a community source code repository and collaboration site
+* Support of IRIS DMC convergence of its technologies to web services

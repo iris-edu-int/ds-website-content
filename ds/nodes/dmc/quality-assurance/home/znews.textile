@@ -1,0 +1,52 @@
+h1. News
+
+* (2021-11-18) We are pleased to announce the public release of ISPAQ version 3.0.0, available at "https://github.com/iris-edu/ispaq":https://github.com/iris-edu/ispaq.
+
+<p style="padding-left:1.5em;">ISPAQ is a command line application that enables you to calculate quality metrics for seismic data locally, by leveraging MUSTANG R-code within a Python client. Over 40 MUSTANG metrics can be calculated for either local miniSEED files or for data available through any Data Center that supports FDSN web services. These metrics include basic trace statistics, metrics based on miniSEED state-of-health flags (if available), metrics based on event arrivals, Power Spectral Densities (PSDs), Probability Density Functions (PDFs), and metrics derived from PSDs. All results are computed and stored on the user's local machine. </p>
+
+<p style="padding-left:1.5em;">Improvements and changes for this release include: 
+1. ability to write metric values to an SQLite database 
+2. addition of MUSTANG metrics sample_rate_resp, sample_rate_channel, max_range 
+3. access to IRIS PH5 archive data, using IRISPH5 alias 
+4. new Jupyter notebook tutorials 
+5. bug fixes and usage improvements 
+6. code port to Python3
+</p>
+
+<p style="padding-left:1.5em;">In addition, the new ISPAQ SQLite database is compatible with QuARG, the Quality Assurance Report Generator ("https://github.com/iris-edu/quarg":https://github.com/iris-edu/quarg) and can be used as a source to import metric values into that tool. 
+</p>
+
+* (2021-08-16) We are happy to announce the release of MUSTANGular version 2.2, available at "http://ds.iris.edu/mustang/mustangular":http://ds.iris.edu/mustang/mustangular. MUSTANGular is a web-based application that plots color-coded MUSTANG metric values on an interactive map. 
+
+<p style="padding-left:1.5em;">
+New improvements include: 
+1. 'Display single channel’ priority now includes location codes. When there are co-located station channels and the display is set to show one channel only, the user can prioritize which channel is displayed (if the first priority channel is not available at a station, it goes to the second priority, etc.). In previous versions, this priority selection did not include location code and as a result there were channel-locations that could not be displayed. This update fixes this issue. 
+2. Re-introducing the 'aggregate channels' feature, which creates a single station value by aggregating the values across co-located channels. The options are to aggregate my maximum, minimum, and most extreme values. This is secondary to the 'channel value across timespan' value, which has options to calculate single values for each station-channel-location for the time period selected (default=average). It will calculate a single value for each station-channel-location, and then aggregate these values across co-located channels. 
+3. Improvements to the station pop-up display. When selecting a station on the map, the pop-up displays the values for all the channel-locations in addition to the value displayed on the map. These are individually color-coded according to the color scale. 
+</p>
+
+<p style="padding-left:1.5em;">
+MUSTANGular was created and is maintained at the University of Washington by the Pacific Northwest Seismic Network. Thanks go to Kyla Marczewski (primary developer) and Paul Bodin (Network Manager) for making this available not only to IRIS, but also as an open source project on GitHub ("https://github.com/pnsn/mustangular":https://github.com/pnsn/mustangular).
+</p>
+
+* (2021-07-20) IRIS is pleased to announce the release of a new software tool for producing quick data quality reports using MUSTANG-generated metrics, designed for use with PASSCAL experiments and other temporary deployments.  Named PIQQA (PI's Quick Quality Assessment), this tool is the result of a collaborative effort between IRIS Data Services and Instrumentation Services. 
+
+<p style="padding-left:1.5em;">This recent Data Services Newsletter article provides a nice overview of PIQQA, including an example report:
+"https://ds.iris.edu/ds/newsletter/vol23/no1/533/piqqa-data-quality-reports-for-passcal-experiments/":https://ds.iris.edu/ds/newsletter/vol23/no1/533/piqqa-data-quality-reports-for-passcal-experiments/
+
+<p style="padding-left:1.5em;">PIQQA is open-source and will run on any dataset archived at the IRIS DMC for which MUSTANG metrics have been generated (please bear in mind that there are limits to the amount of metric data that MUSTANG web services can deliver through this tool; multi-year requests for large networks may not be appropriate).  We think PIQQA will be particularly useful for PIs of recent temporary/PASSCAL deployments, who may appreciate a quick overview of the quality of their dataset. PIQQA does not display all MUSTANG metrics, and users interested in exploring additional metrics in greater detail are encouraged to explore additional MUSTANG clients or query MUSTANG directly via web services.
+
+<p style="padding-left:1.5em;">People wishing to use PIQQA may download the source code from theGitHub repository "https://github.com/iris-edu/piqqa":https://github.com/iris-edu/piqqa
+</p>
+
+* (2020-11-18) We are pleased to announce the release of QuARG, the Quality Assurance Report Generator, available through the iris-edu GitHub repository: "https://github.com/iris-edu/quarg":https://github.com/iris-edu/quarg. This utility creates a Quality Assurance report, intended for network operators who want and need to have an understanding of the health of the stations in their network. This utility creates a Quality Assurance report, intended for network operators who want and need to have an understanding of the health of the stations in their network. The report calls attention to underperforming or broken stations so that time and resources can be prioritized as they are allocated for improving the quality of the network. 
+
+<p style="padding-left:1.5em;">
+QuARG is a python-based utility that walks the user through the process of creating a quality assurance report. This process follows 4 broad steps:
+1. It utilizes "MUSTANG metrics":http://service.iris.edu/mustang/ available through our web services, or alternately metrics generated using "ISPAQ":https://github.com/iris-edu/ispaq (using ISPAQ 3.0, available soon), to find and highlight potential problems in the data by flagging days that exceed user configurable threshold values. By using the pre-computed metrics, it reduces the amount of time that an analyst has to spend scanning the data for problems. It can also find issues that would otherwise go undetected by the eye. 
+2. Users then analyze the list of potential issues to determine if these are data quality problems that should be included in the report. QuARG makes it easy to keep track of which issues have been investigated, keep notes on what the analyst has found, and link to a slew of QA tools, such as waveform plots, metric plots, and Probability Density Function (PDF) plots, to make it easier to understand the problem. 
+3. From there, users create tickets that describe the problem. Tickets can be created in QuARG, or in an external ticketing system if the analysts have one that they already use. 
+4. These tickets, which track problems as they arise and can be updated when they are fixed, are then used to create a nicely formatted HTML quality assurance report. 
+
+<p style="padding-left:1.5em;">Full documentation can be read at "https://iris-edu.github.io/quarg/":https://iris-edu.github.io/quarg/.
+</p>

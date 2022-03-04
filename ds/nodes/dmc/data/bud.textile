@@ -1,0 +1,29 @@
+h1. BUD: Buffer of Uniform Data
+
+BUD is the IRIS DMC's acronym for the online data cache from which we distribute our near-real time miniSEED data holdings prior to formal archiving.
+
+h2. BUD Web Tools
+
+h3. "BUD Query Interface":/bud_stuff/bud/bud_start.pl?BUDDIR=/budnas/virtualnets/ALL
+
+p(clearfix). !</bud_stuff/dmc/bud_query.gif!:/bud_stuff/bud/bud_start.pl?BUDDIR=/budnas/virtualnets/ALL  Those users interested in accessing data coming through the BUD should start with this interface
+
+h3. "BUD Stat":/servlet/budstat/index.jsp
+
+p(clearfix). !</bud_stuff/dmc/budstat.gif!:/servlet/budstat/index.jsp "BUD Stat":/servlet/budstat/index.jsp Users or network operators who are interested in seeing statistics of what data is available in the BUD might like to use this interface. BUD Stat also displays availability of meta data for data held in the BUD and statistics of data moved from the BUD into DMC's main archive. To archive data out of the BUD, the DMC requires meta data. To guarantee that data is archived, network operators who are contributing data to the BUD should periodically consult BUD Stat to make sure that the DMC has meta data for waveform data.
+
+h3. "BUD Monitor":/bud_stuff/dmc/bud_monitor.ALL.html
+
+p(clearfix). !</bud_stuff/dmc/bud_monitor.gif!:/bud_stuff/dmc/bud_monitor.ALL.html  Those network operators (or users) who are interested in seeing the data and feed latency times might like to use this interface. Users can also request data by station (for most recent data only).
+
+h2. Receiving Real Time Data from the IRIS BUD
+
+h3. "SeedLink service":/ds/nodes/dmc/services/seedlink/ 
+
+A TCP/IP based protocol designed to robustly deliver real-time, continuous data over the Internet. The robust nature of the protocol allows clients to disconnect and reconnect without losing data (reconnection must happen within a reasonable amount of time, i.e. a couple of hours). The requested data streams may be limited to specific stations, locations and/or channels. Very little data latency (seconds) is introduced relative to the real-time data streams coming in to the DMC, all latency variations are due to the DMC's upstream source. SeedLink is developed by GEOFON. 
+
+h3. "AutoDRM":/ds/nodes/dmc/manuals/autodrm-service/ 
+
+*ENDING January 1, 2018*
+
+For emailed documentation on this service send an empty email with Subject: HELP to "$":mailto:autodrm@iris.washington.edu.

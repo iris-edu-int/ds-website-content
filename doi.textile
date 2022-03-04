@@ -1,0 +1,13 @@
+h1. Digital Object Identifiers
+
+p(alert alert-warning). This feature is still under development, and the information shown here may change.
+
+Digital Object Identifiers (DOIs) are "unique character strings used to identify an object such as an electronic document":http://en.wikipedia.org/wiki/Digital_object_identifier. Historically they have been associated with scholarly materials such as journal articles and books, but they are now being used more and more for other published works, including research datasets. 
+
+The "International Federation of Digital Seismograph Networks":http://www.fdsn.org (FDSN) is planning on publishing DOIs for member seismic networks in 2014. This is to ensure that seismic network operators under the FDSN umbrella receive full credit and citation(s) if scientists use their respective seismic network data in future published articles.
+
+h3. Links
+
+* "Digital Object Identifiers for FDSN network operators":/dms/newsletter/vol15/no3/digital-object-identifiers-for-fdsn-network-operators/ from the DMS Newsletter
+* "DOI Poster":/files/staff/adam/AGU_2013_DOI.pdf presented at the Fall 2013 AGU Conference
+* "FAQ for the DOI Implementation at UNAVCO":http://facility.unavco.org/data/doi-faq.html

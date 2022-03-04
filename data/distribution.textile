@@ -1,0 +1,59 @@
+h1. IRIS DMC Data Statistics
+
+Archive growth and shipment statistics are available in multiple file formats (image, PDF, text) and are updated every month. Please click the links below to either view the files in your browser, or download directly.
+
+h2(#data). Data
+
+h3(#data-archive). Archive
+
+table{width:50%;text-align:center}.
+| !/files/stats/data/archive/Archive_Growth.thumb.jpg!:/files/stats/data/archive/Archive_Growth.jpg |
+| IRIS DMC Archive Growth: "JPG":/files/stats/data/archive/Archive_Growth.jpg / "PDF":/files/stats/data/archive/Archive_Growth.pdf |
+
+h3(#data-shipments). Shipments
+
+table{width:100%;text-align:center}.
+| !/files/stats/data/shipments/GigabytesByYearAndType.thumb.jpg!:/files/stats/data/shipments/GigabytesByYearAndType.jpg | !/files/stats/data/shipments/NetworkCategory.thumb.jpg!:/files/stats/data/shipments/NetworkCategory.jpg |
+| Terabytes Shipped by Request Type: "JPG":/files/stats/data/shipments/GigabytesByYearAndType.jpg / "PDF":/files/stats/data/shipments/GigabytesByYearAndType.pdf | Shipments by Network Category: "JPG":/files/stats/data/shipments/NetworkCategory.jpg / "PDF":/files/stats/data/shipments/NetworkCategory.pdf |
+| !/files/stats/data/shipments/Values_GigabytesByNetwork.thumb.jpg!:/files/stats/data/shipments/Values_GigabytesByNetwork.jpg | !/files/stats/data/shipments/Stations_Submitting_Data.thumb.jpg!:/files/stats/data/shipments/Stations_Submitting_Data.jpg |
+| Gigabytes Shipped by Network Code: "JPG":/files/stats/data/shipments/Values_GigabytesByNetwork.jpg / "PDF":/files/stats/data/shipments/Values_GigabytesByNetwork.pdf | Stations Submitting Data: "JPG":/files/stats/data/shipments/Stations_Submitting_Data.jpg / "PDF":/files/stats/data/shipments/Stations_Submitting_Data.pdf |
+| !/files/stats/data/shipments/CumulativeShipments.thumb.jpg!:/files/stats/data/shipments/CumulativeShipments.jpg |
+| Cumulative Shipments: "JPG":/files/stats/data/shipments/CumulativeShipments.jpg / "PDF":/files/stats/data/shipments/CumulativeShipments.pdf |
+
+h2(#data-product-shipments). Data Product Shipments
+
+<notextile>
+<div class="row-fluid">
+<div class="col-xs-6">
+</notextile>
+
+h3(#data-product-shipments-imagefiles). Image files
+
+* "Event-based - events considered of interest by IRIS Data Services":/files/stats/dataproducts/shipments/images/event/
+* "Monthly - from 2010-03-01 onwards":/files/stats/dataproducts/shipments/images/monthly/
+
+<notextile>
+</div>
+<div class="col-xs-6">
+</notextile>
+
+h3(#data-product-shipments-textfiles). Text files
+
+* "Monthly - from 2010-03-01 onwards":/files/stats/dataproducts/shipments/text/monthly/
+* "Summary Microsoft Excel file":/files/stats/dataproducts/shipments/text/monthly/DataProductShipments.xls
+
+<notextile>
+</div>
+</div>
+<div class="clearfix"></div>
+</notextile>
+
+!(width:100%)/files/stats/dataproducts/shipments/images/event/2012-04-10_2012-04-17_Sumatera_2012_hourlysummary.png!
+
+p(text-center). _Shipment statistics image from the 2012-04-11 M8.6 Sumatera, Indonesia event_
+
+h2. Web Statistics
+
+!/stats/images/web_stats_icon.png!:/stats/visualization
+
+"IRIS Web Statistics":/stats/visualization

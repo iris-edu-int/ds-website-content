@@ -1,0 +1,23 @@
+h1. Event Catalogs
+
+h2. Search Event Catalogs
+
+Please use the DMC's "FDSN Event web-service &raquo;":http://service.iris.edu/fdsnws/event/1/
+
+h2. Catalog Sources
+
+h4. NEIC PDE
+
+This is the catalog of the United States Geological Survey. "More information &raquo;":http://earthquake.usgs.gov/research/data/pde.php
+ 
+h4. ISC
+
+Bulletin of the International Seismological Centre (ISC). A list of earthquakes two years behind real time. "More information &raquo;":http://www.isc.ac.uk/
+ 
+h4. ANF/ANFR
+
+Earthquake locations published by the USArray "Array Network Facility":http://anf.ucsd.edu/ (ANF). The ANF also publishes event phase readings which are available from the DMC. The @R@ in the ANFR catalog indicates the final *Reviewed* publication.
+
+h4. UofW (University of Washington)
+
+A research catalog of phase picks from the University of Washington. "More information &raquo;":http://www.pnsn.org/

@@ -1,0 +1,47 @@
+h1. Data Problem Reporting (DPR)
+
+* View the DPR "format document"://ds.iris.edu/data/qcdoc
+* View the "entire DPR archive":http://ds.iris.edu/dynamic/dpr/qc.combined.txt
+
+h2. DPR Lookup
+
+*NOTE:* The following view searches are CASE SENSITIVE.
+
+<notextile>
+
+<style type="text/css">
+  label { font-weight:bold; }
+</style>
+<form id="dpr-form" class="form-horizontal" action="/cgi-bin/viewdpr.pl" method="GET">
+  <div class="form-group">
+    <label for="dpr-id" class="col-xs-3 control-label">View a specific DPR</label>
+    <div class="col-xs-9">
+      <input id="dpr-id" name="id" placeholder="DMCQC2007:0014" class="form-control" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="dpr-station" class="col-xs-3 control-label">View by station</label>
+    <div class="col-xs-9">
+      <input id="dpr-station" name="station" placeholder="ANTO" class="form-control" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="dpr-network" class="col-xs-3 control-label">View by network</label>
+    <div class="col-xs-9">
+      <input id="dpr-network" name="network" placeholder="II" class="form-control" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-xs-offset-3 col-xs-9">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+
+</notextile>
+
+h2. DPR Output
+
+<div id="dpr-output">
+  <p>Submit a query. Results displayed here.</p>
+</div>

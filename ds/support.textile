@@ -1,0 +1,35 @@
+h1. Support
+
+h2. Frequently Answered Questions
+
+The "IRIS DMC FAQ":/ds/support/faq/ answers many common questions about using IRIS data services.
+
+For more general questions about IRIS, see the "IRIS HQ FAQ":/hq/about_iris/faqs/.
+
+h2. Technical/Software Support
+
+Discover IRIS and community software, products, web tools and web services.
+
+h3. Community Software
+
+See "SeisCode":https://seiscode.iris.washington.edu/ for help with community-developed software.
+
+h3. IRIS Software and Services
+
+* "IRIS Software":/ds/nodes/dmc/software/downloads/
+* "IRIS Web Services":https://service.iris.edu
+* "IRIS Manuals":/ds/nodes/dmc/manuals/
+* "IRIS Tutorials":/ds/nodes/dmc/tutorials/
+* "IRIS Web Tools":/ds/nodes/dmc/tools/
+** "Earthquake Browser Help":/ieb/help/
+** "Wilber3 Help":/ds/nodes/dmc/manuals/wilber-3/
+** "BUD Help":/bud_stuff/dmc/help.htm
+
+h2. Data at IRIS
+
+See the "Data at IRIS":/ds/nodes/dmc/data/ page for information about data stored at the IRIS DMC.
+
+h2. Other Helpful Resources
+
+* "FDSN":http://www.fdsn.org/ 
+* "SEED Manual (PDF)":http://www.fdsn.org/seed_manual/SEEDManual_V2.4.pdf (PDF)

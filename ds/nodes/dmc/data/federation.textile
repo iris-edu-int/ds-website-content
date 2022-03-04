@@ -1,0 +1,5 @@
+h1. FDSN Web Service Federation
+
+"Many data centers"://www.fdsn.org/webservices/datacenters/ have adopted "FDSN web services"://www.fdsn.org/webservices/ as a mechanism for delivering data.
+
+The IRIS "fedcatalog service"://service.iris.edu/irisws/fedcatalog/1/ provides a way to find and download data across multiple data centers. It can be used directly or through tools like "ObsPy":http://docs.obspy.org/packages/obspy.clients.fdsn.html#basic-routing-clients-usage.

@@ -1,0 +1,92 @@
+h1. Simple ASCII
+
+h2. Overview
+
+Simple ASCII is a text column representation timeseries data that IRIS DMC now provides. This representation makes it very simple to import into other utilities such as spreadsheets and mathematical analysis programs. There are two kinds of Simple ASCII representation:
+
+* *SLIST*: single column listing of sample values with only a starting time index for the evenly spaced samples.
+* *TSPAIR*: double column listing, with each sample value preceded by a time stamp.
+
+The sample value listings are preceded by a header, which describes the station, channel, sample rate, data format, and the numeric type of the sample representation. An example is shown here:
+
+<pre>TIMESERIES IU_ANMO_00_BHZ_M, 288000 samples, 20 sps, 2010-02-27T06:30:00.019538, TSPAIR, INTEGER, COUNTS
+2010-02-27T06:30:00.019538  -47237
+2010-02-27T06:30:00.069538  -47304
+2010-02-27T06:30:00.119538  -47367
+2010-02-27T06:30:00.169538  -47430
+2010-02-27T06:30:00.219538  -47499
+2010-02-27T06:30:00.269538  -47572
+2010-02-27T06:30:00.319538  -47653
+2010-02-27T06:30:00.369538  -47747
+2010-02-27T06:30:00.419538  -47844
+2010-02-27T06:30:00.469538  -47941
+2010-02-27T06:30:00.519538  -48049
+2010-02-27T06:30:00.569538  -48170
+2010-02-27T06:30:00.619538  -48293
+2010-02-27T06:30:00.669538  -48419
+2010-02-27T06:30:00.719538  -48543
+2010-02-27T06:30:00.769538  -48668
+2010-02-27T06:30:00.819538  -48796
+[......cut here for brevity.....]</pre>
+
+h2. Detailed description
+
+Each contiguous time series segment (no gaps or overlaps) is represented with a header line followed by data samples in one of two styles: either sample lists or time-sample pairs.  There are no restrictions on how the segments are organized into files, a file might contain a single segment or many, concatenated segments either for the same channel or many different channels.
+
+Header lines have the general form:
+
+@"TIMESERIES SourceName, # samples, # sps, Time, Format, Type, Units"@
+
+Header field descriptions:
+
+table(table table-bordered table-striped).
+|_. Field|_. Description|
+|SourceName|"Net_Sta_Loc_Chan_Qual", no spaces, quality code optional|
+|# samples|Number of samples following header|
+|# sps|Sampling rate in samples per second|
+|Time|Time of first sample in ISO YYYY-MM-DDTHH:MM:SS.FFFFFF format|
+|Format|'SLIST' (sample list) or 'TSPAIR' (time-sample pair)|
+|Type|Sample type 'INTEGER', 'FLOAT' or 'ASCII'|
+|Units|Units of time-series, e.g. "Counts":http://ds.iris.edu/ds/nodes/dmc/kb/questions/201/, M/S, etc., should not contain spaces|
+
+Example header (no line wrapping):
+
+<pre>TIMESERIES NL_HGN_00_BHZ_R, 11947 samples, 40 sps, 2003-05-29T02:13:22.043400, SLIST, INTEGER, Counts</pre>
+
+h3. Sample value format
+
+For the *SLIST* (_sample list_) format, samples are listed in a single column, optionally many columns may be used with the time-series incrementing from left to right and wrapping to the next line.  The time of the first sample is the time listed in the header.
+
+For the *TSPAIR* (_time-sample pair_) format, each sample is listed on a separate line with a specific time stamp in the same ISO format as used in the header line.
+
+h4. Example SLIST format:
+
+<pre>TIMESERIES NL_HGN_00_BHZ_R, 12 samples, 40 sps, 2003-05-29T02:13:22.043400, SLIST, INTEGER, Counts
+2787
+2776
+2774
+2780
+2783
+2782
+2776
+2766
+2759
+2760
+2765
+2767</pre>
+
+h4. Example TSPAIR format:
+
+<pre>TIMESERIES NL_HGN_00_BHZ_R, 12 samples, 40 sps, 2003-05-29T02:13:22.043400, TSPAIR, INTEGER, Counts
+2003-05-29T02:13:22.043400  2787
+2003-05-29T02:13:22.068400  2776
+2003-05-29T02:13:22.093400  2774
+2003-05-29T02:13:22.118400  2780
+2003-05-29T02:13:22.143400  2783
+2003-05-29T02:13:22.168400  2782
+2003-05-29T02:13:22.193400  2776
+2003-05-29T02:13:22.218400  2766
+2003-05-29T02:13:22.243400  2759
+2003-05-29T02:13:22.268400  2760
+2003-05-29T02:13:22.293400  2765
+2003-05-29T02:13:22.318400  2767</pre>

@@ -1,0 +1,7 @@
+h1. Notices
+
+A list of helpful notices for users of the IRIS Data Management Center (DMC) website:
+
+* "Deprecated Software":/ds/nodes/dmc/notices/deprecated-software/ : Are you looking for some software that used to be hosted on the IRIS DMC website?
+
+* "Deprecated Products":/ds/nodes/dmc/notices/deprecated-products/ : Are you looking for some products that used to be hosted on the IRIS DMC website?

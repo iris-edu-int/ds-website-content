@@ -1,0 +1,29 @@
+h1. EarthScope Statistics
+
+h2. EarthScope archiving and distribution at the DMC
+
+_updated May 2016_
+
+* EarthScope Data Holdings ("PDF":/files/earthscope/stats/ES-DataHoldings.pdf)
+* EarthScope Shipments in Terabytes ("PDF":/files/earthscope/stats/ES-Terabytes.pdf)
+* USArray Shipments by Interface ("PDF":/files/earthscope/stats/USArray-Interface.pdf)
+* USArray Shipments by Interface, Monthly ("PDF":/files/earthscope/stats/USArray-Interface_byMonth.pdf)
+* USArray Shipments by Interface, by Year ("PDF":/files/earthscope/stats/USArray-Interface_byYear.pdf)
+* USArray Data Holdings ("PDF":/files/earthscope/stats/USArray-DataHoldings.pdf)
+* USArray Station Days ("PDF":/files/earthscope/stats/USArray-StaDays.pdf)
+
+h2. USArray quarterly gap and continuity metrics
+
+p(alert alert-info). (3rd Quarter 2009 - 4th Quarter 2014)
+
+* "Gaps":/files/earthscope/usarray/qc/quarterly-gaps.htm (number of gaps per station-day in histogram plots)
+* "Continuity":/files/earthscope/usarray/qc/quarterly-continuity.htm (longest contiguous data segment per month per station in histogram plots)
+
+h2. USArray network availability
+
+p(alert alert-info). (% uptime across the network in 1- and 3-month rolling averages)
+
+
+* Permanent (Backbone) Array ("JPG":/files/earthscope/stats/PerfMetrics-BB.jpg|"PDF":/files/earthscope/stats/PerfMetrics-BB.pdf) _updated January 2014_
+* Transportable Array ("JPG":/files/earthscope/stats/PerfMetrics-TA.jpg|"PDF":/files/earthscope/stats/PerfMetrics-TA.pdf) _updated January 2014_
+* Full (Composite) Array ("JPG":/files/earthscope/stats/PerfMetrics-USArray.jpg|"PDF":/files/earthscope/stats/PerfMetrics-USArray.pdf) _updated January 2014_ 
