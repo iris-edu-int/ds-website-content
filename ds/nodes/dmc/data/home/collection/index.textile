@@ -5,7 +5,7 @@ h1. Data Collection
 : "List of network codes":http://www.fdsn.org/networks/
 ; Submitting data
 : "Submitting SEED data":/ds/nodes/dmc/data/submitting/
-: "Submitting OBSIP data":/ds/nodes/dmc/forms/obsip-data-submission/
+: "Submitting OBSIC data":/ds/nodes/dmc/forms/obsip-data-submission/
 : "Submitting assembled data":/ds/nodes/dmc/forms/assembled-id/
 : "Submitting data FAQ":/hq/about_iris/faqs
 : "Cost calculator for archived data":/ds/nodes/dmc/tools/archive-pricing/

@@ -77,7 +77,7 @@ Legacy software:
 h3. Temporary Deployments
 
 * "Mobilization form":/stations/mob.htm
-* "OBSIP Data Submission form":/ds/nodes/dmc/forms/obsip-data-submission/
+* "OBSIC Data Submission form":/ds/nodes/dmc/forms/obsip-data-submission/
 * "PASSCAL Experiment forms":http://www.passcal.nmt.edu/content/forms
 * "Instrument request form":http://www.passcal.nmt.edu/inst_request
 

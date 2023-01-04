@@ -2,12 +2,12 @@ h1. Restricted Data Access
 
 Since 2002, the IRIS DMC has been committed to managing data by accepting it as close to real-time as possible. The DMC realizes that efficiencies are realized on many levels, from eliminating tape transfers, capitalizing on low-latency delivery protocols, to noticing problems with data, so that they can be corrected while the data collection is still active and relevant information is fresh. If refined metadata is created while data collection is underway, there are fewer problems with the final product, in the end.
 
-But in addition to this, an important function of the DMC is to collect data, sort it, and make it readily available to a wider research community, especially with short-term temporary experiments (such as from PASSCAL, SEIS-UK, OBSIP, SISMOB-FR, and others) that have multiple partners conducting research with new data, and don't want to be burdened with distributing data while the research is underway. For this reason, there are data at the DMC that appear to be available in the holdings, but are restricted.
+But in addition to this, an important function of the DMC is to collect data, sort it, and make it readily available to a wider research community, especially with short-term temporary experiments (such as from PASSCAL, SEIS-UK, OBSIC, SISMOB-FR, and others) that have multiple partners conducting research with new data, and don't want to be burdened with distributing data while the research is underway. For this reason, there are data at the DMC that appear to be available in the holdings, but are restricted.
 
 There are four generalized policies for what data are restricted:
 
 # *IRIS/PASSCAL:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
-# *OBSIP:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
+# *OBSIC:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
 # *SEIS-UK:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open
 # *SISMOB-FR:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open.
 
