@@ -1,4 +1,0 @@
-atlassian-python-api
-textile
-requests
-dotenv
