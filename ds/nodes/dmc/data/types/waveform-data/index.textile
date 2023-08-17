@@ -1,56 +1,6 @@
 h1. Waveform Data
 
-The IRIS DMC archives waveform (time-series) data from stations around the world. The following information highlights passive and active source data available through the DMC.
-
-Time-series data is collected for many types of data, identified using a system of "channel codes":/ds/nodes/dmc/tools/data_channels/.
-
-h2(#passive). Passive Source
-
-<notextile>
-<figure style="float:right">
-  <img src="/media/_s/img/dms/nodes/dmc/data/types/waveform-data/seismogram-sample.jpg" />
-  <figcaption class="text-center">Example waveform data showing an event arrival</figcaption>
-</figure>
-</notextile>
-
-Most of the data archived at the DMC is from broad-band stations recording passive (or natural) source events. Some stations record continuously, some have triggered channels. Most of the passive source data are from permanent station installations and are archived in "SEED":/ds/nodes/dmc/data/formats/#seed format, but some data come to us from temporary installations and in formats other than "SEED":/ds/nodes/dmc/data/formats/#seed.
-
-* "Search our data holdings for passive source data":/SeismiQuery/
-* "How to request passive source data":/forms/webrequest/
-* "Restricted data information":/ds/nodes/dmc/data/types/restricted/
-* "Seismic data sources":/ds/nodes/dmc/data/sources/
-
-h2(#active). Active Source
-
-Active source refers to the creation of seismic events using explosives or mechanical devices like air guns, from either experiments on land or while underway on properly equipped research ships.
-
-Much of the active source data at the DMC is recorded using temporary deployments of instruments provided by the PASSCAL program, but we do have some active source data from other sources. Active source data can come in a variety of formats.
-
-* "How to search for active source data":/SeismiQuery/assembled.phtml
-* "How to request active source data":/data/assembled_request.htm
-* "How to request an official ID number for a contributed assembled set":/data/assembled_ID.htm
-* "Information about temporary deployments":/SeismiQuery/assembled.phtml (including PASSCAL experiments)
-* "Data sources":/ds/nodes/dmc/data/sources/#temp
-
-h2. Waveform Request Tools
-
-IRIS provides a variety of "Web Tools":/ds/nodes/dmc/tools/#data_types=timeseries for requesting waveform data.
-
-h3. Request Waveform Data Using BREQ_FAST
-
-Batch access to the IRIS DMC archive can be obtained by electronically mailing a specially formatted file to the IRIS DMC in Seattle. These are BREQ_FAST files and provide a base level access to the DMC needed by any user. "Learn how to submit a BREQ_FAST Request &raquo;":/ds/nodes/dmc/manuals/breq_fast/
-
-h3. WebRequest - An easy way to submit a request for data
-
-WebRequest is a data request form that allows users to submit BREQ_FAST-formatted data requests to the DMC. "Submit a WebRequest &raquo;":/forms/webrequest/
-
-h3. SOD - Standing Order for Data
-
-SOD is a program that automates tedious data selection, downloading, and routine processing tasks in seismology. It allows you to define your desired data based on earthquakes, recording stations, and the resulting combination of information. SOD then retrieves the data that matches the criteria. "Learn more about SOD &raquo;":http://www.seis.sc.edu/sod/
-
-h3. JWEED
-
-Using JWEED a person can obtain waveforms from any institution which has implemented DHI servers. JWEED now utilizes Web Mapping Services (WMS) for displaying maps. "Learn more about JWEED &raquo;":/ds/nodes/dmc/software/downloads/jweed/
+The IRIS DMC archives waveform ("time-series":/ds/nodes/dmc/data/types/time-series-data/) data from stations around the world. The following information highlights passive and active source data available through the DMC.
 
 h2. Waveform Data Formats
 
@@ -75,4 +25,4 @@ The SAC format comes in fixed binary and ASCII forms and is read by the SAC anal
 
 h2(#assembled). Assembled Data
 
-The IRIS DMC distributes several pre-assembled data sets. Most of these data sets are from temporary deployments and in *formats other than SEED*. An assembled set is accompanied by a data report. We have "assembled data":/SeismiQuery/assembled.phtml from various sources including IRIS PASSCAL (mostly active source), the USGS, and others.
+The IRIS DMC distributes several pre-assembled data sets. Most of these data sets are from temporary deployments and in *formats other than SEED*. An assembled set is accompanied by a data report. We have "assembled data":/mda/?type=assembled from various sources including IRIS PASSCAL (mostly active source), the USGS, and others.

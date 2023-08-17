@@ -8,7 +8,7 @@ RESP files structure SEED response information by rows identifying a SEED Blocke
 
 How to get RESP files (also see the related article below)
 
-The "rdseed":/ds/nodes/dmc/software/downloads/rdseed and "PDCC":/ds/nodes/dmc/software/downloads/pdcc programs can both generate RESP from SEED volumes.  RESP is also available via the "DMC's RESP webservice":http://service.iris.edu/irisws/resp/1/ and can be downloaded through the "Nominal Response Library":/NRL/.  Please see related topics for software and access details.
+The "rdseed":/ds/nodes/dmc/software/downloads/rdseed and "PDCC":/ds/nodes/dmc/software/downloads/pdcc programs can both generate RESP from SEED volumes.  RESP is also available via the "DMC's RESP webservice":http://service.iris.edu/irisws/resp/1/ and can be downloaded through the "Nominal Response Library":/ds/nrl/.  Please see related topics for software and access details.
 
 h2. What are the fields in a RESP file?
 
@@ -131,6 +131,4 @@ Since the poles-zeros file written by rdseed contains a constant that has alread
 
 h2. Links
 
-* "Query for RESP using the SeismiQuery BREQ_FAST form":http://www.iris.edu/SeismiQuery/breq_fast.phtml
 * "Read about the IRIS RESP Service":http://service.iris.edu/irisws/resp/docs/1/help/
-

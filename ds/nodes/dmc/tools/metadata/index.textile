@@ -1,10 +1,3 @@
 h1. Metadata
 
-* "Use the Tools wizard":/ds/nodes/dmc/tools/
-
-_Metadata_ is *data about data content* and is critical for analysis of timeseries data such as seismic data. IRIS has various web-based tools that allow users to query, view, and download metadata.
-
-* "Dataless SEED":/data/dataless.htm : A dataless SEED volume contains the metadata for a request only.
-* "Meta Data Aggregator (MDA)":/mda : View metadata summaries from the IRIS DMC database.
-* "SeismiQuery":/SeismiQuery/ : Pre-formatted database queries that allow users to access data and information stored in the DMC Oracle database.
-* "Virtual Networks":/vnets : A virtual network is a group of stations and/or seismic networks, representing an affiliation that goes beyond the traditional bounds of seismic networks to represent an umbrella organization or initiative.
+See "Metadata":/ds/nodes/dmc/data/types/metadata/

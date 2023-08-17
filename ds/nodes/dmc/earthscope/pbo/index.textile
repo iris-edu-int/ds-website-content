@@ -39,9 +39,7 @@ IRIS distributes near-real time miniSEED data via BUD. "Click here to access rea
 
 h3. SEED Data Requests
 
-Waveform data from the PB network are available in SEED format. Several tools provide access to SEED format data at IRIS for querying the archives and allowing data requests.
-
-"See what PBO data are available using SeismiQuery &raquo;":/SeismiQuery/channel.htm
+Waveform data from the "PB network":/mda/PB/ are available in SEED format. Several tools provide access to SEED format data at IRIS for querying the archives and allowing data requests.
 
 The table below shows typical @Network@, @Location@ Identifiers and @Channel@ Codes:
 
@@ -53,9 +51,7 @@ table(table table-bordered table-striped).
 
 @*@ = wildcard
 
-*Note:* other channels are available, consult "SeismiQuery":/SeismiQuery/channel.htm for details.
-
-PBO data is available through all "DMC request mechanisms":/ds/nodes/dmc/tools/. A simple way to make small requests is by using "WebRequest":/data/WebRequest.htm or install the "JWEED client":/ds/nodes/dmc/software/downloads/jweed for event based or real time data viewing.
+PBO data is available through all "DMC request mechanisms":/ds/nodes/dmc/tools/. A simple way to make small requests is by using "WebRequest":/ds/nodes/dmc/forms/breqfast-request/.
 
 h2. Strainmeter Products
 

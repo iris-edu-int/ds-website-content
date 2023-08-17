@@ -40,7 +40,7 @@ h2. To Use
 
 OpenSSL has a lot of command options, and a wide array of cryptographic tools available. The IRIS DMC is currently making use of the _DES CBC_ encryption algorithm (Data Encryption Standard - Cypher Block Chaining) due to its symmetric encrypt/decrypt capacity for ease of use by our data recipients. This basically means that we can use the same password to encrypt the data as the user uses to decrypt the data. Simpler bookkeeping for both sides.
 
-As an authorized recipient of restricted data from IRIS, you will be provided with a password specifically tied to the restricted network identifier. All you need to do is supply the password, labeled below as @{passwd key}@ in order to decrypt the data. Here is the usage pattern:
+You can view and refresh your password from the "Data Access":/ds/license/user-data/ area of your user account. All you need to do is supply the password, labeled below as @{passwd key}@ in order to decrypt the data. Here is the usage pattern:
 
 <pre>openssl enc -d -des-cbc -salt -in {seed.openssl} -out {seed} -pass pass:{passwd key}</pre>
 

@@ -1,0 +1,5 @@
+h1. JWEED Request
+
+*The JWEED software package is no longer distributed.*
+
+An open source Python project with similar functionality is available at "$":https://github.com/iris-edu/pyweed. This is an open source project and freely distributed.

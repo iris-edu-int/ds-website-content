@@ -24,7 +24,7 @@ table(table table-bordered table-striped).
 |2009|Data Products Working Group formed and the Charge was developed. Product development group formed with the hiring of one product specialist and allocation of management and software engineer resources.|DP|
 |2009|Information Services Coordinator (Webmaster) position becomes integrated with the Software Group|IT|
 |2009|5 ^th^ generation of storage is purchased - the Isilon Systems RAID cluster with higher capacity disk trays, enabling disk storage for the doubling of distributed data seen anually|DM|
-|2006|IRIS participates in the EarthScope Portal project, combining USArray data with the SAFOD, PBO, and OBSIP program data in a co-operative effort. The Software Group begins developing a data product catalog system for USArray|IT|
+|2006|IRIS participates in the EarthScope Portal project, combining USArray data with the SAFOD, PBO, and OBSIC program data in a co-operative effort. The Software Group begins developing a data product catalog system for USArray|IT|
 |2005|IRIS DMC hires a new Director of Software Engineering|IT|
 |2005|4 ^th^ generation of storage is purchased - RAID disk from Isilon Systems|DM|
 |2004|The USArray data pulse begins|N/A|

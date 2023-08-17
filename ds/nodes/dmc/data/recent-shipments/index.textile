@@ -1,3 +1,3 @@
-h1. Recent shipments (obsolete)
+h1. Recent shipments
 
-<!-- This page is now hardcoded in Django -->
+This service has been disabled.

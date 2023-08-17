@@ -1,0 +1,5 @@
+h1. Restricted Data Registration
+
+p(alert alert-info). *Please use the new data licensing system!*  
+Data licensing is moving to a system managed through authentication. Instead of filling in this form,  "Register/Log in":/account/ using your email address and visit your "Data Access":/ds/license/user-data/ page. From there you can view your restricted data access permissions and request new ones.  
+(This form will continue to function during this transition.)

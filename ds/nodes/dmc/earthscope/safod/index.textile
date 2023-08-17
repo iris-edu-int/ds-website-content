@@ -26,7 +26,7 @@ There are three basic data sets contained in these recordings.
 
 h2. Requesting SAFOD Data from the Assembled Holdings at the DMC
 
-Users can view the Assembled SAFOD data sets from our "SeismiQuery page":/SeismiQuery/assembled.phtml
+Users can view the Assembled SAFOD data sets from our "MDA page":/mda/?type=assembled
 
 Search using report no. *05-022* or the nickname *SAFOD*. This is the main data set described in the "Readme file":/data/reports/2005/05-022/SAFOD_P-GSI_Readme.pdf. *The total volume exceeds 2 TeraBytes (TB)*, so you may wish to contact the IRIS DMC first.
 

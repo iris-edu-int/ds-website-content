@@ -7,38 +7,39 @@ But in addition to this, an important function of the DMC is to collect data, so
 There are four generalized policies for what data are restricted:
 
 # *IRIS/PASSCAL:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
-# *OBSIC:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
+# *OBSIP:* The policy is that 2 (two) years after the last instrument is pulled from the field, data should become open.
 # *SEIS-UK:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open
 # *SISMOB-FR:* The policy is that 3 (three) years after the last instrument is pulled from the field, data should become open.
 
-h2. How can you determine if data are restricted?
+h2. How can I determine if data are restricted?
 
 The "Metadata Aggregator":/mda has this information posted. Mouse over the key in the upper right hand corner and see the key expand to look like this:
 
-<notextile>
-  <figure>
-    <img src="/media/_s/img/dms/nodes/dmc/data/types/restricted/mda-legend.png" />
-    <figcaption class="text-center"><strong>Figure 1:</strong> The Meta Data Aggregator legend</figcaption>
-  </figure>
-</notextile>
+!mda-restricted.png!
 
-h2. How can I determine who ran the experiment (Principal Investigator's or PI's) to know whether I can ask for access?
+h2. How do I see what restricted data I can access?
 
-There is a list of experiments for the IRIS/PASSCAL deployments with this information located at:
+Log in to your account and visit your "Data Access":/ds/license/user-data/ page. It will show a list of restricted datasets to which you have access.
 
-"http://ds.iris.edu/data/passcal/latest.pdf":/data/passcal/latest.pdf
+!restricted-data-access.png!
 
-This is updated monthly. At this time, there is no spreadsheet with this information for other non-IRIS groups.
+h2. How do I request access to restricted data?
 
-h2. How can I register to access data should I have been given the password for any given network of restricted data?
+On your "Data Access":/ds/license/user-data/ page select a network to request access. On the following page you will be asked for more details about your request.
 
-"Register here &raquo;":/ds/nodes/dmc/forms/restricted-data-registration/
+!request-data-access.png!
+
+This will send a request to the Principal Investigators (PIs) who will review your request. If your request is approved you will be notified by email.
+
+h2. How do I request restricted data?
+
+The usual access point is the "fdsnws-dataselect /queryauth API":https://service.iris.edu/fdsnws/dataselect/docs/1/help/#restricteddata and tools based on it. This uses a username/password system.
+
+Your username is your *registered email address* and your password is a token which you can manage from your "Data Access":/ds/license/user-data/ page.
 
 h2. What happens with restricted data that are requested to be shipped using ftp?
 
-IRIS places data on an anonymous ftp disk located at *ftp.iris.washington.edu:/pub/userdata* that is segregated by the @.NAME@ field entry that was used when making requests. So that the data cannot be downloaded and used by non-participating researchers, you must be able to decrypt the data using openssl, and the instructions for this, with examples, is located at:
-
-"http://ds.iris.edu/ds/nodes/dmc/data/types/restricted/encrypted/":/ds/nodes/dmc/data/types/restricted/encrypted/
+IRIS places data on an anonymous ftp disk located at *ftp.iris.washington.edu:/pub/userdata* that is segregated by the @.NAME@ field entry that was used when making requests. So that the data cannot be downloaded and used by non-participating researchers, you must be able to decrypt the data using openssl, and the instructions for this, with examples, is located "here":/ds/nodes/dmc/data/types/restricted/encrypted/.
 
 h2. If a Network is listed as being "partially open", meaning just select stations are without restriction to use, how do I know which they are?
 

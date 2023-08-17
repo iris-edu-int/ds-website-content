@@ -4,7 +4,7 @@ The DMC collects and archives a number of different types of data.
 
 h2. Time Series Data 
 
-"Time Series Data":/ds/nodes/dmc/data/types/waveform-data/ (or Waveform Data) includes sensor recordings of a variety of (primarily seismological) measurements.  This is the primary type of data available from the DMC.
+"Time Series Data":/ds/nodes/dmc/data/types/time-series-data/ (or Waveform Data) includes sensor recordings of a variety of (primarily seismological) measurements.  This is the primary type of data available from the DMC.
 
 <div class="alert alert-info">
 *Learn more:* "Time Series Data Channel Wizard":/ds/nodes/dmc/tools/data_channels/: Time-series data is collected for many types of data, identified using a system of channel codes. Learn about these channel codes using this online tool.

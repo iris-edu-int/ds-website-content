@@ -1,0 +1,30 @@
+h1. SeismiQuery is disabled
+
+SeismiQuery has been disabled while we investigate security concerns with SeismiQuery interfaces.
+
+Update July 18, 2022: The security concerns have proven to be valid, potentially severe, and difficult to mitigate. We do not have an estimate at this time as to when Seismiquery can be restored, either in full or in part.
+
+; Are you looking for information on waveform data availability?
+: "$":https://service.iris.edu/fdsnws/availability/1
+: "$":https://service.iris.edu/ph5ws/availability/1
+
+; Are you searching for station and channel metadata?
+: "$":https://service.iris.edu/fdsnws/station/1
+: "$":https://service.iris.edu/ph5ws/station/1
+: "$":https://ds.iris.edu/mda 
+
+; Are you searching for assembled datasets?
+: "$":https://ds.iris.edu/mda/?type=assembled
+
+; Do you want to find data around an earthquake?
+: "$":https://ds.iris.edu/wilber3
+
+; Do you want to search for stations on a map?
+: "$":https://ds.iris.edu/gmap
+
+; Do you want to see waveforms for data up to real time?
+: "$":https://www.iris.edu/app/station_monitor/ 
+: "$":https://service.iris.edu/irisws/timeseriesplot/1 
+
+; Is there something else you are searching for?
+: Send your questions to: "$":webmaster@iris.edu

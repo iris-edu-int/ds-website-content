@@ -1,0 +1,170 @@
+h1. Identity Management
+
+h2. Welcome to the IRIS Identity Management Landing Page
+
+Here you will find explanations and the latest updates on our identity-enhanced data access methods that allow us to better serve you...with a personal touch.  Please read below for more information on what we are doing and what you can do to connect as an identified user to our seismic data web services.  Please keep in mind that this system is a work in progress, so keep checking back here to follow up on the latest changes and additions.
+
+h5.  Shortcut to examples
+
+Please refer to the "Web Service Authentication Examples":http://ds.iris.edu/ds/identitymanagement/wsauth_examples page for command line examples of use.
+
+h3. What is Identity Management
+
+Identity Management is a system that provides login facilities to track user activity and permit authorized access to restricted data sets and other privileged features.  Working in partnership with "UNAVCO":https://www.unavco.org/, IRIS intends to place all forms of data access under user identification; and all you have to do is bring some form of ID, whether that is an account you create with us or one you bring from another institution.
+
+h3. Why is IRIS Making Use of Identity Management?
+
+As awardees of a substantial NSF Large Facility grant, both IRIS and UNAVCO been given a charge to Record and Report:
+
+* *WHO* is requesting data
+* *WHAT* data is being requested, and
+* *FOR WHAT* purpose
+
+SAGE and GAGE have jointly developed a system for capturing better information about how our services are being used.  The downstream benefits for identified users can be summed up as:
+
+* _Personalized_ access
+* _Security_ through login credentials
+* _Permissions_ to special resources and services
+* _Customized_ assistance with access issues
+* _Consistency_ in identified representation in system
+* _Interoperability_ with other systems requiring identification
+
+h3. Constraints for Implementation
+
+Our solutions must:
+
+* Remain easily accessible to users and existing applications
+* Remain compliant to community access standards
+* Require very little change to existing software
+* Continue to support existing restricted data protections
+* Provide a definable path for implementation in the SAGE/GAGE joint data system.
+
+h3. What IRIS is Currently Doing
+
+Users of IRIS services will find:
+* A Single Sign-On (SSO) Gateway to Federated Identity Providers (IdPs)
+** We are using a shared Auth0 Login Portal with UNAVCO.
+** Users register in the Auth0 Login Portal prior to first login.
+* Features supporting your login identity such as:
+** Your IRIS Web Page User Profile
+** Access to restricted data sets
+** Self-service updates of networks and experiments for PIs.
+** Subscriptions to mailing lists
+** Identified data access via web services
+
+h3.  Bring Your Own Identity
+
+The Auth0 login portal allows users to log in to IRIS by way of CILogon, Google, or a custom account you create with Auth0.  It's your choice what to use.  IRIS and UNAVCO both follow the Single Sign On model for access sessions.
+
+
+!IRISUNAVCO_login_screen_1.png! !OpeningPresentation1.jpg!
+
+h3.  Logging in to IRIS
+
+For more than a decade, IRIS has offered a login option for users to permit access to certain features on the web, including mailing lists.  This means that many of our users have an existing account with IRIS that they want to preserve.
+
+To do so with our new identity system, please register using the same email address for your Auth0 login.  All other users can start fresh with new login credentials.  You only have to use a valid email address for your username.
+
+Logging into IRIS starts the top of the IRIS Data Services home page "https://ds.iris.edu":http://ds.iris.edu where you find the 'Sign In' link.  You are presented with a page providing three options.
+
+* Log in via the new Auth0 Portal.
+* Log in using a Google Account.
+* Log in using the legacy IRIS path.
+
+!login-page.png!
+
+The Auth0 portal is to become the new login point of access, and the other two options may go away in the near future.
+
+In order to carry your old IRIS account to Auth0, simply login with the same email address as you used on the old IRIS login.  You can also select the identity provider from CILogon that matches your IRIS login email if you can locate it.  So long as your new email address matches to the old, your original account and settings will be found.
+
+Because your login is treated as Single Sign On (SSO), you will only need to login once for an acceptable period of time.  As is normal with web browsers, your credentials will be saved in a cookie on the browser so that each of your activities will remember your logged in state.  _For this reason, we ask that you enable cookies when accessing IRIS web sites._
+
+h3.  Logging in through Auth0
+
+When selecting the Auth0 login portal, you will be offered the choice of using a (email) username and password if you have a UNAVCO-IRIS account through Auth0.  You also have alternative forms of login for accounts you may have elsewhere, including Google, many popular educational institutions, and ORCID.
+
+!IRISUNAVCO_login_screen_1.png!
+
+If you do not already have a pre-existing account to choose from, you can create a new account in Auth0 by selecting the 'Sign Up' link below the red 'Continue' button.  Remember, to keep a linkage to your existing IRIS account, you want to register using that same email address.  You can use a new address, but your current settings and subscriptions at IRIS will not be automatically linked.
+
+
+h3.  Registering Your New Login
+
+The first time you log in to the Auth0 UNAVCO-IRIS portal, you will need to register information about your account.  This account will be used jointly by the UNAVCO and IRIS data services to _authenticate_ and _authorize_ your access to our mutual offerings.  These are two key terms that we use when referring to identity management:
+
+* Authentication = we have verified you are who you say you are.
+* Authorization = we have verified that you have access or permission.
+
+You will be presented with a registration page that asks you for some simple descriptive information about you.  UNAVCO and IRIS will keep this information confidential, as its only use is to supply key demographic information in its performance reports.  Once your registration is complete, your account is ready for use.
+
+!User-Registration-example-1.png!
+!user-registration.png!
+
+h3.  Your Login Profile
+
+When you log in to IRIS through the Auth0 portal, you will be returned to the Data Services page you started on.  Once logged in, you can see your username at the top of the web page.  This is a link to your personal profile at IRIS.
+
+!user-account-summary.png!
+
+Here, you will find a summary of your account allowances and basic profile information.  This is also the place where you can establish your data access credentials (click on the 'Data Access' tab to view).  
+
+h3.  Data Access Controls
+
+The Data Access view in your profile shows three different sections.  Which we will cover below.
+
+h5.  Service Password
+
+In this section, you will find a key generator that is used for authenticating your account with IRIS Web Services.  In the past, IRIS allowed users to have a fixed password for their accounts, but we are moving to a system that makes use of a time-limited password token for data access.  In the future, IRIS will require nearly all data access to be authenticated and we will provide updates on what that timeline looks like down the road.
+
+!user-service-password_MB0YfNE.png!
+
+If a password does not already exist in your profile, click the _Refresh Web Service_ Password button and a 16-character code will be generated for you.  There is a selection dropdown that allows you to specify how long you would like this token to be effective.  Shorter time windows are considered more secure.  When a token expires, you can Refresh to get a new one.
+
+For convenience, a .netrc file generator has been provided here.  Since many of the web service clients recognize the .netrc file as a reasonably secure alternative to entering your credentials on the command line, we generate the file entry for you.
+
+Examples of using these credentials are provided on the "Web Service Authentication Examples":http://ds.iris.edu/ds/identitymanagement/wsauth_examples page.
+
+h5.  SSL Password
+
+!user-ssl-password.png!
+
+The SSL Password is a special token for batch data file deliveries that have been encrypted for you.  The primary example of this is a BREQ_FAST data delivery for restricted data.  This is your key to unlock the data once you have downloaded it.
+
+More information on using the SSL Password can be found on the "Encrypted Data":https://ds.iris.edu/ds/nodes/dmc/data/types/restricted/encrypted/ page.
+
+h5.  Restricted Data Access
+
+Here, you will find the section highlighting networks for which you are a Principal Investigator or are an Authorized User.
+
+!user-restricted-data.png!
+
+To apply for access to a data set that you are not yet authorized, find the name of the experiment in the dropdown listing and select the Request Access button.
+
+h3.  Traditional IRIS Data Access
+
+* IRIS offers access to data through a few different web services.
+** FDSNWS and PH5 Dataselect (for Level 1 data)
+** IRISWS Timeseries (for transformation tools on Level 1 miniSEED)
+** Timeseriesplot (for plotting traces to a downloadable image)
+* Each of these services offers the oft-used ‘query’ endpoint.
+@service.iris.washington.edu/fdsnws/dataselect/1/query?net=IU&sta=ANMO……@
+* This endpoint is anonymous, as in the user does not identify themselves.
+* Each of these services also offers a ‘queryauth’ endpoint.
+@http://service.adc1.iris.edu/fdsnws/dataselect/1/queryauth?net=US&sta=OXF…@
+* This endpoint requires Digest Authentication.
+* IRIS uses this to authorize access to specific restricted datasets.
+
+
+h3.  Your Privacy
+
+* Your personal information is kept confidential.
+* We count the number of unique users that visit our services.
+* We tabulate the geographic locations of our visitors.
+* We attribute usage rates to sector of work.
+* We tie restricted data allowances to your credentials.
+
+IRIS also has general privacy policies that are shared with the public.  You can find this in the footer of all major IRIS web pages.  "Privacy Policy link":https://www.iris.edu/hq/policy/privacy
+
+h3.  The Latest Updates
+
+You can find the latest updates to this page in the text boxes below.

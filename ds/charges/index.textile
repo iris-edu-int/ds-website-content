@@ -1,12 +1,3 @@
 h1. Charges
 
-The Data Services Standing Committee ("DSSC":/hq/about_iris/governance/ds) operates in an oversight capacity to ensure that the IRIS Data Management System (DMS) is effective in archiving and making available data from the "GSN":/hq/about_iris/governance/gsn and "PASSCAL":/hq/about_iris/governance/passcal programs, as well as other data.
-
-# Develop and maintain policies that ensure that data flow into the DMC in a timely fashion from the Data Collection Centers (in the case of GSN data) and from individual investigators (in the case of PASSCAL data). These duties will be closely coordinated with the GSN Steering Committee and PASSCAL Steering Committee respectively.
-# Insure completeness of the data archive. Develop policies for the archival of non-IRIS data, particularly "FDSN":http://www.fdsn.org data needed to insure the global recording of teleseismic events by broadband seismometers.
-# Develop, set and maintain data quality standards for GSN, PASSCAL, as well as other data stored by the DMC.
-# Ensure that users have easy and rapid access to the data archive.
-# Advise in the development of software tools for the display and processing of seismic data by users.
-# Provide oversight for the operation of the IRIS DMC, the IRIS/IDA DCC, the IRIS/USGS DCC, and other DMS components as needed.
-# Develop new initiatives to enhance the effectiveness of the DMS.
-# Advise the Program Manager and the IRIS President on program planning and the yearly budgets.
+Moved to "$":https://www.iris.edu/hq/about_iris/governance/ds

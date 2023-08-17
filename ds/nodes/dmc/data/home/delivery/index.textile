@@ -13,12 +13,11 @@ h3. Time Series Data
 
 ; Web and Email-based Tools
 : "BREQ_FAST":/ds/nodes/dmc/manuals/breq_fast/ takes requests via email and delivers data via FTP/HTTP.
-: "SeismiQuery":/SeismiQuery/ provides low-level access to IRIS data via web forms.
 : "Wilber3":/wilber3/ offers a rich UI for acquiring data related to a given seismic event.
 : See our "full set of web tools":/ds/nodes/dmc/tools/.
 ; Downloadable Software
 : "SAC":/ds/nodes/dmc/software/downloads/sac/ (Seismic Analysis Code) is a general purpose interactive program designed for the study of sequential signals, especially time series data.
-: "JWEED":/ds/nodes/dmc/software/downloads/jweed/ is a Java program for requesting data related to events.
+: "PyWEED":/ds/nodes/dmc/software/downloads/pyweed/ is a Python GUI program for requesting data related to events.
 : "SEEDLink":/ds/nodes/dmc/services/seedlink/ is a protocol for streaming real-time data.
 : See our "full set of software tools":/ds/nodes/dmc/software/.
 

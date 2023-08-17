@@ -4,13 +4,13 @@ Metadata include station siting, instrumentation, and earthquake information whi
 
 h2. Tools
 
-"Online tools for exploring metadata holdings":/ds/nodes/dmc/tools/metadata/
+"Online tools for exploring metadata holdings":/ds/nodes/dmc/tools/#data_types=metadata
 
 h2. Formats
 
 h3(#dataless_seed). Dataless SEED
 
-"Dataless SEED":/ds/nodes/dmc/data/formats/#dataless_seed is a subset of the SEED data format, and includes instrument responses, instrument coordinates, compression type, etc.. A dataless volume is commonly used to populate a metadata database or in combination with "MiniSEED":/ds/nodes/dmc/data/formats/#mini-seed to convert time series to an alternate format such as "full SEED":/ds/nodes/dmc/data/formats/#seed (using the IRIS DMC's "rdseed":/ds/nodes/dmc/software/downloads/rdseed/ software).
+"Dataless SEED":/ds/nodes/dmc/data/formats/#dataless_seed is a subset of the SEED data format, and includes instrument responses, instrument coordinates, compression type, etc.. A dataless volume is commonly used to populate a metadata database or in combination with "MiniSEED":/ds/nodes/dmc/data/formats/#miniseed to convert time series to an alternate format such as "full SEED":/ds/nodes/dmc/data/formats/#seed (using the IRIS DMC's "rdseed":/ds/nodes/dmc/software/downloads/rdseed/ software).
 
 h3(#stationxml). StationXML
 

@@ -1,14 +1,8 @@
 h1. Job Announcements
 
-IRIS maintains a mailing list and web page for employment opportunities in the seismological community. 
+EarthScope maintains a mailing list for employment opportunities in the seismological community. 
 
-h2. Looking for job listings
-
-Job postings are sent via the "Job Announcements":/message-center/topic/jobs/ mailing list, and listed on the "IRIS website":/hq/employment.
-
-h2. Posting a job listing
-
-You can post a job by sending email to "$":mailto:jobs@lists.ds.iris.edu, or by filling out our "web form":/ds/nodes/dmc/forms/job_posting/. Your posting will be reviewed and then forwarded to the subscriber list and posted on the web page.
+https://groups.google.com/a/earthscope.org/g/jobs
 
 h3. Job posting guidelines
 

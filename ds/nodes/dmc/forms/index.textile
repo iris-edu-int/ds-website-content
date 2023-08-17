@@ -64,14 +64,13 @@ h3. Download IRIS Data Services Software
 * "PQLX":/ds/nodes/dmc/forms/pqlx/
 * "SAC":/ds/nodes/dmc/forms/sac/
 
-Many software packages are distributed through the "IRIS GitHub pages":https://github.com/iris-edu/.
+Many software packages are distributed through the "IRIS GitHub pages":https://github.com/iris-edu/
 
 IRIS hosts a number of third-party and legacy software projects on the "SeisCode":http://seiscode.iris.washington.edu/  community software repository.
 
 Legacy software:
 
 * "Jrdseed":/ds/nodes/dmc/forms/jrdseed/
-* "JWEED":/ds/nodes/dmc/forms/jweed/
 * "rdseed":https://github.com/iris-edu-legacy/rdseed
 
 h3. Temporary Deployments

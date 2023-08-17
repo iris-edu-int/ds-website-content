@@ -13,10 +13,6 @@ h2. Searchable Product Depository (SPUD)
 
 The _Searchable Product Depository_ (SPUD) is the IRIS DMC's primary data product management system. Complementing the DMC's SEED and assembled data archives, which contain time series recordings, the SPUD system primarily contains derivative data products of other types (images, movies, etc.) created either at the DMC or by members of the community. "Access SPUD »":/spud/
 
-h2. JWEED
+h2. PyWEED
 
-_JWEED_ is a map-based seismogram request tool. It enables the user to select events and stations and then download the data to their computer. JWEED is platform-independent and allows the user to access information from remote data centers, using the "IRIS Web Services":/ws/, and from local file sources that the user has generated and downloaded. "Read More »":/ds/nodes/dmc/manuals/jweed/
-
-h2. SeismiQuery
-
-_SeismiQuery_ is the web interface to our Oracle database. SeismiQuery is made up of several search utilities, including one that allows the user to create station and event files. Users are encouraged to search the database before making a request in order in ensure that we have the data of interest. "Read More »":/SeismiQuery/
+_PyWEED_ is a map-based seismogram request tool. It enables the user to select events and stations and then download the data to their computer. PyWEED is platform-independent and allows the user to access information from remote data centers, using the "IRIS Web Services":http://service.iris.edu/. "Read More »":/ds/nodes/dmc/manuals/pyweed/

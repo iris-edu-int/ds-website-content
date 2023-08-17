@@ -2,7 +2,7 @@ h1. Seismic Data Sources
 
 h2(#perm). Permanent Networks
 
-Permanent networks provide "passive":/ds/nodes/dmc/data/types/waveform-data/#passive data only.
+Permanent networks provide "passive":/ds/nodes/dmc/data/types/time-series-data/ data only.
 
 h3. Global Seismographic Network 
 
@@ -22,7 +22,7 @@ h3. Regional Networks
 
 Several regional networks contribute data to the IRIS archive or have open access to their data sets. 
 
-"List of regional networks":/ds/nodes/dmc/data/sources/regional/
+"Listing of regional network data":/mda/_US-REGIONAL/
  	 
 h3. Virtual Networks at the IRIS DMC
 
@@ -32,7 +32,7 @@ A virtual network is a group of stations and/or seismic networks.
  	 
 h2(#temp). Temporary Networks and Experimental Data
 
-Temporary networks may include both "passive":/ds/nodes/dmc/data/types/waveform-data/#passive and "active":/ds/nodes/dmc/data/types/waveform-data/#active data.
+Temporary networks may include both "passive and active":/ds/nodes/dmc/data/types/time-series-data/ data.
 
 h3. PASSCAL
 
@@ -46,7 +46,7 @@ IRIS also has an archive of other temporary deployments from several different s
 
 * United States Geological Survey ("USGS":http://earthquake.usgs.gov/)
 * Seismic Equipment InfraStructure in the UK ("SEIS-UK":http://www.le.ac.uk/seis-uk/)
-* U.S. National Ocean Bottom Seismograph Instrument Pool ("OBSIP":http://www.obsip.org/)
+* U.S. National Ocean Bottom Seismograph Instrument Center ("OBSIC":https://obsic.whoi.edu/)
 
 "List of Temporary FDSN Network Codes":http://www.iris.edu/mda/#tnetlist
 "Request a temporary FDSN Network Code":http://www.fdsn.org/networks/request/temp/

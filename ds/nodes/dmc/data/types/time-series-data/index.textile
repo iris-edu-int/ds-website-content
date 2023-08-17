@@ -1,0 +1,25 @@
+h1. Time Series Data
+
+The IRIS DMC archives time series (waveform) data from stations around the world.
+
+!/media/_s/img/dms/nodes/dmc/data/types/waveform-data/seismogram-sample.jpg!
+
+h2. Active vs Passive Source
+
+Passive Source data is collected continuously, and usually monitors natural seismic activity. Often, known events are used to identify segments of data to fetch.
+
+Active Source data usually involves the creation of seismic events using explosives or mechanical devices like air guns. Discrete data sets may be collected and organized around these events.
+
+h2. Data Archives
+
+h3. SEED Archive
+
+This is the primary IRIS archive, containing primarily passive source data in "SEED":/ds/nodes/dmc/data/formats/#seed format. Data channels are organized by "FDSN identifier":https://docs.fdsn.org/projects/source-identifiers/ elements, and primarily accessed through a "data service API":https://service.iris.edu/fdsnws/dataselect/1/.
+
+See: "MDA Networks":/mda/
+
+h2. Assembled Data
+
+Assembled data primarily comes from temporary deployments and in *formats other than SEED*. Data comes from various sources including IRIS PASSCAL (mostly active source), the USGS, and others.
+
+See: "MDA Assembled":/mda/?type=assembled

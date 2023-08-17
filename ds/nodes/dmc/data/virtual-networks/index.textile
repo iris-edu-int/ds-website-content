@@ -14,9 +14,8 @@ For further discussion of virtual networks at the IRIS DMC refer to the followin
 
 h2. Virtual Network Discovery and Browsing
 
-* "MetaData Aggregator (MDA)":/mda Includes a list of public virtual networks (below the traditional networks) in expanded form and combined with station metadata.
+* "MetaData Aggregator (MDA)":/mda/?type=virtualnetwork includes a list of public virtual networks (below the traditional networks) in expanded form and combined with station metadata.
 * "Programmatic Access":http://service.iris.edu/irisws/virtualnetwork/1/ Both virtual network definitions and resolved listings are available from the DMC's virtual network web service.
-* "SeismiQuery Virtual Network Query Form":/SeismiQuery/virtual_net.htm Allows for flexible searching of virtual networks when needed.
 
 h2. Virtual Network Description (VND)
 
@@ -50,4 +49,4 @@ h3. Important points regarding maintenance
 * Any primary or secondary codes must be accompanied by matching @DCC:@ lines indicating a URL for the data center.
 * Only lines starting with a virtual network code or @DCC:@ are parsed from the VND, all other lines are ignored. The "virtual network service":http://service.iris.edu/irisws/virtualnetwork/1/ output includes more lines for informational purposes only.
 
-VNDs can be submitted to the DMC in either MS-Excel (@.xls@) format or comma-separated value (@.csv@) format. XML-based MS-Excel formats, i.e. with a @.xlsx@ extension, are not supported. 
+VNDs can be submitted to the DMC in either MS-Excel (@.xls@) format or comma-separated value (@.csv@) format. XML-based MS-Excel formats, i.e. with a @.xlsx@ extension, are not supported.

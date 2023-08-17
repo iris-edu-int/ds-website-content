@@ -1,5 +1,5 @@
 h1. About
 
-The Quality Assurance (QA) team at the IRIS DMC is tasked with monitoring the quality of the IRIS DMC seismic data archive and providing resources relating to data quality to the earth science community. On this page you will find information on general QA practices, "MUSTANG":http://services.iris.edu/mustang/ metrics and PDFs, and links to QA related products and services at the DMC. 
+The Quality Assurance (QA) team at EarthScope is tasked with monitoring the quality of the EarthScope seismic data archive and providing resources relating to data quality to the earth science community. On this page you will find information on general QA practices, "MUSTANG":http://services.iris.edu/mustang/ metrics and PDFs, and links to QA related products and services at EarthScope. 
 
 "Quality Assurance Mission Statement":http://www.iris.edu/ds/nodes/dmc/about/sections/quality-assurance/

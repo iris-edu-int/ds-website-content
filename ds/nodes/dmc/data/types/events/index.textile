@@ -14,8 +14,6 @@ h3. Event Search Tools
 
 "All Event Tools":/ds/nodes/dmc/tools/#data_types=events
 
-* "Wilber":/wilber/
+* "Wilber":/wilber3/
 * "IEB - IRIS Earthquake Browser":/ieb/
-* "JWEED":/ds/nodes/dmc/software/downloads/jweed
-* "Quake Maps":/quakes/maps.htm
-* "SeismiQuery":/SeismiQuery/sq-eventsmag.htm
+* "PyWEED":/ds/nodes/dmc/software/downloads/pyweed/

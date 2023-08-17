@@ -9,7 +9,7 @@ h1. Data Services
 
 h2. Introduction
 
-IRIS Data Services (DS) has very specific "charges":/ds/charges/ and consists of several components or "nodes". These nodes work together to insure the smooth flow of GSN and PASSCAL data from the stations to the seismological research community.
+IRIS Data Services (DS) has very specific "charges":http://www.iris.edu/hq/about_iris/governance/ds and consists of several components or "nodes". These nodes work together to insure the smooth flow of GSN and PASSCAL data from the stations to the seismological research community.
 
 h2. Data Services Nodes
 
