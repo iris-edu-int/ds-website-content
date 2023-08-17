@@ -7,7 +7,7 @@ h1. News
 <p style="padding-left:1.5em;">Improvements and changes for this release include: 
 1. ability to write metric values to an SQLite database 
 2. addition of MUSTANG metrics sample_rate_resp, sample_rate_channel, max_range 
-3. access to IRIS PH5 archive data, using IRISPH5 alias 
+3. access to EarthScope PH5 archive data, using IRISPH5 alias 
 4. new Jupyter notebook tutorials 
 5. bug fixes and usage improvements 
 6. code port to Python3
@@ -26,15 +26,15 @@ New improvements include:
 </p>
 
 <p style="padding-left:1.5em;">
-MUSTANGular was created and is maintained at the University of Washington by the Pacific Northwest Seismic Network. Thanks go to Kyla Marczewski (primary developer) and Paul Bodin (Network Manager) for making this available not only to IRIS, but also as an open source project on GitHub ("https://github.com/pnsn/mustangular":https://github.com/pnsn/mustangular).
+MUSTANGular was created and is maintained at the University of Washington by the Pacific Northwest Seismic Network. Thanks go to Kyla Marczewski (primary developer) and Paul Bodin (Network Manager) for making this available not only to EarthScope, but also as an open source project on GitHub ("https://github.com/pnsn/mustangular":https://github.com/pnsn/mustangular).
 </p>
 
-* (2021-07-20) IRIS is pleased to announce the release of a new software tool for producing quick data quality reports using MUSTANG-generated metrics, designed for use with PASSCAL experiments and other temporary deployments.  Named PIQQA (PI's Quick Quality Assessment), this tool is the result of a collaborative effort between IRIS Data Services and Instrumentation Services. 
+* (2021-07-20) EarthScope is pleased to announce the release of a new software tool for producing quick data quality reports using MUSTANG-generated metrics, designed for use with PASSCAL experiments and other temporary deployments.  Named PIQQA (PI's Quick Quality Assessment), this tool is the result of a collaborative effort between EarthScope Data Services and Instrumentation Services. 
 
 <p style="padding-left:1.5em;">This recent Data Services Newsletter article provides a nice overview of PIQQA, including an example report:
 "https://ds.iris.edu/ds/newsletter/vol23/no1/533/piqqa-data-quality-reports-for-passcal-experiments/":https://ds.iris.edu/ds/newsletter/vol23/no1/533/piqqa-data-quality-reports-for-passcal-experiments/
 
-<p style="padding-left:1.5em;">PIQQA is open-source and will run on any dataset archived at the IRIS DMC for which MUSTANG metrics have been generated (please bear in mind that there are limits to the amount of metric data that MUSTANG web services can deliver through this tool; multi-year requests for large networks may not be appropriate).  We think PIQQA will be particularly useful for PIs of recent temporary/PASSCAL deployments, who may appreciate a quick overview of the quality of their dataset. PIQQA does not display all MUSTANG metrics, and users interested in exploring additional metrics in greater detail are encouraged to explore additional MUSTANG clients or query MUSTANG directly via web services.
+<p style="padding-left:1.5em;">PIQQA is open-source and will run on any dataset archived at the EarthScope DMC for which MUSTANG metrics have been generated (please bear in mind that there are limits to the amount of metric data that MUSTANG web services can deliver through this tool; multi-year requests for large networks may not be appropriate).  We think PIQQA will be particularly useful for PIs of recent temporary/PASSCAL deployments, who may appreciate a quick overview of the quality of their dataset. PIQQA does not display all MUSTANG metrics, and users interested in exploring additional metrics in greater detail are encouraged to explore additional MUSTANG clients or query MUSTANG directly via web services.
 
 <p style="padding-left:1.5em;">People wishing to use PIQQA may download the source code from theGitHub repository "https://github.com/iris-edu/piqqa":https://github.com/iris-edu/piqqa
 </p>

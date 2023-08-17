@@ -1,6 +1,6 @@
 h1. Data Curation
 
-; "Quality Assurance (QA) at IRIS":/ds/nodes/dmc/quality-assurance/
+; "Quality Assurance (QA) at EarthScope":/ds/nodes/dmc/quality-assurance/
 ; Web Services
 : "Mustang":http://service.iris.edu/mustang/ is a set of web services for retrieving data quality measurements.
 ; Data Problems

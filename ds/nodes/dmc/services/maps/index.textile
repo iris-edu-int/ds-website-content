@@ -1,14 +1,14 @@
-h1. IRIS Mapping Tools
+h1. EarthScope Mapping Tools
 
 The DMC offers several options for viewing network station locations.
 
 h2. Google Map Service (GMAP)
 
-The Google Map generator creates maps based on federated FDSN datacenter metadata holdings. Requesting data directly from the IRIS FedCatalog web service the GMAP tool creates dynamic station maps that can be panned and zoomed. The GMS can produce network, single station or arbitrary station set maps. Users can generate a kml file to view stations in Google Earth.
+The Google Map generator creates maps based on federated FDSN datacenter metadata holdings. Requesting data directly from the EarthScope FedCatalog web service the GMAP tool creates dynamic station maps that can be panned and zoomed. The GMS can produce network, single station or arbitrary station set maps. Users can generate a kml file to view stations in Google Earth.
 
 "GMAP":/gmap | "Learn more &raquo;":/ds/newsletter/vol8/no3/new-web-interfaces-the-metadata-aggregator-mda-and-google-map-service/
 
-h2. IRIS Earthquake Browser (IEB)
+h2. Interactive Earthquake Browser (IEB)
 
 The IEB combines the DMC's large database of earthquakes with the popular Google Maps web interface. The IEB is useful both educationally and as a research tool. With the IEB you can quickly find earthquakes in any region of the globe and then import this information into the GEON Integrated Data Viewer (IDV) where the hypocenters may be visualized in three dimensions. 
 
@@ -16,6 +16,6 @@ The IEB combines the DMC's large database of earthquakes with the popular Google
 
 h2. Metadata Aggregator (MDA)
 
-The MetaData Aggregator (MDA) returns metadata summaries from the IRIS DMC database including data availability and links to further services. Five levels of summary are available: network list, network, station, location and channel.
+The MetaData Aggregator (MDA) returns metadata summaries from the EarthScope DMC database including data availability and links to further services. Five levels of summary are available: network list, network, station, location and channel.
 
 "MDA":/mda | "Learn more &raquo;":/ds/newsletter/vol8/no3/new-web-interfaces-the-metadata-aggregator-mda-and-google-map-service/

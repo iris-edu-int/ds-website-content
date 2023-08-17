@@ -2,7 +2,7 @@ h1. Mars Seismic Catalogue, InSight Mission
 
 h2. Overview
 
-This catalogue includes Martian seismic events as recorded by InSight up to September 30, 2019 / Sol 299 for the InSight mission. Actual files are available at IPGP and IRIS.
+This catalogue includes Martian seismic events as recorded by InSight up to September 30, 2019 / Sol 299 for the InSight mission. Actual files are available at IPGP and EarthScope.
 The citation for the catalogue is:
 
 InSight Marsquake Service (2020). Mars Seismic Catalogue, InSight Mission; V1 2/1/2020. ETHZ, IPGP, JPL, ICL, ISAE-Supaero, MPS, Univ. Bristol. https://doi.org/10.12686/a6

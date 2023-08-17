@@ -25,4 +25,4 @@ The web services group is currently engaged in the following activities:
 * Development of an on-demand synthetic seismogram service based on an archive of empirical Green’s functions
 * Development of a seismogram rotation service
 * Development of SeisCode: a community source code repository and collaboration site
-* Support of IRIS DMC convergence of its technologies to web services
+* Support of EarthScope DMC convergence of its technologies to web services

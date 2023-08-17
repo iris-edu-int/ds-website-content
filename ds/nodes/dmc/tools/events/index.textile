@@ -1,18 +1,18 @@
 h1. Events
 
 * "Use the Tools wizard":/ds/nodes/dmc/tools/#data_types=events
-* "Learn about the types of event data IRIS archives":/ds/nodes/dmc/data/types/events
+* "Learn about the types of event data EarthScope archives":/ds/nodes/dmc/data/types/events
 
 h2. Tools for browsing and requesting data
 
 h2. Wilber3
 
-A web interface for searching for, and requesting, waveform data via "IRIS web-services":/. Data is delivered in SEED, miniSEED, SAC binary or SAC ASCII files. "Read More »":/wilber3/
+A web interface for searching for, and requesting, waveform data via "EarthScope web-services":/. Data is delivered in SEED, miniSEED, SAC binary or SAC ASCII files. "Read More »":/wilber3/
 
 h2. Searchable Product Depository (SPUD)
 
-The _Searchable Product Depository_ (SPUD) is the IRIS DMC's primary data product management system. Complementing the DMC's SEED and assembled data archives, which contain time series recordings, the SPUD system primarily contains derivative data products of other types (images, movies, etc.) created either at the DMC or by members of the community. "Access SPUD »":/spud/
+The _Searchable Product Depository_ (SPUD) is the EarthScope DMC's primary data product management system. Complementing the DMC's SEED and assembled data archives, which contain time series recordings, the SPUD system primarily contains derivative data products of other types (images, movies, etc.) created either at the DMC or by members of the community. "Access SPUD »":/spud/
 
 h2. PyWEED
 
-_PyWEED_ is a map-based seismogram request tool. It enables the user to select events and stations and then download the data to their computer. PyWEED is platform-independent and allows the user to access information from remote data centers, using the "IRIS Web Services":http://service.iris.edu/. "Read More »":/ds/nodes/dmc/manuals/pyweed/
+_PyWEED_ is a map-based seismogram request tool. It enables the user to select events and stations and then download the data to their computer. PyWEED is platform-independent and allows the user to access information from remote data centers, using the "EarthScope Web Services":http://service.iris.edu/. "Read More »":/ds/nodes/dmc/manuals/pyweed/

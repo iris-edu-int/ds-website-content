@@ -1,6 +1,6 @@
 h1. Data Formats
 
-The IRIS DMC provides data to users in several different formats. 
+The EarthScope DMC provides data to users in several different formats. 
 
 h2. SAC
 

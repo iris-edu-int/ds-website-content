@@ -1,10 +1,10 @@
-h1. Introduction to IRIS waveform data
+h1. Introduction to EarthScope waveform data
 
 h2. Overview
 
-The primary data archive at IRIS consists of several thousand continuous data streams (or "channels") of seismic and other data.
+The primary data archive at EarthScope consists of several thousand continuous data streams (or "channels") of seismic and other data.
 
-IRIS generally does not produce or own the data in this archive, its primary role is to archive data on behalf of other organizations, and provide a central source for distribution.
+EarthScope generally does not produce or own the data in this archive, its primary role is to archive data on behalf of other organizations, and provide a central source for distribution.
 
 h3. Data channel naming
 

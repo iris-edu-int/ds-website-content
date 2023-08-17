@@ -6,7 +6,7 @@ Permanent networks provide "passive":/ds/nodes/dmc/data/types/time-series-data/ 
 
 h3. Global Seismographic Network 
 
-The IRIS Global Seismographic Network (GSN) is one of the four major components of IRIS Consortium. The goal of the GSN is to deploy 128 permanent seismic recording stations uniformly over the earth's surface. 
+The EarthScope Global Seismographic Network (GSN) is one of the four major components of EarthScope Consortium. The goal of the GSN is to deploy 128 permanent seismic recording stations uniformly over the earth's surface. 
 
 "Learn more about the GSN":http://www.iris.edu/hq/programs/gsn.
  	 
@@ -20,11 +20,11 @@ Data "shipment statistics":/data/distribution/ for FDSN and other data
  	 
 h3. Regional Networks
 
-Several regional networks contribute data to the IRIS archive or have open access to their data sets. 
+Several regional networks contribute data to the EarthScope archive or have open access to their data sets. 
 
 "Listing of regional network data":/mda/_US-REGIONAL/
  	 
-h3. Virtual Networks at the IRIS DMC
+h3. Virtual Networks at the EarthScope DMC
 
 A virtual network is a group of stations and/or seismic networks. 
 
@@ -36,13 +36,13 @@ Temporary networks may include both "passive and active":/ds/nodes/dmc/data/type
 
 h3. PASSCAL
 
-The Program for the Array Seismic Studies of the Continental Lithosphere (PASSCAL) is another one of the four major componenets of IRIS. PASSCAL operates a pool of over 400 portable seismic instruments to record active source reflection data, active source refraction data or natural source recordings of earthquakes. 
+The Program for the Array Seismic Studies of the Continental Lithosphere (PASSCAL) is another one of the four major componenets of EarthScope. PASSCAL operates a pool of over 400 portable seismic instruments to record active source reflection data, active source refraction data or natural source recordings of earthquakes. 
 
 "Learn more about PASSCAL":http://www.iris.edu/hq/programs/passcal.
 
 h3. Other Sources
 
-IRIS also has an archive of other temporary deployments from several different sources including:
+EarthScope also has an archive of other temporary deployments from several different sources including:
 
 * United States Geological Survey ("USGS":http://earthquake.usgs.gov/)
 * Seismic Equipment InfraStructure in the UK ("SEIS-UK":http://www.le.ac.uk/seis-uk/)
@@ -54,7 +54,7 @@ IRIS also has an archive of other temporary deployments from several different s
  	 
 h2(#event). Event Catalog Data
 
-IRIS archives "event data":/ds/nodes/dmc/data/types/events/ produced by various contributors.
+EarthScope archives "event data":/ds/nodes/dmc/data/types/events/ produced by various contributors.
 
 h3. National Earthquake Information Center, World Data Center for Seismology, Denver, Colorado
 

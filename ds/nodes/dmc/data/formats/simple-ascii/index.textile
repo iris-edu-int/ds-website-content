@@ -2,7 +2,7 @@ h1. Simple ASCII
 
 h2. Overview
 
-Simple ASCII is a text column representation timeseries data that IRIS DMC now provides. This representation makes it very simple to import into other utilities such as spreadsheets and mathematical analysis programs. There are two kinds of Simple ASCII representation:
+Simple ASCII is a text column representation timeseries data that EarthScope DMC now provides. This representation makes it very simple to import into other utilities such as spreadsheets and mathematical analysis programs. There are two kinds of Simple ASCII representation:
 
 * *SLIST*: single column listing of sample values with only a starting time index for the evenly spaced samples.
 * *TSPAIR*: double column listing, with each sample value preceded by a time stamp.

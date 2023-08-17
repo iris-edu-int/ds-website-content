@@ -131,4 +131,4 @@ Since the poles-zeros file written by rdseed contains a constant that has alread
 
 h2. Links
 
-* "Read about the IRIS RESP Service":http://service.iris.edu/irisws/resp/docs/1/help/
+* "Read about the EarthScope RESP Service":http://service.iris.edu/irisws/resp/docs/1/help/

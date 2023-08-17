@@ -4,7 +4,7 @@ h2. ISF format with DMC extensions
 
 _Defined 2007-03-14_
 
-The accepted format for associated hypocenter and phase information submitted to the IRIS DMC is the IASPEI Seismic Format (ISF) BULLETIN message type, specifically IMS1.0:SHORT format with an ISF Phase Information Sub-block. In addition to this specification, specially constructed IMS1.0 comments recognized and parsed by the DMC should be included to indicate SEED location ID's, unambiguous FDSN/SEED network codes and submitting agencies.
+The accepted format for associated hypocenter and phase information submitted to the EarthScope DMC is the IASPEI Seismic Format (ISF) BULLETIN message type, specifically IMS1.0:SHORT format with an ISF Phase Information Sub-block. In addition to this specification, specially constructed IMS1.0 comments recognized and parsed by the DMC should be included to indicate SEED location ID's, unambiguous FDSN/SEED network codes and submitting agencies.
 
 The IRIS-recognized comments take the form of IMS 1.0 unformatted comments and should not interfere with parsers built for IMS1.0 or ISF. Their specific construction is detailed below.
 

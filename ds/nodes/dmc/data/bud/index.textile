@@ -1,6 +1,6 @@
 h1. BUD: Buffer of Uniform Data
 
-BUD is the IRIS DMC's acronym for the online data cache from which we distribute our near-real time miniSEED data holdings prior to formal archiving.
+BUD is the EarthScope DMC's acronym for the online data cache from which we distribute our near-real time miniSEED data holdings prior to formal archiving.
 
 h2. BUD Web Tools
 
@@ -16,7 +16,7 @@ h3. "BUD Monitor":/bud_stuff/dmc/bud_monitor.ALL.html
 
 p(clearfix). !</bud_stuff/dmc/bud_monitor.gif!:/bud_stuff/dmc/bud_monitor.ALL.html  Those network operators (or users) who are interested in seeing the data and feed latency times might like to use this interface. Users can also request data by station (for most recent data only).
 
-h2. Receiving Real Time Data from the IRIS BUD
+h2. Receiving Real Time Data from the EarthScope BUD
 
 h3. "SeedLink service":/ds/nodes/dmc/services/seedlink/ 
 

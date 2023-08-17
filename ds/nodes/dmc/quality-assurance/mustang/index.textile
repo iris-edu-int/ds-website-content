@@ -1,6 +1,6 @@
 h1. About MUSTANG
 
-The @Modular Utility for STAtistical kNowledge Gathering@ system is an ambitious project designed to bring data quality analysis web services to IRIS DMC, covering the entirety of the data archive, from past to present time. It provides station operators and earth scientists ready access to measurements that are scientifically useful and reflect the state of instrumentation that record seismic data.
+The @Modular Utility for STAtistical kNowledge Gathering@ system is an ambitious project designed to bring data quality analysis web services to EarthScope DMC, covering the entirety of the data archive, from past to present time. It provides station operators and earth scientists ready access to measurements that are scientifically useful and reflect the state of instrumentation that record seismic data.
 
 The goal of MUSTANG is to provide greater visibility of instrument health as well as store a quantitative record of data quality for the purposes of selective data access by scientists.
 
@@ -12,7 +12,7 @@ h3. The MUSTANG system is designed along the following principles:
 
 *EXTENSIBILITY* - Metrics calculations are carried out using R utilities in an environment that allows new metrics to be prototyped and deployed. R is commonly used for analytics, providing an avenue for outside contribution by subject matter experts.
 
-*COMPREHENSIVENESS* - MUSTANG looks at the entire SEED archive at IRIS DMC, providing a complete history of seismic data quality for digital seismic networks.
+*COMPREHENSIVENESS* - MUSTANG looks at the entire SEED archive at EarthScope DMC, providing a complete history of seismic data quality for digital seismic networks.
 
 *CORRECTNESS* - MUSTANG is designed so that metrics will stay up to date.  In development is a system to automatically trigger recalculation of metrics when changes are detected in the archive or the metadata (coming soon).
 
@@ -46,7 +46,7 @@ h3. Citations and DOIs
 
 To cite the MUSTANG system or reference the use of MUSTANG metrics:
 
-* Assuring the Quality of IRIS Data with MUSTANG
+* Assuring the Quality of EarthScope Data with MUSTANG
 Robert Casey, Mary E. Templeton, Gillian Sharer, Laura Keyson, Bruce R. Weertman, Tim Ahern
 Seismological Research Letters (2018) 89 (2A): 630-639.
 DOI: "https://doi.org/10.1785/0220170191":https://doi.org/10.1785/0220170191

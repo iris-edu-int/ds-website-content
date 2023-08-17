@@ -6,7 +6,7 @@ Time series are stored as generally independent, fixed length data records which
 
 A “file” or “stream” of miniSEED is simply a concatenation of data records. Depending on the capabilities of the intended reader the data records for multiple channels of data may be multiplexed together.
 
-More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the IRIS DMC.
+More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the EarthScope DMC.
 
 h2. Getting a MiniSEED File:
 
@@ -22,6 +22,6 @@ The sender can ship files that are >2Gb with this, since @miniseed2dmc@ will tur
 
 On the DMC side we run a @ringserver@ process to catch the streaming data sent by @miniseed2dmc@ and write it out into file denominations of our choosing. In practice the DMC will run one ringserver process for each supplier. Each ringserver process will _"listen"_ for connections on a network (TCP) port, so each supplier should be assigned a port number.
 
-The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "$":mailto:data-submission@earthscope.org to initiate submission.
+The submitting data center only need to open a firewall hole to this EarthScope DMC machine, and contact "$":mailto:data-submission@earthscope.org to initiate submission.
 
 @Name: ringsub.iris.washington.edu@

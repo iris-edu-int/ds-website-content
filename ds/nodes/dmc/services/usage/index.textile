@@ -1,8 +1,8 @@
-h1. Usage guidelines for IRIS DMC services
+h1. Usage guidelines for EarthScope DMC services
 
 h2. Guidelines for using web services
 
-"Web services":http://service.iris.edu hosted at the IRIS DMC ("http://service.iris.edu":http://service.iris.edu) should be used with following limitations:
+"Web services":http://service.iris.edu hosted at the EarthScope DMC ("http://service.iris.edu":http://service.iris.edu) should be used with following limitations:
 * Users should limit usage to no more than *5 concurrent connections* to any combination of web services.
 * Users should limit their clients to no more than *10 connections per second* regardless of the return capability of the service interfaces.
 

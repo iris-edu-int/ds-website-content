@@ -9,7 +9,7 @@ The DMC currently has four core groups (managers in parentheses):
 
 h2(#data-products). Data Products
 
-The IRIS DMC works closely with members of the seismology community to develop, host and distribute a diverse array of data products. In addition to developing our own in-house products, IRIS funds the development of external data products, which we then make freely available to the community.
+The EarthScope DMC works closely with members of the seismology community to develop, host and distribute a diverse array of data products. In addition to developing our own in-house products, EarthScope funds the development of external data products, which we then make freely available to the community.
 "More information &raquo;":/ds/products/
 
 h2(#information-techology). Information Technology
@@ -27,5 +27,5 @@ h2(#web-services). Web Services
 
 To provide programmatic access to our data holdings, the DMC has developed a "series of web-services":/ws/ that allow users to connect to, and download directly, *time-series data* and *metadata* from our data holdings. We also provide several interfaces to directly connect to these web-services using Java and Matlab. We have recently developed equivalent "FDSN":http://service.iris.edu/fdsn services.
 
-* "IRIS Web Services &raquo;":/ws/
+* "EarthScope Web Services &raquo;":/ws/
 * "FDSN Web Services &raquo;":http://service.iris.edu/fdsnws/

@@ -1,6 +1,6 @@
 h1. Seismic Event Data
 
-IRIS aggregates event data from a number of independently-operated "catalogs":/ds/nodes/dmc/data/types/events/catalogs/.
+EarthScope aggregates event data from a number of independently-operated "catalogs":/ds/nodes/dmc/data/types/events/catalogs/.
 
 "About Event Catalogs":/ds/nodes/dmc/data/types/events/catalogs/
 
@@ -15,5 +15,5 @@ h3. Event Search Tools
 "All Event Tools":/ds/nodes/dmc/tools/#data_types=events
 
 * "Wilber":/wilber3/
-* "IEB - IRIS Earthquake Browser":/ieb/
+* "IEB - Interactive Earthquake Browser":/ieb/
 * "PyWEED":/ds/nodes/dmc/software/downloads/pyweed/

@@ -30,7 +30,7 @@ The USArray component of the EarthScope experiment is a continental-scale seismi
 
 "Learn more at the USArray website &raquo;":http://www.usarray.org/
 
-The IRIS DMC is the final archive and distribution point for all raw USArray data from each sub-component: Transportable Array, Reference Network (Backbone/Permanent Array), Flexible Array and Magnetotelluric Array.
+The EarthScope DMC is the final archive and distribution point for all raw USArray data from each sub-component: Transportable Array, Reference Network (Backbone/Permanent Array), Flexible Array and Magnetotelluric Array.
 
 The DMC's "Virtual Network":/ds/newsletter/vol6/no2/ concept can be used to select various components of USArray data. The following table illustrates the scope of the USArray virtual networks:
 
@@ -184,9 +184,9 @@ h2(#data). To Request USArray Data from the DMC
 
 All USArray data at the DMC is managed within the existing DMC infrastructure along with all the other, non-USArray data at the DMC.  This means that USArray data is available via all the DMC's traditional request mechanisms.
 
-Before requesting data for the first time, we recommend that you learn about requesting and using IRIS data in general. A good place to start is on the "IRIS DMC Data page":/ds/nodes/dmc/data/.
+Before requesting data for the first time, we recommend that you learn about requesting and using EarthScope data in general. A good place to start is on the "EarthScope DMC Data page":/ds/nodes/dmc/data/.
 
-*Real-time data:* IRIS distributes near-real time miniSEED data directly from our real-time collection system (BUD). "Click here for details about getting data from our real-time systems":/data/bud/. The recommended method for receiving real-time data feeds is with the DMC's "SeedLink":/ds/nodes/dmc/services/seedlink/ service.
+*Real-time data:* EarthScope distributes near-real time miniSEED data directly from our real-time collection system (BUD). "Click here for details about getting data from our real-time systems":/data/bud/. The recommended method for receiving real-time data feeds is with the DMC's "SeedLink":/ds/nodes/dmc/services/seedlink/ service.
 
 *Transportable Array and Reference Network:* Data from both the Transportable Array and Reference Network are delivered to the DMC in near-real time in SEED format.  It is available via all the "DMC's traditional request mechanisms":/ds/nodes/dmc/tools/ including near-real time.  Approximately 7 days after arriving at the DMC the data are copied to the primary archive making them available to all request mechanisms.  The data remain in, and are available via, the real-time collection system (BUD) for two months.
 
@@ -194,7 +194,7 @@ h3. Transportable Array SEED data qualities (in order of increasing preference)
 
 table(table table-bordered table-striped).
 |_. SEED Quality|_. Description|
-|@R@|Data delivered to the IRIS DMC via real-time telemetry|
+|@R@|Data delivered to the EarthScope DMC via real-time telemetry|
 |@D@|Gap-fill data delivered after real-time data, usually delivered within 3 months of real time.|
 |@Q@|TA final station data sets delivered after station removal, these data are primarily onsite (Baler) data merged with real-time telemetered data|
 
@@ -289,7 +289,7 @@ This section is not intended to be an exhaustive tutorial for DMC data access, t
 
 h3. "Real-time data feeds":/data/bud
 
-The preferred method to get continuous, real-time data feeds from USArray stations is to use the IRIS DMC's "SeedLink service":/ds/nodes/dmc/services/seedlink/.  Note that most but not all USArray stations are delivered to the DMC in real-time.
+The preferred method to get continuous, real-time data feeds from USArray stations is to use the EarthScope DMC's "SeedLink service":/ds/nodes/dmc/services/seedlink/.  Note that most but not all USArray stations are delivered to the DMC in real-time.
 SeedLink client software exists for "BRTT's Antelope":http://www.brtt.com, "Earthworm":http://folkworm.ceri.memphis.edu/ew-doc/, "SeisComP":http://www.gfz-potsdam.de/geofon/seiscomp/welcome.html and a command line client, slarchive, that will write Mini-SEED data directly into the directories and files of your chosing.  In the case of Antelope and Earthworm, client programs are included with the recent releases, otherwise source code for client software can be found on the "SeedLink service":/ds/nodes/dmc/services/seedlink/ overview page.
 
 h3. BREQ_FAST
@@ -304,11 +304,11 @@ As a simple example, requesting a 40-minute window of data from the LHZ channel 
 .END
 * TA 2006 05 03 15 30 00.0 2006 05 03 16 10 00.0 1 LHZ</pre>
  
-Note that this request only includes the @TA@ network stations (the stations installed by IRIS specifially for the Transporable Array).  To request data from all Transportable Array stations including the shared and cooperative stations replace the @TA@ network code with the @_US-TA@ virtual network code.
+Note that this request only includes the @TA@ network stations (the stations installed by EarthScope specifially for the Transporable Array).  To request data from all Transportable Array stations including the shared and cooperative stations replace the @TA@ network code with the @_US-TA@ virtual network code.
 
 h3. Web Services
 
-"IRIS web services":http://service.iris.edu provides direct access to data and metadata archived at the DMC.
+"EarthScope web services":http://service.iris.edu provides direct access to data and metadata archived at the DMC.
 
 *Sample queries:*
 

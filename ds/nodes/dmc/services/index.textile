@@ -14,7 +14,7 @@ h2. Real time Streaming Service
 
 h2. Map Service
 
-The IRIS DMC Google Map Service generator creates maps based on IRIS DMC metadata holdings. Either a network or single station map can be generated. Each map produced includes a link to the same data as a KML NetworkLink appropriate for Google Earth. Network and station parameters can be specified directly in the URI path.
+The EarthScope DMC Google Map Service generator creates maps based on EarthScope DMC metadata holdings. Either a network or single station map can be generated. Each map produced includes a link to the same data as a KML NetworkLink appropriate for Google Earth. Network and station parameters can be specified directly in the URI path.
 
 "More information &raquo;":/gmap/
 

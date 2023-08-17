@@ -51,7 +51,7 @@ For non-realtime data the DMC is providing a "miniseed2dmc client":https://githu
 
 On the DMC side we run a ringserver process to catch the streaming data sent by miniseed2dmc and write it out into file denominations of our choosing. In practice the DMC will run one ringserver process for each supplier. Each ringserver process will "listen" for connections on a network (TCP) port, so each supplier should be assigned a port number.
 
-The submitting data center only need to open a firewall hole to this IRIS DMC machine, and contact "$":mailto:data-submission@earthscope.org at the IRIS DMC to initiate submission.
+The submitting data center only need to open a firewall hole to this EarthScope DMC machine, and contact "$":mailto:data-submission@earthscope.org at the EarthScope DMC to initiate submission.
 
 Server name: @ringsub.iris.washington.edu@
  

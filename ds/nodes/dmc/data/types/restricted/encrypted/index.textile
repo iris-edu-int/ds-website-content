@@ -1,6 +1,6 @@
 h1. Encrypted Data
 
-IRIS routinely distributes restricted data sets to authorized users in encrypted format to ensure the data remains in a private access domain for the time period of the access restriction. Authorized users are required to use the same password they were given when registering to access these data and was assigned by the PI of the project.
+EarthScope routinely distributes restricted data sets to authorized users in encrypted format to ensure the data remains in a private access domain for the time period of the access restriction. Authorized users are required to use the same password they were given when registering to access these data and was assigned by the PI of the project.
 
 We used to use the @crypt@ utility on Sun OS machines for this task, but have discovered that crypt implementations do not work reliably in cross-platform situations. Therefore, we looked to some other alternatives for securing delivered data sets and settled on an open-source solution: OpenSSL.
 
@@ -11,7 +11,7 @@ The main website for OpenSSL can be found here: "http://www.openssl.org/":http:/
  
 h2. Finding or Installing
 
-Below are a list of platforms and instructions on how to install and access OpenSSL for use in decrypting IRIS restricted data:
+Below are a list of platforms and instructions on how to install and access OpenSSL for use in decrypting EarthScope restricted data:
 
 h3. Sun OS Solaris SPARC and Intel:
 
@@ -38,7 +38,7 @@ to see if the package is installed and what version it is. If you do not have it
  
 h2. To Use
 
-OpenSSL has a lot of command options, and a wide array of cryptographic tools available. The IRIS DMC is currently making use of the _DES CBC_ encryption algorithm (Data Encryption Standard - Cypher Block Chaining) due to its symmetric encrypt/decrypt capacity for ease of use by our data recipients. This basically means that we can use the same password to encrypt the data as the user uses to decrypt the data. Simpler bookkeeping for both sides.
+OpenSSL has a lot of command options, and a wide array of cryptographic tools available. The EarthScope DMC is currently making use of the _DES CBC_ encryption algorithm (Data Encryption Standard - Cypher Block Chaining) due to its symmetric encrypt/decrypt capacity for ease of use by our data recipients. This basically means that we can use the same password to encrypt the data as the user uses to decrypt the data. Simpler bookkeeping for both sides.
 
 You can view and refresh your password from the "Data Access":/ds/license/user-data/ area of your user account. All you need to do is supply the password, labeled below as @{passwd key}@ in order to decrypt the data. Here is the usage pattern:
 

@@ -1,6 +1,6 @@
 h1. Workshops
 
-The IRIS Data Management System organizes several workshops throughout the year.
+The EarthScope Data Management System organizes several workshops throughout the year.
 
 h2. Upcoming Workshops
 

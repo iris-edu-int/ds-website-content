@@ -1,12 +1,12 @@
 h1. PH5
 
-The IRIS DMC maintains a growing archive of "PASSCAL HDF5":https://github.com/PIC-IRIS/PH5 (PH5) datasets. These contributed datasets include a mix of active (controlled) and passive source waveform (time-series) data. The majority of these datasets contain high sample rate array oriented seismic data from temporary experiments.
+The EarthScope DMC maintains a growing archive of "PASSCAL HDF5":https://github.com/PIC-IRIS/PH5 (PH5) datasets. These contributed datasets include a mix of active (controlled) and passive source waveform (time-series) data. The majority of these datasets contain high sample rate array oriented seismic data from temporary experiments.
 
-A list of all PH5 experiments may be viewed using the "IRIS MetaData Aggregator (MDA)":http://ds.iris.edu/mda/?datacenter=IRISPH5 or plotted on an interactive map using "IRIS GMAP":http://ds.iris.edu/gmap/#network=*&datacenter=IRISPH5&planet=earth.
+A list of all PH5 experiments may be viewed using the "EarthScope MetaData Aggregator (MDA)":http://ds.iris.edu/mda/?datacenter=IRISPH5 or plotted on an interactive map using "EarthScope GMAP":http://ds.iris.edu/gmap/#network=*&datacenter=IRISPH5&planet=earth.
 
 h2. Requesting PH5 Data
 
-The IRIS DMC maintains FDSN compatible "PH5 web service interfaces":http://service.iris.edu/ph5ws/. These services are designed to provide an interface for access to time series PH5 datasets, related station and availability metadata, and active source event information.
+The EarthScope DMC maintains FDSN compatible "PH5 web service interfaces":http://service.iris.edu/ph5ws/. These services are designed to provide an interface for access to time series PH5 datasets, related station and availability metadata, and active source event information.
 
 The historic PH5 Web Form has been deprecated in favor of the PH5 Web Services. Users are encouraged to use the "PH5 Dataselect Web Service URL Builder":http://service.iris.edu/ph5ws/dataselect/docs/1/builder/ instead.
 

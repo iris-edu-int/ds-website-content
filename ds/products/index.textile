@@ -1,6 +1,6 @@
 h1. Products
 
-Data products derived from raw data are produced both by the scientific community and the IRIS DMC. These complement the simple data products based on raw data such as event segmented waveforms, which are available via the DMCs traditional "data access":/ds/data/ mechanisms. To ensure that the data products are useful to the research community, direct feedback and guidance is provided by the "Data Service Standing Committee":https://www.iris.edu/hq/about_iris/governance/ds (DSSC).
+Data products derived from raw data are produced both by the scientific community and the EarthScope DMC. These complement the simple data products based on raw data such as event segmented waveforms, which are available via the DMCs traditional "data access":/ds/data/ mechanisms. To ensure that the data products are useful to the research community, direct feedback and guidance is provided by the "Data Service Standing Committee":https://www.iris.edu/hq/about_iris/governance/ds (DSSC).
 
 !>{height:60px}http://ds.iris.edu/media/_s/img/dms/products/spud.png!:/spud/
   Below is a list of products produced either at the DMC or by the research community that are available from the DMC. Many of these products are available in "SPUD":/spud/ where you can easily search for and download products.

@@ -1,6 +1,6 @@
 h1. Manuals
 
-The IRIS DMC provides manuals for all software, tools and services we provide.
+The EarthScope DMC provides manuals for all software, tools and services we provide.
 
 h2. Categories
 
@@ -44,8 +44,8 @@ table(table table-bordered table-striped).
 |"AutoDRM":/manuals/autoDRM.htm |*ENDING January 1, 2018* - AutoDRM is an automatic data request management system used for obtaining data through a system of formatted email messages.|
 |"BREQ_FAST":/manuals/breq_fast.htm |Email request format based on station/channel/time parameters|
 |"JWEED":/dms/nodes/dmc/software/archive/jweed/ |Java update of WEED that allows users to access event and station data through an interactive map.|
-|"MATLAB Data Access":/dms/nodes/dmc/software/downloads/iris-ws/ |Waveform data, event metadata, and station metadata from the IRIS-DMC can now be accessed within MATLAB using the IRIS-WS Java library. No knowledge of Java is required.|
-|"MetaData Aggregator":/mda/help |The MetaData Aggregator (MDA) prints metadata summaries from the IRIS DMC database including data availability and links to further services.|
+|"MATLAB Data Access":/dms/nodes/dmc/software/downloads/iris-ws/ |Waveform data, event metadata, and station metadata from the EarthScope-DMC can now be accessed within MATLAB using the IRIS-WS Java library. No knowledge of Java is required.|
+|"MetaData Aggregator":/mda/help |The MetaData Aggregator (MDA) prints metadata summaries from the EarthScope DMC database including data availability and links to further services.|
 |"NetDC":/manuals/netdc/ |Email request format based on inventory, response data, and station/channel/time parameters. "Participating Networks":/manuals/netdc/intro.htm |
 |"SeismiQuery":/SeismiQuery/help.html |SeismiQuery is a set of pre-formatted database queries that allow users to access data and information stored in the DMC Oracle database.|
 |"SOD":http://www.seis.sc.edu/sod/documentation/index.html |SOD is software application that automates data selection, downloading, and routine processing tasks. Now includes utilities for calling DHI services via the command line.|
@@ -64,7 +64,7 @@ h2(#seed). SEED Manual.
 ** "POD":/manuals/pod.htm : Produce a SEED volume from a set of waveform files, their associated station/channel descriptions and response information
 * SEED Response Evaluation Tools
 ** "evalresp":/manuals/evalresp.htm : Evaluate response information and output to ASCII files using rdseed produced RESP files
-** "FetchResp":/manuals/fetchresp.htm : Java client which will download response information from IRIS DMC and construct RESP files on the user's computer.
+** "FetchResp":/manuals/fetchresp.htm : Java client which will download response information from EarthScope DMC and construct RESP files on the user's computer.
 ** "JEvalResp":/manuals/Java version of evalresp
 ** JPlotResp": Graphically-oriented Java program for processing and plotting the response information
 
@@ -79,11 +79,11 @@ h2(#plotting-and-display). Plotting and Display Programs
 
 table(table table-bordered table-striped).
 |_. Name|_. Summary|
-|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the IRIS DMC|
+|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the EarthScope DMC|
 
 h2(#processing). Processing Programs
 
 table(table table-bordered table-striped).
 |_. Name|_. Summary|
-|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the IRIS DMC|
+|"Seismic Analysis Code (SAC)":/files/sac-manual/ |Developed at Lawrence Livermore National Labs (LLNL) and distributed free by the EarthScope DMC|
 |"TauP":http://www.seis.sc.edu/downloads/TauP/taup.pdf |Application for computing travel times|

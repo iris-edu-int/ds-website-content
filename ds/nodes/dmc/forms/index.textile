@@ -5,10 +5,10 @@ h1. Forms
 <div class="col-md-6">
 </notextile>
 
-h2. General IRIS Forms
+h2. General EarthScope Forms
 
 * "Contact Us":/ds/nodes/dmc/forms/contact/
-* "Become a Member of IRIS":/ds/nodes/dmc/forms/iris_membership/
+* "Become a Member of EarthScope":/ds/nodes/dmc/forms/iris_membership/
 * "Post a job/employment opportunity":/ds/nodes/dmc/forms/job_posting/
 
 h3. Bulkmail
@@ -24,15 +24,15 @@ h3. Bulkmail
 h3. Mailing Lists
 
 * "IRIS Mailing Lists":/hq/about_iris/mailing_lists
-** "IRIS E&amp;O Teachable Moments":http://www.iris.washington.edu/mailman/listinfo/eno_quakes
-** "IRIS DMC Software Announcement List":http://www.iris.washington.edu/mailman/listinfo/software-info
+** "EarthScope E&amp;O Teachable Moments":http://www.iris.washington.edu/mailman/listinfo/eno_quakes
+** "EarthScope DMC Software Announcement List":http://www.iris.washington.edu/mailman/listinfo/software-info
 
 <notextile>
 </div>
 </div>
 </notextile>
 
-h2. IRIS DMC Forms
+h2. EarthScope DMC Forms
 
 * "Data Product Suggestions":/ds/nodes/dmc/forms/product-suggestion/
 
@@ -58,7 +58,7 @@ h3. Networks
 * "FDSN Permanent Network Code Request Form":http://www.fdsn.org/forms/netcode_perm.htm
 * "Temporary Network Code Request Form":http://www.fdsn.org/forms/netcode_temp.htm
 
-h3. Download IRIS Data Services Software
+h3. Download EarthScope Data Services Software
 
 * "PDCC":/ds/nodes/dmc/forms/pdcc/
 * "PQLX":/ds/nodes/dmc/forms/pqlx/
@@ -66,7 +66,7 @@ h3. Download IRIS Data Services Software
 
 Many software packages are distributed through the "IRIS GitHub pages":https://github.com/iris-edu/
 
-IRIS hosts a number of third-party and legacy software projects on the "SeisCode":http://seiscode.iris.washington.edu/  community software repository.
+EarthScope hosts a number of third-party and legacy software projects on the "SeisCode":http://seiscode.iris.washington.edu/  community software repository.
 
 Legacy software:
 
@@ -80,6 +80,6 @@ h3. Temporary Deployments
 * "PASSCAL Experiment forms":http://www.passcal.nmt.edu/content/forms
 * "Instrument request form":http://www.passcal.nmt.edu/inst_request
 
-h3. Useful IRIS HQ forms
+h3. Useful EarthScope HQ forms
 
 * "Travel form":http://www.iris.edu/hq/forms/travel_authorization

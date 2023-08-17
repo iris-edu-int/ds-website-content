@@ -1,6 +1,6 @@
 h1. Waveform Data
 
-The IRIS DMC archives waveform ("time-series":/ds/nodes/dmc/data/types/time-series-data/) data from stations around the world. The following information highlights passive and active source data available through the DMC.
+The EarthScope DMC archives waveform ("time-series":/ds/nodes/dmc/data/types/time-series-data/) data from stations around the world. The following information highlights passive and active source data available through the DMC.
 
 h2. Waveform Data Formats
 
@@ -17,7 +17,7 @@ SEED helps seismologists who record, share, and use seismological data. By provi
 
 h3. Simple ASCII format
 
-Simple ASCII is a text column representation timeseries data that IRIS DMC now provides. This representation makes it very simple to import into other utilities such as spreadsheets and mathematical analysis programs. "More information on the Simple ASCII format &raquo;":/ds/nodes/dmc/data/formats/simple-ascii/
+Simple ASCII is a text column representation timeseries data that EarthScope DMC now provides. This representation makes it very simple to import into other utilities such as spreadsheets and mathematical analysis programs. "More information on the Simple ASCII format &raquo;":/ds/nodes/dmc/data/formats/simple-ascii/
 
 h3. SAC (Seismic Analysis Code) format
 
@@ -25,4 +25,4 @@ The SAC format comes in fixed binary and ASCII forms and is read by the SAC anal
 
 h2(#assembled). Assembled Data
 
-The IRIS DMC distributes several pre-assembled data sets. Most of these data sets are from temporary deployments and in *formats other than SEED*. An assembled set is accompanied by a data report. We have "assembled data":/mda/?type=assembled from various sources including IRIS PASSCAL (mostly active source), the USGS, and others.
+The EarthScope DMC distributes several pre-assembled data sets. Most of these data sets are from temporary deployments and in *formats other than SEED*. An assembled set is accompanied by a data report. We have "assembled data":/mda/?type=assembled from various sources including IRIS PASSCAL (mostly active source), the USGS, and others.

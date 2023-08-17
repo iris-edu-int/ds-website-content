@@ -1,6 +1,6 @@
 h1. Meetings
 
-The IRIS Data Management System (DMS) holds regular meetings. These can be divided into the following categories:
+The EarthScope Data Management System (DMS) holds regular meetings. These can be divided into the following categories:
 
 h2. "Data Services Standing Committee, DSSC":/ds/meetings/dssc/
 

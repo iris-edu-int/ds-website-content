@@ -2,7 +2,7 @@ h1. Data Management
 
 h2. Purpose
 
-The Data Management section at the IRIS DMC is composed of technical staff whose primary function is to manage (archive and distribute) all perpetually archived continuous data at the IRIS Data Management Center.
+The Data Management section at the EarthScope DMC is composed of technical staff whose primary function is to manage (archive and distribute) all perpetually archived continuous data at the EarthScope Data Management Center.
 
 Since 1990, the DMC is also been the primary International Federation of Digital Seismograph Networks (FDSN) Continuous Data archive. This turning point toward archiving continuous data forged the path toward impressive discoveries that continue to this day.
 
@@ -29,7 +29,7 @@ The Data Management Section performs these primary functions:
 
 h2. Primary tasks
 
-The IRIS DMC Data Management Section is currently engaged in the following tasks:
+The EarthScope DMC Data Management Section is currently engaged in the following tasks:
 
 * Porting all of our core server machines to RedHat Enterprise Virtualization (RHEV) running RedHat Enterprise Linux (RHEL). Eliminating support of Solaris on SUN hardware platforms.
 * Acquiring the next generation of RAID storage hardware

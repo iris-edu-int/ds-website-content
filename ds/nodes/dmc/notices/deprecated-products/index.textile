@@ -1,10 +1,10 @@
 h1. Deprecated Products
 
-The data product that you have tried to access is no longer supported by the IRIS DMC. Information about these legacy products are listed below.
+The data product that you have tried to access is no longer supported by the EarthScope DMC. Information about these legacy products are listed below.
 
 h2(#spyder). System to Provide You Data from Earthquakes Rapidly (SPYDER)
 
-SPYDER data was event-oriented data products created shortly after an earthquake occurred. The data was unchecked and was considered to be of unknown quality. The data came from a variety of sources, primarily from the IRIS DMC’s BUD system However, autoDRMs around the world and direct station dial-up augmented the data in SPYDER.
+SPYDER data was event-oriented data products created shortly after an earthquake occurred. The data was unchecked and was considered to be of unknown quality. The data came from a variety of sources, primarily from the EarthScope DMC’s BUD system However, autoDRMs around the world and direct station dial-up augmented the data in SPYDER.
 
 <notextile><div class="alert alert-info">SPYDER was deprecated in Spring 2014.</div></notextile>
 
@@ -15,7 +15,7 @@ h4. Learn more about SPYDER
 
 h2(#farm). Fast Archive Recovery Method (FARM)
 
-The IRIS DMC recognized the fact that the most interesting data, and most frequently requested, are data from earthquakes. Most of these interesting events are larger than a magnitude of M5.5. For this reason, the IRIS DMC routinely pre-assembled data from earthquakes that were larger than 5.7, unless the event depth was greater than 100 km, in which case we included those down to M5.5. Although IRIS' mission is to protect the entire archive of continuous data, event-related data holdings are the most valuable and frequently accessed.
+The EarthScope DMC recognized the fact that the most interesting data, and most frequently requested, are data from earthquakes. Most of these interesting events are larger than a magnitude of M5.5. For this reason, the EarthScope DMC routinely pre-assembled data from earthquakes that were larger than 5.7, unless the event depth was greater than 100 km, in which case we included those down to M5.5. Although EarthScope' mission is to protect the entire archive of continuous data, event-related data holdings are the most valuable and frequently accessed.
 
 An initiative was put forth in the Summer of 2000 to rebuild the FARM system. The problems that plagued the FARM were an out-of-date or incomplete accounting of station data, old or incorrect metadata headers, and data restricted to GSN stations. The goal was a system that could more easily be updated as station data became available from many networks, and where updates in station metadata would not require time-consuming rebuilds of thousands of SEED files. The result was a design called @POND@, which is an acronym for @Pool Of Network Data@. The scheme would involve breaking the @FARM@ data into pieces, each of which could be easily modified or appended to as needed. (One @POND@ holds all the data for one seismic network.)
 
@@ -42,7 +42,7 @@ What you found in the UV FARM are month-long "miniSEED":/ds/nodes/dmc/data/forma
 
 As a data user, you had the ability to request any, or all, reporting channels that were collected for the time period of interest. One important difference in the interface for requesting UV FARM data from the typical, event-based FARM data, is that we did not provide the mechanisms to time window these holdings below the one month time span. You had the ability to pull data back from these holdings in the same number of data formats, including miniSEED, fullSEED, and SAC.
 
-The IRIS DMC began building the UV FARM in the summer of 2002, and we were able to provide data back to June, 1975. This project continued until we got to one month behind real time, then each month we will automatically make the most current data available in a rolling time window.
+The EarthScope DMC began building the UV FARM in the summer of 2002, and we were able to provide data back to June, 1975. This project continued until we got to one month behind real time, then each month we will automatically make the most current data available in a rolling time window.
 
 <notextile><div class="alert alert-info">The <code>UV FARM</code> was taken offline in Spring 2014.</div></notextile>
 

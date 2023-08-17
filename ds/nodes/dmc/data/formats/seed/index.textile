@@ -10,13 +10,13 @@ Time series are stored as generally independent, fixed length data records which
 
 A "file" or "stream" of miniSEED is simply a concatenation of data records.  Depending on the capabilities of the intended reader the data records for multiple channels of data may be multiplexed together.
 
-More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the IRIS DMC.
+More than one programming library exists to support easy reading and writing of miniSEED data without knowing the details of the format, the "libmseed":https://seiscode.iris.washington.edu/projects/libmseed library is supported and used extensively by the EarthScope DMC.
 
 h2. Dataless SEED
 
 A dataless SEED volume is the metadata counterpart to miniSEED that contains the geographic coordinates and instrument response information often needed to process the time series data.  A dataless can contain a complete and comprehensive history of metadata for one or many networks and stations.  A dataless volume does not contain any time series values.
 
-A dataless volume is commonly used to populate a metadata database or in combination with miniSEED to convert time series to an alternate format (using the IRIS DMC's  "rdseed":/dms/nodes/dmc/software/downloads/rdseed/ software).
+A dataless volume is commonly used to populate a metadata database or in combination with miniSEED to convert time series to an alternate format (using the EarthScope DMC's  "rdseed":/dms/nodes/dmc/software/downloads/rdseed/ software).
 
 A modern alternative to dataless SEED volumes to exchange seismological metadata is the FDSN's "StationXML":http://www.fdsn.org/xml/station/ schema.
 

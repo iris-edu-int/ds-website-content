@@ -9,7 +9,7 @@ h1. Data Services
 
 h2. Introduction
 
-IRIS Data Services (DS) has very specific "charges":http://www.iris.edu/hq/about_iris/governance/ds and consists of several components or "nodes". These nodes work together to insure the smooth flow of GSN and PASSCAL data from the stations to the seismological research community.
+EarthScope Data Services (DS) has very specific "charges":http://www.iris.edu/hq/about_iris/governance/ds and consists of several components or "nodes". These nodes work together to insure the smooth flow of GSN and PASSCAL data from the stations to the seismological research community.
 
 h2. Data Services Nodes
 
@@ -23,15 +23,15 @@ h2. Data Services Nodes
 
 h3. Components
 
-IRIS DS is composed of seven distinct nodes. The Albuquerque Seismic Laboratory (ASL) and the UCSD/IDA DCCs collect data from the "GSN":/gmap/IU, perform QA on the data, convert the data to SEED and send the GSN data to the DMC. The PASSCAL instrument Center (PIC) performs QA and reformatting for PASSCAL data. The Array Network Facility (ANF) is charged with insuring that USArray/Transportable Array data flow to the DMC and that proper metadata is available. The Kazakh National Data Center in Almaty performs QA on data from the numerous arrays and stations in Kazakhstan before forwarding the data to the IRIS DMC. The UW, as the host of the IRIS DMC, produces data products as well as provides feedback on MUSTANG Quality Assurance System with an emphasis on how MUSTANG can be used with data from regional networks. The DMC in Seattle is the home of the IRIS data archive and serves as the primary distribution point for IRIS data.
+EarthScope DS is composed of seven distinct nodes. The Albuquerque Seismic Laboratory (ASL) and the UCSD/IDA DCCs collect data from the "GSN":/gmap/IU, perform QA on the data, convert the data to SEED and send the GSN data to the DMC. The PASSCAL instrument Center (PIC) performs QA and reformatting for PASSCAL data. The Array Network Facility (ANF) is charged with insuring that USArray/Transportable Array data flow to the DMC and that proper metadata is available. The Kazakh National Data Center in Almaty performs QA on data from the numerous arrays and stations in Kazakhstan before forwarding the data to the EarthScope DMC. The UW, as the host of the EarthScope DMC, produces data products as well as provides feedback on MUSTANG Quality Assurance System with an emphasis on how MUSTANG can be used with data from regional networks. The DMC in Seattle is the home of the EarthScope data archive and serves as the primary distribution point for EarthScope data.
 
 h2. Governance &amp; Staffing 
 
-IRIS DS is given oversight by a "standing committee":http://www.iris.edu/hq/about_iris/governance/ds (SC) representing the seismological community. (See "Action Items":http://www.iris.edu/hq/about_iris/governance/ds/#reports from DSSC meetings.) The IRIS Data Services is managed by Dr. Jerry Carter. Read about the charges to "DS":http://www.iris.edu/hq/about_iris/governance/ds.
+EarthScope DS is given oversight by a "standing committee":http://www.iris.edu/hq/about_iris/governance/ds (SC) representing the seismological community. (See "Action Items":http://www.iris.edu/hq/about_iris/governance/ds/#reports from DSSC meetings.) The EarthScope Data Services is managed by Dr. Jerry Carter. Read about the charges to "DS":http://www.iris.edu/hq/about_iris/governance/ds.
 
 h3. Current reports
 
-* "Available at the main IRIS website &raquo;":http://www.iris.edu/hq/programs/ds/#strategic-plan
+* "Available here &raquo;":http://www.iris.edu/hq/programs/ds/#strategic-plan
 
 h3. Previous Reports
 
@@ -44,7 +44,7 @@ h2. Policies
 
 h2. Workshops
 
-The DMC on behalf of IRIS DS organizes seismic data workshops around the world, including how to handle network data and metadata and diverse topics in the Advanced Studies Institutes.
+The DMC on behalf of EarthScope DS organizes seismic data workshops around the world, including how to handle network data and metadata and diverse topics in the Advanced Studies Institutes.
 
 "View the list of workshops":/ds/workshops
 

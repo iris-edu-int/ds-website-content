@@ -20,7 +20,7 @@ h2. Metadata
 
 h2(#historical). Historical Data
 
-The IRIS DMC archives historical seismic data including scanned seismograms and other information from pre-digital sources.
+The EarthScope DMC archives historical seismic data including scanned seismograms and other information from pre-digital sources.
 
 <notextile>
   <blockquote>

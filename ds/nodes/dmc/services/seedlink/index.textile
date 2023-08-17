@@ -4,7 +4,7 @@ h2. Overview
 
 The _SeedLink_ protocol is a robust data transmission intended for use on the Internet or private circuits that support TCP/IP. The protocol is robust in that clients may disconnect and reconnect without losing data, in other words transmissions may be resumed as long as the data still exist in the servers buffer. Requested data streams may be limited to specific networks, stations, locations and/or channels. All data packets are 512-byte Mini-SEED records. Enhancements to the SeedLink protocol supported by the DMC's server allow network and station codes to be wildcarded in addition to the location and channel codes.
 
-h2. Real-time Data from the IRIS DMC
+h2. Real-time Data from the EarthScope DMC
 
 The DMC runs a publicly accessible SeedLink server on the following host and port:
 
@@ -57,9 +57,9 @@ This example parameter file would select @BH*@ channel data from the @IU@ networ
 
 For more details regarding channel selection and other @slink2orb@ parameters consult the @slink2orb@ man page and the default @slink2orb.pf@ parameter file, both are distributed with Antelope.
 
-h2(#expectations). Expectations Regarding Real Time Data from the IRIS DMC
+h2(#expectations). Expectations Regarding Real Time Data from the EarthScope DMC
 
-The IRIS DMC exists primarily to serve data needed for scientific studies.  As such, there is generally a weak case for delivering data in real time.  The DMC receives most data through real time methods.  Since the data received in real time can easily be made available in real time, the DMC does so through a SeedLink server with minor latency added.  Generally, the DMC advocates for real time data transport since it is less costly to receive data at the DMC in real time rather than by delayed methods.
+The EarthScope DMC exists primarily to serve data needed for scientific studies.  As such, there is generally a weak case for delivering data in real time.  The DMC receives most data through real time methods.  Since the data received in real time can easily be made available in real time, the DMC does so through a SeedLink server with minor latency added.  Generally, the DMC advocates for real time data transport since it is less costly to receive data at the DMC in real time rather than by delayed methods.
 
 We do not have a mandate, nor is the DMC funded, to provide 24/7 real time data services.  Therefore, interruptions in data flow may occur.  The DMC will attempt to remedy interruptions in its real time data feeds in a timely manner but we can guarantee neither the quality nor continuity in our real time data services.  All mission-oriented agencies should be aware of this limitation of real time data services from the DMC and plan accordingly.
 

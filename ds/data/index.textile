@@ -1,4 +1,4 @@
-h1. Data at IRIS
+h1. Data at EarthScope
 
 <notextile>
 <script>window.location = '/ds/nodes/dmc/data/';</script>

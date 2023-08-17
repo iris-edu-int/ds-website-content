@@ -1,7 +1,7 @@
 h1. Data Types
 
 ; "Time Series data":/ds/nodes/dmc/data/types/time-series-data/
-: Continuous seismic instrument recordings from thousands of stations worldwide.  This is the primary IRIS archive.
+: Continuous seismic instrument recordings from thousands of stations worldwide.  This is the primary EarthScope archive.
 ; "Metadata":/ds/nodes/dmc/data/types/metadata/
 : Includes information such as recording instrument characteristics and data quality; this is generally used to determine the time series data to request.
 ; "Event data":/ds/nodes/dmc/data/types/events/

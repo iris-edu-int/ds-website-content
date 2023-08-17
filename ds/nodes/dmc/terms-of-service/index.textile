@@ -2,7 +2,7 @@ h1. Terms of Service
 
 bq. Data Services will NEVER request your username and password via email, web form, or other unusual methods. If you receive such a request, it is a phishing attack aimed at illegally obtaining your Data Services username and password. Never reply to these messages or follow any instructions these messages contain.
 
-The Data Services Terms of Service are rules that you (the user) agree to abide by in order to use the IRIS Data Services website. Using the website means that you are agreeing to these terms, listed below.
+The Data Services Terms of Service are rules that you (the user) agree to abide by in order to use the EarthScope Data Services website. Using the website means that you are agreeing to these terms, listed below.
 
-* "Acceptable Use Policy":/ds/nodes/dmc/terms-of-service/acceptable-use-policy/ - describes the Terms of Service and policy governing the use of information technology at IRIS Data Services
+* "Acceptable Use Policy":/ds/nodes/dmc/terms-of-service/acceptable-use-policy/ - describes the Terms of Service and policy governing the use of information technology at EarthScope Data Services
 * "Message Center Terms of Services":/ds/nodes/dmc/terms-of-service/message-center/ - describes the Terms of Service and policy governing the use specifically of the Message Center application

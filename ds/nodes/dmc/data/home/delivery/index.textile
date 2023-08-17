@@ -1,7 +1,7 @@
 h1. Data Delivery
 
 ; "Web Services":http://service.iris.edu/
-: This is the base delivery mechanism for most IRIS data.  It can be accessed directly, but a variety of convenient wrappers are available.
+: This is the base delivery mechanism for most EarthScope data.  It can be accessed directly, but a variety of convenient wrappers are available.
 ; "Application Programming Interfaces (APIs)":http://service.iris.edu/clients/
 : APIs are available via "Java":/ds/nodes/dmc/software/downloads/iris-ws/, "Matlab":/ds/nodes/dmc/software/downloads/irisFetch.m/, and "Python":https://seiscode.iris.washington.edu/projects/obspy libraries, as well as command line "fetch scripts":https://seiscode.iris.washington.edu/projects/ws-fetch-scripts.
 ; "Web Tools":/ds/nodes/dmc/tools/
@@ -37,6 +37,6 @@ h3. Other Data Types
 ; Event Data
 : "Interactive Earthquake Browser":/ieb/ (IEB) shows recent earthquakes on an interactive map.
 
-h3. About IRIS Data
+h3. About EarthScope Data
 
 "Data delivery statistics":/data/distribution/

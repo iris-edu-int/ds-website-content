@@ -22,7 +22,7 @@ h2. Staff
 
 h2. Employment
 
-IRIS provides "announcements and listings of employment opportunities":/ds/nodes/dmc/about/jobs/ at both IRIS and in the broader seismological community.
+EarthScope provides "announcements and listings of employment opportunities":/ds/nodes/dmc/about/jobs/ at both EarthScope and in the broader seismological community.
 
 <notextile>
   </div>

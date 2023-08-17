@@ -2,11 +2,11 @@ h1. Quality Assurance
 
 h2. Purpose
 
-The IRIS Quality Assurance Section seeks to monitor and ensure access to the highest quality of seismic data possible.
+The EarthScope Quality Assurance Section seeks to monitor and ensure access to the highest quality of seismic data possible.
 
 h2. Overview
 
-In order to ensure that the IRIS data user community has access to the best achievable quality of seismic and related data, the IRIS DMC Quality Assurance (QA) Team seeks to build a QA process that encompasses the IRIS SEED archive.  This process would:
+In order to ensure that the EarthScope data user community has access to the best achievable quality of seismic and related data, the EarthScope DMC Quality Assurance (QA) Team seeks to build a QA process that encompasses the EarthScope SEED archive.  This process would:
 
 * speed identification and reporting of quality issues to network operators, 
 * track resolution of reported issues,

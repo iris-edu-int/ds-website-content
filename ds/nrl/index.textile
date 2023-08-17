@@ -1,8 +1,8 @@
 h1. Nominal Response Library
 
-In 2006, the IRIS DMC began to collect an "authoritative" set of manufacturers' recommended nominal instrument responses in SEED RESP format and publish these on the web. The goal behind the Library is to make it easier for the seismological community to both share and create metadata for common instrumentation, and to improve response accuracy for users of the data.
+In 2006, the EarthScope DMC began to collect an "authoritative" set of manufacturers' recommended nominal instrument responses in SEED RESP format and publish these on the web. The goal behind the Library is to make it easier for the seismological community to both share and create metadata for common instrumentation, and to improve response accuracy for users of the data.
 "(Learn more about the NRL...)":/ds/newsletter/vol11/no4/77/the-iris-dmc-nominal-response-library/
 
-To cite the IRIS Data Services Nominal Response Library, please use
+To cite the EarthScope Data Services Nominal Response Library, please use
 
 <div class="doi-citation" data-doi="https://doi.org/10.17611/S7159Q"></div>

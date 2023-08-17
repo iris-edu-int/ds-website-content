@@ -1,6 +1,6 @@
 h1. Nodes
 
-The IRIS Data Management System has a series of *internal* and *external* nodes.
+The EarthScope Data Management System has a series of *internal* and *external* nodes.
 
 <notextile>
 <figure style="float:right">
