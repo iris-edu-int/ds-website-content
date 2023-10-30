@@ -5,33 +5,6 @@ h1. Forms
 <div class="col-md-6">
 </notextile>
 
-h2. General EarthScope Forms
-
-* "Contact Us":/ds/nodes/dmc/forms/contact/
-* "Become a Member of EarthScope":/ds/nodes/dmc/forms/iris_membership/
-* "Post a job/employment opportunity":/ds/nodes/dmc/forms/job_posting/
-
-h3. Bulkmail
-
-* "Request to use the IRIS Bulkmail Service":/ds/nodes/dmc/forms/bulkmail/
-
-<notextile>
-</div>
-<div class="col-md-6">
-</notextile>
-
-
-h3. Mailing Lists
-
-* "IRIS Mailing Lists":/hq/about_iris/mailing_lists
-** "EarthScope E&amp;O Teachable Moments":http://www.iris.washington.edu/mailman/listinfo/eno_quakes
-** "EarthScope DMC Software Announcement List":http://www.iris.washington.edu/mailman/listinfo/software-info
-
-<notextile>
-</div>
-</div>
-</notextile>
-
 h2. EarthScope DMC Forms
 
 * "Data Product Suggestions":/ds/nodes/dmc/forms/product-suggestion/
@@ -51,12 +24,11 @@ h3. Data Requests
 
 * "BREQ_FAST-formatted data requests":/ds/nodes/dmc/forms/breqfast-request/
 * "Dataless Request Form":/ds/nodes/dmc/forms/breqfast-request/
-* "Submit information about your data center":/data/DataCenterForm.htm
 
 h3. Networks
 
-* "FDSN Permanent Network Code Request Form":http://www.fdsn.org/forms/netcode_perm.htm
-* "Temporary Network Code Request Form":http://www.fdsn.org/forms/netcode_temp.htm
+* "FDSN Permanent Network Code Request Form":https://www.fdsn.org/networks/request/perm/
+* "Temporary Network Code Request Form":https://www.fdsn.org/networks/request/temp/
 
 h3. Download EarthScope Data Services Software
 
@@ -79,7 +51,3 @@ h3. Temporary Deployments
 * "OBSIC Data Submission form":/ds/nodes/dmc/forms/obsip-data-submission/
 * "PASSCAL Experiment forms":http://www.passcal.nmt.edu/content/forms
 * "Instrument request form":http://www.passcal.nmt.edu/inst_request
-
-h3. Useful EarthScope HQ forms
-
-* "Travel form":http://www.iris.edu/hq/forms/travel_authorization

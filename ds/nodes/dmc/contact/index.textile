@@ -1,5 +1,0 @@
-h1. Contact The DMC
-
-We are currently updating the Data Management Center website. If you have any questions or comments please email "webmaster@iris.washington.edu":mailto:webmaster@iris.washington.edu.
-
-For more general information about EarthScope, please visit the "EarthScope HQ Contact page":/hq/contact/.

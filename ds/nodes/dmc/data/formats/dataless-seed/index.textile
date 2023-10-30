@@ -6,15 +6,7 @@ A _dataless SEED_ volume contains the metadata for a request only, including ins
 
 h2. Getting a Dataless SEED File:
 
-# Generate a request for a dataless using the ["online form":/data/DatalessRequest.htm]
-# Submit a BREQ_FAST style request to "dataless@iris.washington.edu":mailto:dataless@iris.washington.edu from your mail client.
-# Get a dataless from the ["BUD Query Interface":/bud_stuff/bud/bud_start.pl?BUDDIR=/budnas/virtualnets/ALL].
-# Download network dataless SEED files from the ["EarthScope FTP site":http://www.iris.edu/pub/RESPONSES/DATALESS_SEEDS/].
-
-     
-
-     
-
-     
-
-     
+# Generate a request for a dataless using the "online form":/ds/nodes/dmc/forms/breqfast-request/
+# Submit a BREQ_FAST style request to dataless@iris.washington.edu
+# Get a dataless from the "BUD Query Interface":/bud_stuff/bud/bud_start.pl?BUDDIR=/budnas/virtualnets/ALL
+# Download "network dataless SEED files":https://ds.iris.edu/pub/RESPONSES/DATALESS_SEEDS/

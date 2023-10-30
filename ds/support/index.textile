@@ -4,8 +4,6 @@ h2. Frequently Answered Questions
 
 The "EarthScope DMC FAQ":/ds/support/faq/ answers many common questions about using EarthScope data services.
 
-For more general questions about EarthScope, see the "EarthScope HQ FAQ":/hq/about_iris/faqs/.
-
 h2. Technical/Software Support
 
 Discover EarthScope and community software, products, web tools and web services.

@@ -5,30 +5,6 @@ h1. About
   <div class="col-sm-6">
 </notextile>
 
-h2. Sections
-
-The Data Management Center has several distinct internal sections:
-
-* "Data Management":/ds/nodes/dmc/about/sections/data-management/
-* "Data Products":/ds/nodes/dmc/about/sections/data-products/
-* "Information Technology":/ds/nodes/dmc/about/sections/information-technology/
-* "Quality Assurance":/ds/nodes/dmc/about/sections/quality-assurance/
-* "Services":/ds/nodes/dmc/about/sections/services/
-* "Web Team":/ds/nodes/dmc/about/sections/web-team/
-
-h2. Staff
-
-* "List of DMC staff members":/ds/nodes/dmc/about/staff/
-
-h2. Employment
-
-EarthScope provides "announcements and listings of employment opportunities":/ds/nodes/dmc/about/jobs/ at both EarthScope and in the broader seismological community.
-
-<notextile>
-  </div>
-  <div class="col-sm-6">
-</notextile>
-
 h2. The DMC facility
 
 "Address, Server room, etc":/ds/nodes/dmc/about/facility/

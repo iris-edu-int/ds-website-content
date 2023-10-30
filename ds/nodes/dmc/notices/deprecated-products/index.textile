@@ -4,7 +4,7 @@ The data product that you have tried to access is no longer supported by the Ear
 
 h2(#spyder). System to Provide You Data from Earthquakes Rapidly (SPYDER)
 
-SPYDER data was event-oriented data products created shortly after an earthquake occurred. The data was unchecked and was considered to be of unknown quality. The data came from a variety of sources, primarily from the EarthScope DMC’s BUD system However, autoDRMs around the world and direct station dial-up augmented the data in SPYDER.
+SPYDER data was event-oriented data products created shortly after an earthquake occurred. The data was unchecked and was considered to be of unknown quality. The data came from a variety of sources, primarily from the DMC’s BUD system However, autoDRMs around the world and direct station dial-up augmented the data in SPYDER.
 
 <notextile><div class="alert alert-info">SPYDER was deprecated in Spring 2014.</div></notextile>
 
@@ -15,7 +15,7 @@ h4. Learn more about SPYDER
 
 h2(#farm). Fast Archive Recovery Method (FARM)
 
-The EarthScope DMC recognized the fact that the most interesting data, and most frequently requested, are data from earthquakes. Most of these interesting events are larger than a magnitude of M5.5. For this reason, the EarthScope DMC routinely pre-assembled data from earthquakes that were larger than 5.7, unless the event depth was greater than 100 km, in which case we included those down to M5.5. Although EarthScope' mission is to protect the entire archive of continuous data, event-related data holdings are the most valuable and frequently accessed.
+The EarthScope DMC recognized the fact that the most interesting data, and most frequently requested, are data from earthquakes. Most of these interesting events are larger than a magnitude of M5.5. For this reason, the EarthScope DMC routinely pre-assembled data from earthquakes that were larger than 5.7, unless the event depth was greater than 100 km, in which case we included those down to M5.5. Although EarthScope's mission is to protect the entire archive of continuous data, event-related data holdings are the most valuable and frequently accessed.
 
 An initiative was put forth in the Summer of 2000 to rebuild the FARM system. The problems that plagued the FARM were an out-of-date or incomplete accounting of station data, old or incorrect metadata headers, and data restricted to GSN stations. The goal was a system that could more easily be updated as station data became available from many networks, and where updates in station metadata would not require time-consuming rebuilds of thousands of SEED files. The result was a design called @POND@, which is an acronym for @Pool Of Network Data@. The scheme would involve breaking the @FARM@ data into pieces, each of which could be easily modified or appended to as needed. (One @POND@ holds all the data for one seismic network.)
 

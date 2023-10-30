@@ -6,7 +6,7 @@ Permanent networks provide "passive":/ds/nodes/dmc/data/types/time-series-data/ 
 
 h3. Global Seismographic Network 
 
-The EarthScope Global Seismographic Network (GSN) is one of the four major components of EarthScope Consortium. The goal of the GSN is to deploy 128 permanent seismic recording stations uniformly over the earth's surface. 
+The EarthScope Global Seismographic Network (GSN) is a major component of EarthScope Consortium. The goal of the GSN is to deploy 128 permanent seismic recording stations uniformly over the earth's surface. 
 
 "Learn more about the GSN":http://www.iris.edu/hq/programs/gsn.
  	 
@@ -36,7 +36,7 @@ Temporary networks may include both "passive and active":/ds/nodes/dmc/data/type
 
 h3. PASSCAL
 
-The Program for the Array Seismic Studies of the Continental Lithosphere (PASSCAL) is another one of the four major componenets of EarthScope. PASSCAL operates a pool of over 400 portable seismic instruments to record active source reflection data, active source refraction data or natural source recordings of earthquakes. 
+The Program for the Array Seismic Studies of the Continental Lithosphere (PASSCAL) is another major component of EarthScope. PASSCAL operates a pool of over 400 portable seismic instruments to record active source reflection data, active source refraction data or natural source recordings of earthquakes. 
 
 "Learn more about PASSCAL":http://www.iris.edu/hq/programs/passcal.
 

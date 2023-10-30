@@ -304,7 +304,7 @@ As a simple example, requesting a 40-minute window of data from the LHZ channel 
 .END
 * TA 2006 05 03 15 30 00.0 2006 05 03 16 10 00.0 1 LHZ</pre>
  
-Note that this request only includes the @TA@ network stations (the stations installed by EarthScope specifially for the Transporable Array).  To request data from all Transportable Array stations including the shared and cooperative stations replace the @TA@ network code with the @_US-TA@ virtual network code.
+Note that this request only includes the @TA@ network stations (the stations installed by EarthScope specifically for the Transportable Array).  To request data from all Transportable Array stations including the shared and cooperative stations replace the @TA@ network code with the @_US-TA@ virtual network code.
 
 h3. Web Services
 

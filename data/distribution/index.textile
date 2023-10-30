@@ -1,4 +1,4 @@
-h1. EarthScope DMC Data Statistics
+h1. EarthScope Data Statistics
 
 Archive growth and shipment statistics are available in multiple file formats (image, PDF, text) and are updated every month. Please click the links below to either view the files in your browser, or download directly.
 

@@ -47,4 +47,4 @@ You can look up the stations that are *open* "here":http://ds.iris.edu/vnets?vne
 
 h2. More information
 
-If you have any trouble, please email EarthScope staff using: "engine_room@iris.washington.edu":mailto:engine_room@iris.washington.edu
+If you have any trouble, please email EarthScope staff at "$":mailto:data-help@earthscope.org
